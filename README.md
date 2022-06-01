@@ -31,3 +31,9 @@
 > :tada: A vuepress plugin for reward component.在你的站点添加一个打赏插件.
 
 链接：[@vuepress-denaro/vuepress-plugin-reward](https://github.com/denaro-org/vuepress-theme-denaro/tree/main/packages/%40vuepress-denaro/plugin-reward)
+
+## vuepress-plugin-vue-preview
+
+> :tada: Preview vue component effects on your vuepress site.在你的 vuepress 站点上预览 vue 组件效果.
+
+链接：[@vuepress-denaro/vuepress-plugin-vue-preview](https://github.com/denaro-org/vuepress-theme-denaro/tree/main/packages/%40vuepress-denaro/plugin-vue-preview)

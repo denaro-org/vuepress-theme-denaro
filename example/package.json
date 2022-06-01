@@ -12,6 +12,7 @@
     "@vuepress-denaro/vuepress-plugin-moefy-canvas": "^1.0.0",
     "@vuepress-denaro/vuepress-plugin-one-click-copy": "^1.0.0",
     "@vuepress-denaro/vuepress-plugin-reward": "^1.0.0",
+    "@vuepress-denaro/vuepress-plugin-vue-preview": "^1.0.0",
     "@vuepress/bundler-vite": "^2.0.0-beta.46",
     "@vuepress/cli": "^2.0.0-beta.46"
   }

@@ -1,0 +1,15 @@
+@import '@vuepress-denaro/core/lib/styles/variables.scss';
+@import '@vuepress-denaro/core/lib/styles/mixins';
+
+@include b(#{$classPrefix}) {
+  &preview-container {
+    padding: 1rem;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    border-radius: 5px;
+    background-color: #fff;
+
+    &:hover {
+      box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%);
+    }
+  }
+}

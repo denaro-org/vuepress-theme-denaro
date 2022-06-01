@@ -3,6 +3,7 @@ import { dynamicTitlePlugin } from '@vuepress-denaro/vuepress-plugin-dynamic-tit
 import { moefyCanvasPlugin } from '@vuepress-denaro/vuepress-plugin-moefy-canvas'
 import { oneClickCopyPlugin } from '@vuepress-denaro/vuepress-plugin-one-click-copy'
 import { rewardPlugin } from '@vuepress-denaro/vuepress-plugin-reward'
+import { vuePreviewPlugin } from '@vuepress-denaro/vuepress-plugin-vue-preview'
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from '@vuepress/cli'
 
@@ -44,6 +45,7 @@ export default defineUserConfig({
         },
       ],
     }),
+    vuePreviewPlugin(),
   ],
 
   markdown: {

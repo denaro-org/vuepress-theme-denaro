@@ -1,0 +1,50 @@
+{
+  "name": "@vuepress-denaro/vuepress-plugin-vue-preview",
+  "version": "1.0.0",
+  "description": "Preview vue component effects on your vuepress site.在你的 vuepress 站点上预览 vue 组件效果.",
+  "keywords": [
+    "vuepress",
+    "vuepress-plugin",
+    "theme",
+    "denaro",
+    "vue-preview",
+    "vue 组件预览"
+  ],
+  "homepage": "https://github.com/denaro-org/vuepress-theme-denaro/tree/main/packages/@vuepress-denaro/plugin-vue-preview#readme",
+  "bugs": {
+    "url": "https://github.com/denaro-org/vuepress-theme-denaro/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/denaro-org/vuepress-theme-denaro.git"
+  },
+  "license": "MIT",
+  "author": "vxhly <pengchengou@gmail.com>",
+  "main": "lib/node/index.js",
+  "types": "lib/node/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc --build tsconfig.build.json",
+    "build:watch": "tsc --build -w tsconfig.build.json",
+    "clean": "npx rimraf lib *.tsbuildinfo ./**/dist",
+    "copy": "cpx \"src/**/*.{d.ts,vue,less,scss,css,html,sass,json,js}\" lib"
+  },
+  "dependencies": {
+    "@babel/core": "^7.16.12",
+    "@babel/plugin-syntax-jsx": "^7.16.7",
+    "@babel/traverse": "^7.16.10",
+    "@babel/types": "^7.16.8",
+    "@vue/compiler-sfc": "^3.2.29",
+    "@vuepress-denaro/core": "1.0.0",
+    "@vuepress/client": "^2.0.0-beta.46",
+    "@vuepress/core": "^1.9.7",
+    "@vuepress/markdown": "^2.0.0-beta.46",
+    "@vuepress/plugin-prismjs": "^2.0.0-beta.46",
+    "@vuepress/utils": "^2.0.0-beta.46",
+    "enhanced-resolve": "^5.8.3",
+    "slash2": "^2.0.0",
+    "vue": "^3.2.36"
+  }
+}

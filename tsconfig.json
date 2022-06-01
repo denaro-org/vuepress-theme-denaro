@@ -18,6 +18,9 @@
     },
     {
       "path": "./packages/@vuepress-denaro/plugin-reward/tsconfig.build.json"
+    },
+    {
+      "path": "./packages/@vuepress-denaro/plugin-vue-preview/tsconfig.build.json"
     }
   ],
   "files": []
