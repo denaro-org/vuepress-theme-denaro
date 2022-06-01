@@ -25,3 +25,9 @@
 > :tada: A vuepress plugin for clipboard-copy. 一键复制 Vuepress 插件.
 
 链接：[@vuepress-denaro/vuepress-plugin-one-click-copy](https://github.com/denaro-org/vuepress-theme-denaro/tree/main/packages/%40vuepress-denaro/plugin-one-click-copy)
+
+## vuepress-plugin-reward
+
+> :tada: A vuepress plugin for reward component.在你的站点添加一个打赏插件.
+
+链接：[@vuepress-denaro/vuepress-plugin-reward](https://github.com/denaro-org/vuepress-theme-denaro/tree/main/packages/%40vuepress-denaro/plugin-reward)

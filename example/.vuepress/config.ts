@@ -2,6 +2,7 @@ import { baiduAutopushPlugin } from '@vuepress-denaro/vuepress-plugin-baidu-auto
 import { dynamicTitlePlugin } from '@vuepress-denaro/vuepress-plugin-dynamic-title'
 import { moefyCanvasPlugin } from '@vuepress-denaro/vuepress-plugin-moefy-canvas'
 import { oneClickCopyPlugin } from '@vuepress-denaro/vuepress-plugin-one-click-copy'
+import { rewardPlugin } from '@vuepress-denaro/vuepress-plugin-reward'
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from '@vuepress/cli'
 
@@ -30,6 +31,18 @@ export default defineUserConfig({
     moefyCanvasPlugin(),
     oneClickCopyPlugin({
       copyMessage: '复制成功了, 快去粘贴使用吧 !!!',
+    }),
+    rewardPlugin({
+      rewardOption: [
+        {
+          text: '微信',
+          url: '/WeChat.png',
+        },
+        {
+          text: '支付宝',
+          url: '/Alipay.png',
+        },
+      ],
     }),
   ],
 
