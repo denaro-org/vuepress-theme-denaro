@@ -1,0 +1,23 @@
+{
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "packages": [
+    "example",
+    "packages/vuepress-theme-denaro",
+    "packages/@vuepress-denaro/*"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": ["lib"],
+  "version": "1.0.1-alpha.1",
+  "command": {
+    "version": {
+      "allowBranch": "main",
+      "conventionalCommits": true,
+      "exact": true,
+      "ignoreChanges": ["**/*.md"],
+      "message": "build: publish %s"
+    }
+  }
+}
