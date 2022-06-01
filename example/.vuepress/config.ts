@@ -1,5 +1,6 @@
 import { baiduAutopushPlugin } from '@vuepress-denaro/vuepress-plugin-baidu-autopush'
 import { dynamicTitlePlugin } from '@vuepress-denaro/vuepress-plugin-dynamic-title'
+import { moefyCanvasPlugin } from '@vuepress-denaro/vuepress-plugin-moefy-canvas'
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from '@vuepress/cli'
 
@@ -25,6 +26,7 @@ export default defineUserConfig({
       hideText: '(＞人＜;)呀！主人我走丢了, 看到我了嘛？',
       recoverTime: 2000,
     }),
+    moefyCanvasPlugin(),
   ],
 
   markdown: {

@@ -9,6 +9,9 @@
     },
     {
       "path": "./packages/@vuepress-denaro/plugin-dynamic-title/tsconfig.build.json"
+    },
+    {
+      "path": "./packages/@vuepress-denaro/plugin-moefy-canvas/tsconfig.build.json"
     }
   ],
   "files": []
