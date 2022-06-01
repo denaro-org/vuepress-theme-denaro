@@ -1,0 +1,13 @@
+{
+  "name": "vuepress-theme-denaro-example",
+  "version": "1.0.1-alpha.1",
+  "private": true,
+  "scripts": {
+    "build": "vuepress build",
+    "dev": "vuepress dev --clean-cache"
+  },
+  "dependencies": {
+    "@vuepress/bundler-vite": "^2.0.0-beta.46",
+    "@vuepress/cli": "^2.0.0-beta.46"
+  }
+}

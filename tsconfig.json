@@ -1,5 +1,9 @@
 {
   "extends": "./tsconfig.base.json",
-  "references": [],
+  "references": [
+    {
+      "path": "./packages/@vuepress-denaro/core/tsconfig.build.json"
+    }
+  ],
   "files": []
 }
