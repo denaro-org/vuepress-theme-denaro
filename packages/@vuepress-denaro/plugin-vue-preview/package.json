@@ -1,6 +1,6 @@
 {
   "name": "@vuepress-denaro/vuepress-plugin-vue-preview",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Preview vue component effects on your vuepress site.在你的 vuepress 站点上预览 vue 组件效果.",
   "keywords": [
     "vuepress",
@@ -37,7 +37,7 @@
     "@babel/traverse": "^7.16.10",
     "@babel/types": "^7.16.8",
     "@vue/compiler-sfc": "^3.2.29",
-    "@vuepress-denaro/core": "1.0.0",
+    "@vuepress-denaro/core": "1.0.1",
     "@vuepress/client": "^2.0.0-beta.46",
     "@vuepress/core": "^1.9.7",
     "@vuepress/markdown": "^2.0.0-beta.46",
