@@ -1,3 +1,4 @@
+import { baiduAutopushPlugin } from '@vuepress-denaro/vuepress-plugin-baidu-autopush'
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from '@vuepress/cli'
 
@@ -16,11 +17,7 @@ export default defineUserConfig({
     vuePluginOptions: {},
   }),
 
-  // theme: denaroTheme({
-  //   title: 'Coding and Fixing',
-  //   repo: 'denaro-org/vuepress-theme-denaro',
-  // }),
-  plugins: [],
+  plugins: [baiduAutopushPlugin()],
 
   markdown: {
     importCode: {

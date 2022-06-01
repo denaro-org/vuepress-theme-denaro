@@ -7,6 +7,7 @@
     "dev": "vuepress dev --clean-cache"
   },
   "dependencies": {
+    "@vuepress-denaro/vuepress-plugin-baidu-autopush": "^1.0.1-alpha.1",
     "@vuepress/bundler-vite": "^2.0.0-beta.46",
     "@vuepress/cli": "^2.0.0-beta.46"
   }
