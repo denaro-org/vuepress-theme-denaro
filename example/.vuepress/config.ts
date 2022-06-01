@@ -1,4 +1,5 @@
 import { baiduAutopushPlugin } from '@vuepress-denaro/vuepress-plugin-baidu-autopush'
+import { dynamicTitlePlugin } from '@vuepress-denaro/vuepress-plugin-dynamic-title'
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from '@vuepress/cli'
 
@@ -17,7 +18,14 @@ export default defineUserConfig({
     vuePluginOptions: {},
   }),
 
-  plugins: [baiduAutopushPlugin()],
+  plugins: [
+    baiduAutopushPlugin(),
+    dynamicTitlePlugin({
+      showText: '(/≧▽≦/)耶！主人最爱你了！',
+      hideText: '(＞人＜;)呀！主人我走丢了, 看到我了嘛？',
+      recoverTime: 2000,
+    }),
+  ],
 
   markdown: {
     importCode: {

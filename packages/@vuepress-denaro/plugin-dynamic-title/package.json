@@ -1,13 +1,18 @@
 {
-  "name": "@vuepress-denaro/core",
+  "name": "@vuepress-denaro/vuepress-plugin-dynamic-title",
   "version": "1.0.0",
-  "description": "@vuepress-denaro 的核心包",
+  "description": "Add a dynamic title to your site.给你的站点添加动态标题的支持插件.",
   "keywords": [
     "vuepress",
+    "vuepress-plugin",
     "theme",
-    "denaro"
+    "denaro",
+    "dynamic-title",
+    "dynamic",
+    "动态",
+    "标题"
   ],
-  "homepage": "https://github.com/denaro-org/vuepress-theme-denaro/tree/main/packages/@vuepress-denaro/core#readme",
+  "homepage": "https://github.com/denaro-org/vuepress-theme-denaro/tree/main/packages/@vuepress-denaro/plugin-dynamic-title#readme",
   "bugs": {
     "url": "https://github.com/denaro-org/vuepress-theme-denaro/issues"
   },
@@ -17,13 +22,8 @@
   },
   "license": "MIT",
   "author": "vxhly <pengchengou@gmail.com>",
-  "main": "lib/cjs/index.js",
-  "module": "lib/esm/index.js",
-  "types": "lib/esm/index.d.ts",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
+  "main": "lib/node/index.js",
+  "types": "lib/node/index.d.ts",
   "files": [
     "lib"
   ],
@@ -34,16 +34,12 @@
     "copy": "cpx \"src/**/*.{d.ts,vue,less,scss,css,html,sass,json,js}\" lib"
   },
   "dependencies": {
-    "@vicons/carbon": "^0.12.0",
-    "@vicons/tabler": "^0.12.0",
+    "@vuepress-denaro/core": "1.0.0",
     "@vuepress/client": "^2.0.0-beta.46",
-    "@vuepress/plugin-git": "^2.0.0-beta.46",
-    "@vuepress/plugin-theme-data": "^2.0.0-beta.46",
-    "@vuepress/shared": "^2.0.0-beta.46",
-    "@vueuse/core": "^8.1.1",
-    "pinyin-pro": "^3.10.0",
+    "@vuepress/core": "^1.9.7",
+    "@vuepress/utils": "^2.0.0-beta.46",
     "vue": "^3.2.36",
-    "vue-router": "^4.0.15"
+    "vue-router": "^4.0.14"
   },
   "publishConfig": {
     "access": "public"
