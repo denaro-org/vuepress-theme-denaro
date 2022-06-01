@@ -1,6 +1,7 @@
 import { baiduAutopushPlugin } from '@vuepress-denaro/vuepress-plugin-baidu-autopush'
 import { dynamicTitlePlugin } from '@vuepress-denaro/vuepress-plugin-dynamic-title'
 import { moefyCanvasPlugin } from '@vuepress-denaro/vuepress-plugin-moefy-canvas'
+import { oneClickCopyPlugin } from '@vuepress-denaro/vuepress-plugin-one-click-copy'
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from '@vuepress/cli'
 
@@ -27,6 +28,9 @@ export default defineUserConfig({
       recoverTime: 2000,
     }),
     moefyCanvasPlugin(),
+    oneClickCopyPlugin({
+      copyMessage: '复制成功了, 快去粘贴使用吧 !!!',
+    }),
   ],
 
   markdown: {

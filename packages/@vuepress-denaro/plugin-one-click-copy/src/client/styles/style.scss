@@ -1,0 +1,61 @@
+@import '@vuepress-denaro/core/lib/styles/variables.scss';
+
+.#{$classPrefix} {
+  &-code-copy {
+    color: #aaa;
+    fill: #aaa;
+    font-size: 14px;
+    display: inline-block;
+    cursor: pointer;
+  }
+}
+
+.content pre {
+  overflow-y: hidden;
+
+  &[class*='language-'] {
+    overflow-y: hidden;
+  }
+}
+
+div {
+  &[class*='language-'] pre .#{$classPrefix}-code-copy,
+  &[class*='aside-code'] aside .#{$classPrefix}-code-copy {
+    position: absolute;
+    z-index: 1000;
+    top: 7px;
+    right: 35px;
+    opacity: 0;
+    font-size: 16px;
+  }
+
+  &[class*='language-'] pre:hover .#{$classPrefix}-code-copy,
+  &[class*='aside-code'] aside:hover .#{$classPrefix}-code-copy {
+    opacity: 1;
+  }
+
+  &[class*='language-'] pre {
+    position: static !important;
+    user-select: text;
+
+    &[class*='language-'] {
+      position: static !important;
+    }
+  }
+
+  &[class~='language-text']::before {
+    content: 'text';
+  }
+
+  &[class~='language-yml']::before {
+    content: 'yml';
+  }
+
+  &[class~='language-env']::before {
+    content: 'env';
+  }
+}
+
+p code {
+  user-select: all;
+}

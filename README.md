@@ -19,3 +19,9 @@
 > :tada: Decorate your web pages with lovely canvas animations.用可可爱爱的 canvas 动效装饰你的网页.
 
 链接：[@vuepress-denaro/vuepress-plugin-moefy-canvas](https://github.com/denaro-org/vuepress-theme-denaro/tree/main/packages/%40vuepress-denaro/plugin-moefy-canvas)
+
+## vuepress-plugin-one-click-copy
+
+> :tada: A vuepress plugin for clipboard-copy. 一键复制 Vuepress 插件.
+
+链接：[@vuepress-denaro/vuepress-plugin-one-click-copy](https://github.com/denaro-org/vuepress-theme-denaro/tree/main/packages/%40vuepress-denaro/plugin-one-click-copy)

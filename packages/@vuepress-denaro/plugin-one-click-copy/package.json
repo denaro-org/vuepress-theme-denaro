@@ -1,0 +1,46 @@
+{
+  "name": "@vuepress-denaro/vuepress-plugin-one-click-copy",
+  "version": "1.0.0",
+  "description": "A vuepress plugin for clipboard-copy. 一键复制 Vuepress 插件.",
+  "keywords": [
+    "vuepress",
+    "vuepress-plugin",
+    "theme",
+    "denaro",
+    "one-click-copy",
+    "一键复制",
+    "点击复制",
+    "代码复制"
+  ],
+  "homepage": "https://github.com/denaro-org/vuepress-theme-denaro/tree/main/packages/@vuepress-denaro/vuepress-plugin-one-click-copy#readme",
+  "bugs": {
+    "url": "https://github.com/denaro-org/vuepress-theme-denaro/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/denaro-org/vuepress-theme-denaro.git"
+  },
+  "license": "MIT",
+  "author": "vxhly <pengchengou@gmail.com>",
+  "main": "lib/node/index.js",
+  "types": "lib/node/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc --build tsconfig.build.json",
+    "build:watch": "tsc --build -w tsconfig.build.json",
+    "clean": "npx rimraf lib *.tsbuildinfo ./**/dist",
+    "copy": "cpx \"src/**/*.{d.ts,vue,less,scss,css,html,sass,json,js}\" lib"
+  },
+  "dependencies": {
+    "@vuepress-denaro/core": "1.0.0",
+    "@vuepress/client": "^2.0.0-beta.46",
+    "@vuepress/core": "^1.9.7",
+    "@vuepress/utils": "^2.0.0-beta.46",
+    "vue": "^3.2.36"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

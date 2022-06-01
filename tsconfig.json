@@ -12,6 +12,9 @@
     },
     {
       "path": "./packages/@vuepress-denaro/plugin-moefy-canvas/tsconfig.build.json"
+    },
+    {
+      "path": "./packages/@vuepress-denaro/plugin-one-click-copy/tsconfig.build.json"
     }
   ],
   "files": []
