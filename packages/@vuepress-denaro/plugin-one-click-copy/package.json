@@ -1,6 +1,6 @@
 {
   "name": "@vuepress-denaro/vuepress-plugin-one-click-copy",
-  "version": "1.0.1",
+  "version": "1.0.2-alpha.0",
   "description": "A vuepress plugin for clipboard-copy. 一键复制 Vuepress 插件.",
   "keywords": [
     "vuepress",
@@ -34,7 +34,7 @@
     "copy": "cpx \"src/**/*.{d.ts,vue,less,scss,css,html,sass,json,js}\" lib"
   },
   "dependencies": {
-    "@vuepress-denaro/core": "1.0.1",
+    "@vuepress-denaro/core": "1.0.2-alpha.0",
     "@vuepress/client": "^2.0.0-beta.46",
     "@vuepress/core": "^1.9.7",
     "@vuepress/utils": "^2.0.0-beta.46",
