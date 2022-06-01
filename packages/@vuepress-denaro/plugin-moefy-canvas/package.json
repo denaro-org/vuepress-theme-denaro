@@ -45,5 +45,8 @@
     "lodash": "^4.17.21",
     "ts-debounce": "^4.0.0",
     "vue": "^3.2.36"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
