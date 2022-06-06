@@ -25,7 +25,7 @@ export const DenaroMoefyCanvas = defineComponent({
   setup() {
     const id = classNameByBEM('moefy-canvas')
     const MoefyCanvasEL = h('div', { class: id }, h('canvas', { id }))
-    let moefyCanvas: Ribbon | null = null
+    let moefyCanvas: Ribbon | Sakura | Popper | Sparkler | null = null
 
     const getCanvas = (): HTMLCanvasElement => {
       const canvas: HTMLCanvasElement = document.getElementById(

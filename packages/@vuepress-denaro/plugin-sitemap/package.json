@@ -1,16 +1,16 @@
 {
-  "name": "@vuepress-denaro/vuepress-plugin-moefy-canvas",
+  "name": "@vuepress-denaro/vuepress-plugin-sitemap",
   "version": "1.0.2-alpha.0",
-  "description": "Decorate your web pages with lovely canvas animations.用可可爱爱的 canvas 动效装饰你的网页.",
+  "description": "Generate sitemap when packaging documentation.在打包文档时生成站点 sitemap.",
   "keywords": [
     "vuepress",
     "vuepress-plugin",
     "theme",
     "denaro",
-    "moefy-canvas",
-    "vue 组件预览"
+    "sitemap",
+    "sitemap xml"
   ],
-  "homepage": "https://github.com/denaro-org/vuepress-theme-denaro/tree/main/packages/@vuepress-denaro/plugin-moefy-canvas#readme",
+  "homepage": "https://github.com/denaro-org/vuepress-theme-denaro/tree/main/packages/@vuepress-denaro/plugin-sitemap#readme",
   "bugs": {
     "url": "https://github.com/denaro-org/vuepress-theme-denaro/issues"
   },
@@ -32,19 +32,13 @@
     "copy": "cpx \"src/**/*.{d.ts,vue,less,scss,css,html,sass,json,js}\" lib"
   },
   "dependencies": {
-    "@moefy-canvas/core": "^0.3.3",
-    "@moefy-canvas/theme-popper": "^0.3.3",
-    "@moefy-canvas/theme-ribbon": "^0.3.3",
-    "@moefy-canvas/theme-sakura": "^0.3.3",
-    "@moefy-canvas/theme-sparkler": "^0.3.3",
-    "@vuepress-denaro/core": "1.0.2-alpha.0",
-    "@vuepress/client": "^2.0.0-beta.46",
-    "@vuepress/core": "^1.9.7",
+    "@vuepress-denaro/core": "^1.0.2-alpha.0",
+    "@vuepress/client": "^2.0.0-beta.45",
+    "@vuepress/core": "^2.0.0-beta.46",
     "@vuepress/utils": "^2.0.0-beta.46",
-    "canvas-confetti": "^1.5.1",
-    "lodash": "^4.17.21",
-    "ts-debounce": "^4.0.0",
-    "vue": "^3.2.36"
+    "chalk": "^5.0.1",
+    "fs-extra": "^10.1.0",
+    "sitemap": "^3.0.0"
   },
   "publishConfig": {
     "access": "public"
