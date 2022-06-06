@@ -1,6 +1,6 @@
 {
   "name": "@vuepress-denaro/vuepress-plugin-moefy-canvas",
-  "version": "1.0.2-alpha.0",
+  "version": "1.0.2-alpha.1",
   "description": "Decorate your web pages with lovely canvas animations.用可可爱爱的 canvas 动效装饰你的网页.",
   "keywords": [
     "vuepress",
