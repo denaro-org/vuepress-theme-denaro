@@ -1,16 +1,16 @@
 {
-  "name": "@vuepress-denaro/vuepress-plugin-vue-preview",
+  "name": "@vuepress-denaro/vuepress-plugin-smooth-scroll",
   "version": "1.0.2-alpha.1",
-  "description": "Preview vue component effects on your vuepress site.在你的 vuepress 站点上预览 vue 组件效果.",
+  "description": "VuePress plugin for smooth scrolling.用于平滑滚动的 VuePress 插件.",
   "keywords": [
     "vuepress",
     "vuepress-plugin",
     "theme",
     "denaro",
-    "vue-preview",
-    "vue 组件预览"
+    "smooth-scroll",
+    "平滑滚动"
   ],
-  "homepage": "https://github.com/denaro-org/vuepress-theme-denaro/tree/main/packages/@vuepress-denaro/plugin-vue-preview#readme",
+  "homepage": "https://github.com/denaro-org/vuepress-theme-denaro/tree/main/packages/@vuepress-denaro/plugin-smooth-scroll#readme",
   "bugs": {
     "url": "https://github.com/denaro-org/vuepress-theme-denaro/issues"
   },
@@ -32,21 +32,11 @@
     "copy": "cpx \"src/**/*.{d.ts,vue,less,scss,css,html,sass,json,js}\" lib"
   },
   "dependencies": {
-    "@babel/core": "^7.16.12",
-    "@babel/plugin-syntax-jsx": "^7.16.7",
-    "@babel/traverse": "^7.16.10",
-    "@babel/types": "^7.16.8",
-    "@vue/compiler-sfc": "^3.2.29",
-    "@vuepress-denaro/core": "1.0.2-alpha.0",
+    "@vuepress-denaro/core": "^1.0.2-alpha.0",
     "@vuepress/client": "^2.0.0-beta.46",
     "@vuepress/core": "^2.0.0-beta.46",
-    "@vuepress/markdown": "^2.0.0-beta.46",
-    "@vuepress/plugin-prismjs": "^2.0.0-beta.46",
-    "@vuepress/theme-default": "^2.0.0-beta.46",
     "@vuepress/utils": "^2.0.0-beta.46",
-    "enhanced-resolve": "^5.8.3",
-    "slash2": "^2.0.0",
-    "vue": "^3.2.36"
+    "smoothscroll-polyfill": "^0.4.4"
   },
   "publishConfig": {
     "access": "public"

@@ -8,7 +8,8 @@
     "theme",
     "denaro",
     "moefy-canvas",
-    "vue 组件预览"
+    "canvas",
+    "canvas 动画"
   ],
   "homepage": "https://github.com/denaro-org/vuepress-theme-denaro/tree/main/packages/@vuepress-denaro/plugin-moefy-canvas#readme",
   "bugs": {

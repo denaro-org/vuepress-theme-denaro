@@ -79,7 +79,9 @@ export const mdPluginVueVuePreview = function (md): void {
     if (hasImportBlockOpen && importBlockIndex + 2 === idx) {
       hasImportBlockOpen = false
 
-      return !resolveFileError ? '--></CodeGroup></DenraoVuePreview>' : ' -->'
+      return !resolveFileError
+        ? '--></DenraoCodeGroup></DenraoVuePreview>'
+        : ' -->'
     }
     return self.renderToken(tokens, idx, options)
   }
@@ -89,16 +91,16 @@ export const mdPluginVueVuePreview = function (md): void {
 }
 
 function renderDemoOpen({ filePath, absoluteFilePath, showDemo }): string {
-  const template = `<DenraoVuePreview absoluteFilePath="${absoluteFilePath}" showDemo="${showDemo}"><CodeGroup>`
+  const template = `<DenraoVuePreview absoluteFilePath="${absoluteFilePath}" showDemo="${showDemo}"><DenraoCodeGroup>`
 
   const deps = analyzeDeps(absoluteFilePath)
 
   const codeGroups = `${[absoluteFilePath]
     .concat(deps)
     .map((absPath, index) => {
-      return `<CodeGroupItem title="${path.basename(absPath)}">
+      return `<DenraoCodeGroupItem title="${path.basename(absPath)}">
       ${md.render(`@[code](${absPath})`)}
-      </CodeGroupItem>`
+      </DenraoCodeGroupItem>`
     })
     .join('')}`
 
