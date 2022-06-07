@@ -2,6 +2,7 @@ import { baiduAutopushPlugin } from '@vuepress-denaro/vuepress-plugin-baidu-auto
 import { dynamicTitlePlugin } from '@vuepress-denaro/vuepress-plugin-dynamic-title'
 import { moefyCanvasPlugin } from '@vuepress-denaro/vuepress-plugin-moefy-canvas'
 import { oneClickCopyPlugin } from '@vuepress-denaro/vuepress-plugin-one-click-copy'
+import { permainkPinyinPlugin } from '@vuepress-denaro/vuepress-plugin-permalink-pinyin'
 import { rewardPlugin } from '@vuepress-denaro/vuepress-plugin-reward'
 import { sitemapPlugin } from '@vuepress-denaro/vuepress-plugin-sitemap'
 import { smoothScrollPlugin } from '@vuepress-denaro/vuepress-plugin-smooth-scroll'
@@ -50,6 +51,7 @@ export default defineUserConfig({
     sitemapPlugin(),
     vuePreviewPlugin(),
     smoothScrollPlugin(),
+    permainkPinyinPlugin(),
   ],
 
   markdown: {

@@ -26,6 +26,9 @@
       "path": "./packages/@vuepress-denaro/plugin-smooth-scroll/tsconfig.build.json"
     },
     {
+      "path": "./packages/@vuepress-denaro/plugin-permalink-pinyin/tsconfig.build.json"
+    },
+    {
       "path": "./packages/@vuepress-denaro/plugin-vue-preview/tsconfig.build.json"
     }
   ],
