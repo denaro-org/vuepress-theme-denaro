@@ -8,15 +8,5 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
+* **plugin-permalink-pinyin:** 一个 VuePress 插件，将中文标题转换为音译永久链接 ([f46f7f3](https://github.com/denaro-org/vuepress-theme-denaro/commit/f46f7f308d441937c3486b633b8fa08b9c905d34))
 * **plugin-smooth-scroll:** vuePress plugin for smooth scrolling.用于平滑滚动的 VuePress 插件 ([79c8ece](https://github.com/denaro-org/vuepress-theme-denaro/commit/79c8ece0b4c6d7b70259f0ddee947092e8857679))
-
-
-
-
-
-## [1.0.2-alpha.1](https://github.com/denaro-org/vuepress-theme-denaro/compare/v1.0.2-alpha.0...v1.0.2-alpha.1) (2022-06-06)
-
-
-### Features
-
-* **plugin-sitemap:** generate sitemap when packaging documentation.在打包文档时生成站点 sitemap ([42fb6c1](https://github.com/denaro-org/vuepress-theme-denaro/commit/42fb6c1979d76196cd97a8b0dd067007b49692bd))
