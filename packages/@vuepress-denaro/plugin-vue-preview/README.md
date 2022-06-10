@@ -48,6 +48,32 @@ export default defineUserConfig({
 })
 ```
 
+- Write markdown
+
+### single file import
+
+```markdown
+@[code](@/.vuepress/vue-previews/demo.vue)
+```
+
+### vue component import
+
+```markdown
+@[preview-demo](@/.vuepress/vue-previews/demo.vue)
+```
+
+### the vue group only shows the code group
+
+```markdown
+@[preview](@/.vuepress/vue-previews/demo.vue)
+```
+
+### documentation for generating vue files
+
+```markdown
+@[docvue](@/.vuepress/vue-previews/demo.vue)
+```
+
 ## Thanks
 
 [vuepress-plugin-vue-preview](https://github.com/vuepress-reco/vuepress-theme-reco/tree/main/packages/%40vuepress-reco/plugin-vue-preview)
