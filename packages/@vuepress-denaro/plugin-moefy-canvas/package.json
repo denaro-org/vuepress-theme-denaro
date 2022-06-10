@@ -1,6 +1,6 @@
 {
   "name": "@vuepress-denaro/vuepress-plugin-moefy-canvas",
-  "version": "1.0.2-alpha.1",
+  "version": "1.0.2-alpha.2",
   "description": "Decorate your web pages with lovely canvas animations.用可可爱爱的 canvas 动效装饰你的网页.",
   "keywords": [
     "vuepress",
@@ -38,7 +38,7 @@
     "@moefy-canvas/theme-ribbon": "^0.3.3",
     "@moefy-canvas/theme-sakura": "^0.3.3",
     "@moefy-canvas/theme-sparkler": "^0.3.3",
-    "@vuepress-denaro/core": "1.0.2-alpha.0",
+    "@vuepress-denaro/core": "1.0.2-alpha.2",
     "@vuepress/client": "^2.0.0-beta.46",
     "@vuepress/core": "^2.0.0-beta.46",
     "@vuepress/utils": "^2.0.0-beta.46",
