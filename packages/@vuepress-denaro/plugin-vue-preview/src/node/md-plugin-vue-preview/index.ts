@@ -1,5 +1,6 @@
 import { createMarkdown } from '@vuepress/markdown'
 import { fs, path } from '@vuepress/utils'
+import { docVue3 } from 'doc-vue3'
 import { analyzeDeps } from './analyze-deps'
 import { highlightCode } from './md-instance'
 
@@ -19,7 +20,7 @@ function getAbsPath(path): string {
   return path.trim().replace(/^@/, root).trim()
 }
 
-export const mdPluginVueVuePreview = function (md): void {
+export const mdPluginVuePreview = function (md): void {
   // 覆盖块标签-起始标签
   md.renderer.rules.paragraph_open = function (
     tokens,
@@ -31,7 +32,7 @@ export const mdPluginVueVuePreview = function (md): void {
     const contentToken = tokens[idx + 1]
     const matchImportPattern =
       contentToken.type === 'inline' &&
-      contentToken.content.match(/^@\[(preview)-?(\w+)?\]\((.+)\)/)
+      contentToken.content.match(/^@\[(preview|docvue)-?(\w+)?\]\((.+)\)/)
 
     if (!matchImportPattern) {
       return self.renderToken(tokens, idx, options)
@@ -66,6 +67,13 @@ export const mdPluginVueVuePreview = function (md): void {
         showDemo: componentName,
       })
     }
+
+    if (importMode === 'docvue') {
+      const content = fs.readFileSync(absoluteFilePath, 'utf-8')
+      const htmlResult = docVue3(content || '', { type: 'html' })
+
+      return htmlResult + '<!-- '
+    }
   }
 
   // 覆盖块标签-结束标签
@@ -76,6 +84,9 @@ export const mdPluginVueVuePreview = function (md): void {
     env,
     self
   ) {
+    if (importMode === 'docvue') {
+      return ' -->'
+    }
     if (hasImportBlockOpen && importBlockIndex + 2 === idx) {
       hasImportBlockOpen = false
 

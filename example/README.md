@@ -46,3 +46,5 @@ vuepress build .
 :::
 
 @[preview-code](@/.vuepress/vue-previews/demo.vue)
+
+@[docvue](@/.vuepress/vue-previews/demo.vue)

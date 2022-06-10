@@ -1,18 +1,18 @@
+<script lang="ts" setup>
+defineProps({
+  // @doc 增删改查目标的名称
+  crudName: {
+    type: String,
+    default: '',
+  },
+})
+</script>
 <template>
-  <div class="demo-container">
-    <h3 style="widht">My name is {{ name }}.</h3>
-    <p>This is a vue preview demo.</p>
+  <div class="component-crt-crud">
+    嘻嘻嘻嘻嘻嘻嘻
+    <!-- @doc 自定义操作列内容 -->
+    <slot name="customAction"></slot>
+    <!-- @doc 弹窗内容 -->
+    <slot name="modal"></slot>
   </div>
 </template>
-
-<script setup lang="ts">
-import { useInfo } from './demo.ts'
-
-const { name } = useInfo()
-</script>
-
-<style>
-.demo-container {
-  width: 200px;
-}
-</style>
