@@ -9,6 +9,7 @@ import { smoothScrollPlugin } from '@vuepress-denaro/vuepress-plugin-smooth-scro
 import { vuePreviewPlugin } from '@vuepress-denaro/vuepress-plugin-vue-preview'
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from '@vuepress/cli'
+import { path } from '@vuepress/utils'
 
 export default defineUserConfig({
   locales: {
@@ -49,7 +50,9 @@ export default defineUserConfig({
       ],
     }),
     sitemapPlugin(),
-    vuePreviewPlugin(),
+    vuePreviewPlugin({
+      rootPath: path.resolve(process.cwd(), '.vuepress/vue-previews'),
+    }),
     smoothScrollPlugin(),
     permainkPinyinPlugin(),
   ],
