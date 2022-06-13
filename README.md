@@ -8,6 +8,12 @@
 
 链接：[@vuepress-denaro/vuepress-plugin-baidu-autopush](https://github.com/denaro-org/vuepress-theme-denaro/tree/main/packages/%40vuepress-denaro/plugin-baidu-autopush)
 
+## plugin-code-preview
+
+> :tada: A vuepress plugin for codesandbox embed code preview.一个用于 codesandbox 嵌入代码预览的 vuepress 插件.
+
+链接：[@vuepress-denaro/vuepress-plugin-code-preview](https://github.com/denaro-org/vuepress-theme-denaro/tree/main/packages/%40vuepress-denaro/plugin-code-preview)
+
 ## plugin-dynamic-title
 
 > :tada: Add a dynamic title to your site.给你的站点添加动态标题的支持插件.

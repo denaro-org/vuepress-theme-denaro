@@ -1,0 +1,9 @@
+@import '@vuepress-denaro/core/lib/styles/variables.scss';
+
+.#{$classPrefix} {
+  &code-preview {
+    margin: 20px auto;
+    height: 650px;
+    width: 100%;
+  }
+}
