@@ -41,6 +41,8 @@ vuepress dev .
 vuepress build .
 ```
 
+<DenraoCodePreview embedUrl="https://codesandbox.io/embed/avue-demo-z4uje?autoresize=1&fontsize=14&hidenavigation=1&theme=dark&view=preview" ></DenraoCodePreview>
+
 ::: warning 注意
 请确保你的 Node.js 版本 >= 8.6。
 :::

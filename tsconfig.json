@@ -8,6 +8,9 @@
       "path": "./packages/@vuepress-denaro/plugin-baidu-autopush/tsconfig.build.json"
     },
     {
+      "path": "./packages/@vuepress-denaro/plugin-code-preview/tsconfig.build.json"
+    },
+    {
       "path": "./packages/@vuepress-denaro/plugin-dynamic-title/tsconfig.build.json"
     },
     {

@@ -1,7 +1,7 @@
 @import '@vuepress-denaro/core/lib/styles/variables.scss';
 
-##{$classPrefix} {
-  &-message-container {
+.#{$classPrefix} {
+  &message-container {
     .message {
       &.move-in {
         animation: message-move-in 0.3s ease-in-out;

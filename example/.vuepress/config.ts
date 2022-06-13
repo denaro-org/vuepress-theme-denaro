@@ -1,4 +1,5 @@
 import { baiduAutopushPlugin } from '@vuepress-denaro/vuepress-plugin-baidu-autopush'
+import { codePreviewPlugin } from '@vuepress-denaro/vuepress-plugin-code-preview'
 import { dynamicTitlePlugin } from '@vuepress-denaro/vuepress-plugin-dynamic-title'
 import { moefyCanvasPlugin } from '@vuepress-denaro/vuepress-plugin-moefy-canvas'
 import { oneClickCopyPlugin } from '@vuepress-denaro/vuepress-plugin-one-click-copy'
@@ -28,6 +29,7 @@ export default defineUserConfig({
 
   plugins: [
     baiduAutopushPlugin(),
+    codePreviewPlugin(),
     dynamicTitlePlugin({
       showText: '(/≧▽≦/)耶！主人最爱你了！',
       hideText: '(＞人＜;)呀！主人我走丢了, 看到我了嘛？',
