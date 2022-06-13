@@ -45,6 +45,6 @@ vuepress build .
 请确保你的 Node.js 版本 >= 8.6。
 :::
 
-@[preview-code](@/.vuepress/vue-previews/demo.vue)
+@[preview-code](@root/demo.vue)
 
-@[docvue](@/.vuepress/vue-previews/demo.vue)
+@[docvue](@root/demo.vue)

@@ -16,11 +16,18 @@ let resolveFileError = false
 
 const root = process.cwd()
 
-function getAbsPath(path): string {
-  return path.trim().replace(/^@/, root).trim()
+function getAbsPath(path, pathOptions): string {
+  if (pathOptions.rootPath) {
+    return path
+      .trim()
+      .replace(/^@root/, pathOptions.rootPath)
+      .trim()
+  } else {
+    return path.trim().replace(/^@/, root).trim()
+  }
 }
 
-export const mdPluginVuePreview = function (md): void {
+export const mdPluginVuePreview = function (md, { rootPath }): void {
   // 覆盖块标签-起始标签
   md.renderer.rules.paragraph_open = function (
     tokens,
@@ -46,7 +53,7 @@ export const mdPluginVuePreview = function (md): void {
 
     const filePath = matchImportPattern[3]
 
-    const absoluteFilePath = getAbsPath(filePath)
+    const absoluteFilePath = getAbsPath(filePath, { rootPath })
 
     if (!fs.existsSync(absoluteFilePath)) {
       resolveFileError = true

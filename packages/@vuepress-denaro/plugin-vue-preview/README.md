@@ -33,7 +33,11 @@ const {
   vuePreviewPlugin,
 } = require('@vuepress-denaro/vuepress-plugin-vue-preview')
 module.exports = {
-  plugins: [vuePreviewPlugin()],
+  plugins: [vuePreviewPlugin(
+    {
+      rootPath: '' // Replacement path for '@root'
+    }
+  )],
 }
 ```
 
@@ -44,7 +48,11 @@ import { vuePreviewPlugin } from '@vuepress-denaro/vuepress-plugin-vue-preview'
 import { defineUserConfig } from '@vuepress/cli'
 
 export default defineUserConfig({
-  plugins: [vuePreviewPlugin()],
+  plugins: [vuePreviewPlugin(
+    {
+      rootPath: '' // Replacement path for '@root'
+    }
+  )],
 })
 ```
 
