@@ -1,6 +1,6 @@
 {
   "name": "@vuepress-denaro/vuepress-plugin-sitemap",
-  "version": "1.0.2-alpha.3",
+  "version": "1.0.2-alpha.4",
   "description": "VuePress plugin for smooth scrolling.在打包文档时生成站点 sitemap.",
   "keywords": [
     "vuepress",

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.2-alpha.4](https://github.com/denaro-org/vuepress-theme-denaro/compare/v1.0.2-alpha.3...v1.0.2-alpha.4) (2022-06-14)
+
+
+### Features
+
+* **plugin-autodoc:** 添加 rootPath ([54b46c1](https://github.com/denaro-org/vuepress-theme-denaro/commit/54b46c12174ed5d57888f52e626f6e76b9eee36f))
+
+
+
+
+
 ## [1.0.2-alpha.3](https://github.com/denaro-org/vuepress-theme-denaro/compare/v1.0.2-alpha.2...v1.0.2-alpha.3) (2022-06-14)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@vuepress-denaro/vuepress-plugin-smooth-scroll",
-  "version": "1.0.2-alpha.3",
+  "version": "1.0.2-alpha.4",
   "description": "VuePress plugin for smooth scrolling.用于平滑滚动的 VuePress 插件.",
   "keywords": [
     "vuepress",
