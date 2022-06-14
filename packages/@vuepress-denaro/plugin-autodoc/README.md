@@ -33,7 +33,11 @@ const {
   autodocPlugin,
 } = require('@vuepress-denaro/vuepress-plugin-autodoc')
 module.exports = {
-  plugins: [autodocPlugin()],
+  plugins: [autodocPlugin(    
+    {
+      rootPath: '' // Replacement path for '@root'
+    }
+  )],
 }
 ```
 
@@ -44,7 +48,11 @@ import { autodocPlugin } from '@vuepress-denaro/vuepress-plugin-autodoc'
 import { defineUserConfig } from '@vuepress/cli'
 
 export default defineUserConfig({
-  plugins: [autodocPlugin()],
+  plugins: [autodocPlugin(
+    {
+      rootPath: '' // Replacement path for '@root'
+    }
+  )],
 })
 ```
 

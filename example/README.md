@@ -51,4 +51,4 @@ vuepress build .
 
 @[docvue](@root/demo.vue)
 
-@[autodoc](/Users/oupengcheng/working/denaro-org/vuepress-theme-denaro/example/.vuepress/vue-previews/demo.js)
+@[autodoc](@root/demo.js)

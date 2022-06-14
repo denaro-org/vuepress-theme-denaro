@@ -29,7 +29,9 @@ export default defineUserConfig({
   }),
 
   plugins: [
-    autodocPlugin(),
+    autodocPlugin({
+      rootPath: path.resolve(process.cwd(), '.vuepress/vue-previews'),
+    }),
     baiduAutopushPlugin(),
     codePreviewPlugin(),
     dynamicTitlePlugin({
