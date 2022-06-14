@@ -1,6 +1,6 @@
 {
   "name": "@vuepress-denaro/core",
-  "version": "1.0.2-alpha.2",
+  "version": "1.0.2-alpha.3",
   "description": "@vuepress-denaro 的核心包",
   "keywords": [
     "vuepress",
