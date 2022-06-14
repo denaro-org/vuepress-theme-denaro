@@ -1,3 +1,4 @@
+import { autodocPlugin } from '@vuepress-denaro/vuepress-plugin-autodoc'
 import { baiduAutopushPlugin } from '@vuepress-denaro/vuepress-plugin-baidu-autopush'
 import { codePreviewPlugin } from '@vuepress-denaro/vuepress-plugin-code-preview'
 import { dynamicTitlePlugin } from '@vuepress-denaro/vuepress-plugin-dynamic-title'
@@ -28,6 +29,7 @@ export default defineUserConfig({
   }),
 
   plugins: [
+    autodocPlugin(),
     baiduAutopushPlugin(),
     codePreviewPlugin(),
     dynamicTitlePlugin({

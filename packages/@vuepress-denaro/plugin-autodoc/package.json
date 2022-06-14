@@ -1,18 +1,18 @@
 {
-  "name": "@vuepress-denaro/vuepress-plugin-code-preview",
+  "name": "@vuepress-denaro/vuepress-plugin-autodoc",
   "version": "1.0.2-alpha.2",
-  "description": "A vuepress plugin for codesandbox embed code preview.一个用于 codesandbox 嵌入代码预览的vuepress插件.",
+  "description": "Generate javascript documentation with jsdoc.使用 jsdoc 生成 javascript 文档.",
   "keywords": [
     "vuepress",
     "vuepress-plugin",
     "theme",
+    "autodoc",
     "denaro",
-    "code-preview",
-    "preview",
-    "codesandbox",
-    "嵌入代码预览"
+    "api",
+    "jsdoc",
+    "documentation"
   ],
-  "homepage": "https://github.com/denaro-org/vuepress-theme-denaro/tree/main/packages/@vuepress-denaro/plugin-code-preview#readme",
+  "homepage": "https://github.com/denaro-org/vuepress-theme-denaro/tree/main/packages/@vuepress-denaro/plugin-autodoc#readme",
   "bugs": {
     "url": "https://github.com/denaro-org/vuepress-theme-denaro/issues"
   },
@@ -34,10 +34,14 @@
     "copy": "cpx \"src/**/*.{d.ts,vue,less,scss,css,html,sass,json,js}\" lib"
   },
   "dependencies": {
-    "@vuepress-denaro/core": "^1.0.2-alpha.2",
+    "@vuepress-denaro/core": "1.0.2-alpha.2",
     "@vuepress/client": "^2.0.0-beta.48",
     "@vuepress/core": "^2.0.0-beta.48",
     "@vuepress/utils": "^2.0.0-beta.48",
+    "child_process": "^1.0.2",
+    "jsdoc": "^3.6.10",
+    "markdown-it": "^13.0.1",
+    "prismjs": "^1.28.0",
     "vue": "^3.2.37"
   },
   "publishConfig": {
