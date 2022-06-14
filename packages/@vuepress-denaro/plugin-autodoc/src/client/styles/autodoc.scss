@@ -1,0 +1,46 @@
+.badge {
+  display: inline-block;
+  font-size: 20px;
+  font-family: monospace;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 3px;
+  padding: 0 6px;
+  color: #fff;
+  background-color: #42b983;
+}
+
+.scoped .badge,
+blockquote .badge {
+  font-size: 15px;
+  height: 23px;
+  line-height: 23px;
+}
+
+.badge {
+  &.warning {
+    background-color: #e7c000;
+  }
+
+  &.error {
+    background-color: #da5961;
+  }
+
+  &.tip {
+    background-color: #42b983;
+  }
+}
+
+blockquote.scoped {
+  &.warning {
+    border-color: #e7c000;
+  }
+
+  &.error {
+    border-color: #da5961;
+  }
+
+  &.tip {
+    border-color: #42b983;
+  }
+}

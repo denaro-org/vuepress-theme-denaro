@@ -7,6 +7,7 @@
     "dev": "vuepress dev --clean-cache"
   },
   "dependencies": {
+    "@vuepress-denaro/vuepress-plugin-autodoc": "^1.0.2-alpha.2",
     "@vuepress-denaro/vuepress-plugin-baidu-autopush": "1.0.2-alpha.2",
     "@vuepress-denaro/vuepress-plugin-code-preview": "1.0.2-alpha.2",
     "@vuepress-denaro/vuepress-plugin-dynamic-title": "1.0.2-alpha.2",

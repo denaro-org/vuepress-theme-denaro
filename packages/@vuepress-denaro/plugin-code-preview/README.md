@@ -90,4 +90,4 @@ Types of embed code previews.
 
 ## Thanks
 
-[vuepress-plugin-code-preview](https://github.com/moefyit/vuepress-plugin-code-preview)
+[vuepress-plugin-code-preview](https://github.com/vxhly/vuepress-plugin-code-preview)
