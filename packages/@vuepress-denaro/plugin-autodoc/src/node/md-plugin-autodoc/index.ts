@@ -1,7 +1,7 @@
 import Token from 'markdown-it/lib/token'
 import { html, read } from './utils'
 
-export const mdPluginAutodoc = function (md): void {
+export const mdPluginAutodoc = function (md, { rootPath }): void {
   const cache = {}
   const regex = /@\[autodoc\]\((.+)\)/
   let documented = false
@@ -16,7 +16,14 @@ export const mdPluginAutodoc = function (md): void {
 
         // read data into cache
         if (!(path in cache)) {
-          cache[path] = read(path)
+          cache[path] = read(
+            rootPath
+              ? path
+                  .trim()
+                  .replace(/^@root/, rootPath)
+                  .trim()
+              : path.trim()
+          )
         }
 
         // figure out modules to document
