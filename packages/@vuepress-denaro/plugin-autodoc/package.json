@@ -1,6 +1,6 @@
 {
   "name": "@vuepress-denaro/vuepress-plugin-autodoc",
-  "version": "1.0.2-alpha.3",
+  "version": "1.0.2-alpha.4",
   "description": "Generate javascript documentation with jsdoc.使用 jsdoc 生成 javascript 文档.",
   "keywords": [
     "vuepress",
