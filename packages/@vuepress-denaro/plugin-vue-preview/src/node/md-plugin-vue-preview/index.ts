@@ -39,7 +39,7 @@ export const mdPluginVuePreview = function (md, { rootPath }): void {
     const contentToken = tokens[idx + 1]
     const matchImportPattern =
       contentToken.type === 'inline' &&
-      contentToken.content.match(/^@\[(preview|docvue)-?\w+)?\]\{(.+)\}/)
+      contentToken.content.match(/^@\[(preview|docvue)-?(\w+)?\]\{(.+)\}/)
 
     if (!matchImportPattern) {
       return ''
@@ -81,6 +81,7 @@ export const mdPluginVuePreview = function (md, { rootPath }): void {
 
       return htmlResult + '<!-- '
     }
+    return ''
   }
 
   // 覆盖块标签-结束标签
@@ -91,10 +92,18 @@ export const mdPluginVuePreview = function (md, { rootPath }): void {
     env,
     self
   ) {
-    if (importMode === 'docvue') {
+    if (
+      importMode === 'docvue' &&
+      hasImportBlockOpen &&
+      importBlockIndex + 2 === idx
+    ) {
       return ' -->'
     }
-    if (hasImportBlockOpen && importBlockIndex + 2 === idx) {
+    if (
+      importMode === 'preview' &&
+      hasImportBlockOpen &&
+      importBlockIndex + 2 === idx
+    ) {
       hasImportBlockOpen = false
 
       return !resolveFileError

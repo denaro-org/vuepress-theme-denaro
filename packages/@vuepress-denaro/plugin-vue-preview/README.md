@@ -61,25 +61,25 @@ export default defineUserConfig({
 ### single file import
 
 ```markdown
-@[code](@/.vuepress/vue-previews/demo.vue)
+@[code]{@/.vuepress/vue-previews/demo.vue}
 ```
 
 ### vue component import
 
 ```markdown
-@[preview-demo](@/.vuepress/vue-previews/demo.vue)
+@[preview-demo]{@/.vuepress/vue-previews/demo.vue}
 ```
 
 ### the vue group only shows the code group
 
 ```markdown
-@[preview](@/.vuepress/vue-previews/demo.vue)
+@[preview]{@/.vuepress/vue-previews/demo.vue}
 ```
 
 ### documentation for generating vue files
 
 ```markdown
-@[docvue](@/.vuepress/vue-previews/demo.vue)
+@[docvue]{@/.vuepress/vue-previews/demo.vue}
 ```
 
 ## Thanks
