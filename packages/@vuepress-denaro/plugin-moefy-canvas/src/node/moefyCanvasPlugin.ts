@@ -1,7 +1,8 @@
 import { pluginNamePrefix } from '@vuepress-denaro/core'
-import { type Plugin, type PluginObject } from '@vuepress/core'
+import type { Plugin, PluginObject } from '@vuepress/core'
 import { path } from '@vuepress/utils'
-import { type MoefyCanvasOptions, MoefyCanvasTheme } from '../shared'
+import { MoefyCanvasTheme } from '../shared'
+import type { MoefyCanvasOptions } from '../shared'
 
 export const moefyCanvasPlugin = (
   { theme, themeConfig = {}, canvasOptions = {} }: MoefyCanvasOptions = {

@@ -1,11 +1,13 @@
-import { type CanvasOptions } from '@moefy-canvas/core'
+import type { CanvasOptions } from '@moefy-canvas/core'
 import {
   Popper,
   type PopperConfig,
   PopperShape,
 } from '@moefy-canvas/theme-popper'
-import { Ribbon, type RibbonConfig } from '@moefy-canvas/theme-ribbon'
-import { Sakura, type SakuraConfig } from '@moefy-canvas/theme-sakura'
+import type { RibbonConfig } from '@moefy-canvas/theme-ribbon'
+import { Ribbon } from '@moefy-canvas/theme-ribbon'
+import type { SakuraConfig } from '@moefy-canvas/theme-sakura'
+import { Sakura } from '@moefy-canvas/theme-sakura'
 import {
   Sparkler,
   type SparklerConfig,

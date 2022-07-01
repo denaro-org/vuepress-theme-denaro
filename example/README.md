@@ -41,6 +41,12 @@ vuepress dev .
 vuepress build .
 ```
 
+::: tip
+
+1
+
+:::
+
 <!-- <DenraoCodePreview embedUrl="https://codesandbox.io/embed/avue-demo-z4uje?autoresize=1&fontsize=14&hidenavigation=1&theme=dark&view=preview" ></DenraoCodePreview> -->
 
 ::: warning 注意
@@ -49,6 +55,6 @@ vuepress build .
 
 @[preview-code](@root/demo.vue)
 
-@[docvue](@root/demo.vue)
+<!-- @[docvue](@root/demo.vue)
 
-@[autodoc](@root/demo.js)
+@[autodoc](@root/demo.js)  -->

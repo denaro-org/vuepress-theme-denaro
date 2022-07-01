@@ -1,4 +1,4 @@
-import { type IRewardOption } from '../../shared'
+import type { IRewardOption } from '../../shared'
 
 declare const __REWARD_BTN_TEXT__: string
 declare const __REWARD_TITLE__: string

@@ -1,6 +1,6 @@
 import { pluginNamePrefix } from '@vuepress-denaro/core'
-import { type Plugin, type PluginObject } from '@vuepress/core'
-import { type SitemapPluginOptions } from '../shared'
+import type { Plugin, PluginObject } from '@vuepress/core'
+import type { SitemapPluginOptions } from '../shared'
 import { generateSitemap } from './generateSitemap'
 
 export const sitemapPlugin = (

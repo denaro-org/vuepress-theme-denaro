@@ -1,8 +1,8 @@
-import { type CanvasOptions } from '@moefy-canvas/core'
-import { type PopperConfig } from '@moefy-canvas/theme-popper'
-import { type RibbonConfig } from '@moefy-canvas/theme-ribbon'
-import { type SakuraConfig } from '@moefy-canvas/theme-sakura'
-import { type SparklerConfig } from '@moefy-canvas/theme-sparkler'
+import type { CanvasOptions } from '@moefy-canvas/core'
+import type { PopperConfig } from '@moefy-canvas/theme-popper'
+import type { RibbonConfig } from '@moefy-canvas/theme-ribbon'
+import type { SakuraConfig } from '@moefy-canvas/theme-sakura'
+import type { SparklerConfig } from '@moefy-canvas/theme-sparkler'
 
 export enum MoefyCanvasTheme {
   Sparkler = 'sparkler',

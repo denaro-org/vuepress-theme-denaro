@@ -1,6 +1,6 @@
 import { fs, path } from '@vuepress/utils'
-const resolve = require('enhanced-resolve')
-const slash = require('slash2')
+import resolve from 'enhanced-resolve'
+import slash from 'slash2'
 
 const DEFAULT_EXT = ['.tsx', '.jsx', '.js', '.ts', '.vue']
 

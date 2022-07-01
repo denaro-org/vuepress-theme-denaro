@@ -1,4 +1,4 @@
-import { type CanvasOptions } from '@moefy-canvas/core'
+import type { CanvasOptions } from '@moefy-canvas/core'
 import {
   type MoefyCanvasTheme,
   type MoefyCanvasThemeConfig,

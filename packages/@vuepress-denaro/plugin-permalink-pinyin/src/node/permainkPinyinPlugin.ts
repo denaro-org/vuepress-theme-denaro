@@ -1,7 +1,7 @@
 import { pluginNamePrefix } from '@vuepress-denaro/core'
-import { type Plugin, type PluginObject } from '@vuepress/core'
+import type { Plugin, PluginObject } from '@vuepress/core'
 import { slugify } from 'transliteration'
-import { type OptionsSlugify } from 'transliteration/dist/node/src/types'
+import type { OptionsSlugify } from 'transliteration/dist/node/src/types'
 
 export const permainkPinyinPlugin = (options?: OptionsSlugify): Plugin => {
   const pluginObj: PluginObject = {

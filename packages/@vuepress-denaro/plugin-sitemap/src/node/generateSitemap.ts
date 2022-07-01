@@ -1,8 +1,8 @@
 import path from 'path'
-import { type SiteLocaleConfig } from '@vuepress/core'
+import type { SiteLocaleConfig } from '@vuepress/core'
 import fs from 'fs-extra'
 import { createSitemap } from 'sitemap'
-import { type SitemapPluginOptions } from '../shared'
+import type { SitemapPluginOptions } from '../shared'
 import { log } from './utils'
 
 function stripLocalePrefix(path, localePathPrefixes): Record<string, string> {
