@@ -39,10 +39,10 @@ export const mdPluginVuePreview = function (md, { rootPath }): void {
     const contentToken = tokens[idx + 1]
     const matchImportPattern =
       contentToken.type === 'inline' &&
-      contentToken.content.match(/^@\[(preview|docvue)-?(\w+)?\]\((.+)\)/)
+      contentToken.content.match(/^@\[(preview|docvue)-?\w+)?\]\{(.+)\}/)
 
     if (!matchImportPattern) {
-      return self.renderToken(tokens, idx, options)
+      return ''
     }
 
     importMode = matchImportPattern[1]
@@ -101,7 +101,7 @@ export const mdPluginVuePreview = function (md, { rootPath }): void {
         ? '--></DenraoCodeGroup></DenraoVuePreview>'
         : ' -->'
     }
-    return self.renderToken(tokens, idx, options)
+    return ''
   }
 }
 
