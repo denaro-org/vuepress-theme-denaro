@@ -103,9 +103,6 @@ export const mdPluginVuePreview = function (md, { rootPath }): void {
     }
     return self.renderToken(tokens, idx, options)
   }
-
-  // 移除段落标签
-  // md.renderer.rules.paragraph_close = md.renderer.rules.paragraph_open = doNotRenderTokenWhenBlockOpen
 }
 
 function renderDemoOpen({ filePath, absoluteFilePath, showDemo }): string {

@@ -1,7 +1,7 @@
 import { pluginNamePrefix } from '@vuepress-denaro/core'
-import { type Plugin, type PluginObject } from '@vuepress/core'
+import type { Plugin, PluginObject } from '@vuepress/core'
 import { path } from '@vuepress/utils'
-import { type DynamicTitlePluginOptions } from '../shared'
+import type { DynamicTitlePluginOptions } from '../shared'
 
 export const dynamicTitlePlugin = ({
   showIcon = '',

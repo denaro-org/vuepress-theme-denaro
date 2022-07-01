@@ -1,4 +1,4 @@
-import { type SitemapItemOptions } from 'sitemap'
+import type { SitemapItemOptions } from 'sitemap'
 
 /**
  * Options for @vuepress-denaro/vuepress-plugin-sitemap
