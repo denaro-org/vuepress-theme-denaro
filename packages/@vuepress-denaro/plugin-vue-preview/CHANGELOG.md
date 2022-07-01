@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.2-alpha.6](https://github.com/denaro-org/vuepress-theme-denaro/compare/v1.0.2-alpha.5...v1.0.2-alpha.6) (2022-07-01)
+
+
+### Bug Fixes
+
+* **plugin-vue-preview:** 修复保存时解析出错 ([4d6bd43](https://github.com/denaro-org/vuepress-theme-denaro/commit/4d6bd437a2b56aa9022f61dab3798157a0a795e1))
+
+
+
+
+
 ## [1.0.2-alpha.5](https://github.com/denaro-org/vuepress-theme-denaro/compare/v1.0.2-alpha.4...v1.0.2-alpha.5) (2022-07-01)
 
 **Note:** Version bump only for package @vuepress-denaro/vuepress-plugin-vue-preview
