@@ -1,6 +1,6 @@
 {
   "name": "@vuepress-denaro/vuepress-plugin-vue-preview",
-  "version": "1.0.2-alpha.7",
+  "version": "1.0.2-alpha.8",
   "description": "Preview vue component effects on your vuepress site.在你的 vuepress 站点上预览 vue 组件效果.",
   "keywords": [
     "vuepress",
