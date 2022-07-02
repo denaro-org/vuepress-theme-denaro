@@ -2,6 +2,7 @@ import { autodocPlugin } from '@vuepress-denaro/vuepress-plugin-autodoc'
 import { baiduAutopushPlugin } from '@vuepress-denaro/vuepress-plugin-baidu-autopush'
 import { codePreviewPlugin } from '@vuepress-denaro/vuepress-plugin-code-preview'
 import { dynamicTitlePlugin } from '@vuepress-denaro/vuepress-plugin-dynamic-title'
+import { flowchartPlugin } from '@vuepress-denaro/vuepress-plugin-flowchart'
 import { moefyCanvasPlugin } from '@vuepress-denaro/vuepress-plugin-moefy-canvas'
 import { oneClickCopyPlugin } from '@vuepress-denaro/vuepress-plugin-one-click-copy'
 import { permainkPinyinPlugin } from '@vuepress-denaro/vuepress-plugin-permalink-pinyin'
@@ -29,6 +30,7 @@ export default defineUserConfig({
   }),
 
   plugins: [
+    flowchartPlugin(),
     autodocPlugin({
       rootPath: path.resolve(process.cwd(), '.vuepress/vue-previews'),
     }),

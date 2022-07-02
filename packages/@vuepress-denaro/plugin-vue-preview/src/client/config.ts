@@ -9,7 +9,6 @@ import { DenraoVuePreview } from './components'
 
 export default defineClientConfig({
   enhance({ app }) {
-    // wrap the `<DenraoVuePreview />` component with plugin options
     app.component('DenraoVuePreview', h(DenraoVuePreview))
     app.component('DenraoCodeGroup', CodeGroup)
     app.component('DenraoCodeGroupItem', CodeGroupItem)
