@@ -10,7 +10,7 @@
     "access": "public"
   },
   "files": ["lib"],
-  "version": "1.0.2-alpha.7",
+  "version": "1.0.2-alpha.8",
   "command": {
     "version": {
       "allowBranch": "main",
