@@ -11,18 +11,17 @@ export function getModuleResolvePath({
   silent = null,
 }): string | null {
   try {
-    return slash(
-      resolve.create.sync({
-        extensions,
-        symlinks: false,
-        mainFiles: ['index', 'package.json'],
-      })(
-        fs.statSync(basePath).isDirectory()
-          ? basePath
-          : path.parse(basePath).dir,
-        sourcePath
-      )
+    const absolutePath = resolve.create.sync({
+      extensions,
+      symlinks: false,
+      exportsFields: ['exports.import'],
+      mainFiles: ['index', 'package.json'],
+    })(
+      fs.statSync(basePath).isDirectory() ? basePath : path.parse(basePath).dir,
+      sourcePath
     )
+
+    return slash(absolutePath)
   } catch (err) {
     if (!silent) {
       console.error(
