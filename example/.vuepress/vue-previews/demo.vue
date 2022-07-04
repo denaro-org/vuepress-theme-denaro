@@ -1,4 +1,8 @@
 <script lang="ts" setup>
+import { ref } from 'vue'
+
+const count = ref(0)
+
 defineProps({
   // @doc 增删改查目标的名称
   crudName: {

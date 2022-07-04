@@ -59,7 +59,7 @@ export default defineUserConfig({
 - Write markdown
 
 ```markdown
-@[autodoc](@/.vuepress/vue-previews/demo.js)
+@[autodoc]{@/.vuepress/vue-previews/demo.js}
 ```
 
 ## Thanks

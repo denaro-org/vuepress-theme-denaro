@@ -3,7 +3,7 @@ import { html, read } from './utils'
 
 export const mdPluginAutodoc = function (md, { rootPath }): void {
   const cache = {}
-  const regex = /@\[autodoc\]\((.+)\)/
+  const regex = /@\[autodoc\]\{(.+)\}/
   let documented = false
 
   // add markdown-it rule for plugin
@@ -35,17 +35,16 @@ export const mdPluginAutodoc = function (md, { rootPath }): void {
 
         // render html for doc
         documented = true
-        token.content =
-          modules
-            .map((key) => {
-              if (!(key in data)) {
-                throw new Error(
-                  `Autodoc: could not find export \`${key}\` in file \`${path}\``
-                )
-              }
-              return html(data[key])
-            })
-            .join('\n') + '<!--'
+        token.content = modules
+          .map((key) => {
+            if (!(key in data)) {
+              throw new Error(
+                `Autodoc: could not find export \`${key}\` in file \`${path}\``
+              )
+            }
+            return html(data[key])
+          })
+          .join('\n')
         token.type = 'html_inline'
         token.markdown = modules.join(', ')
         token.children = null
