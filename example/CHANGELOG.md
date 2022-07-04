@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.2-alpha.10](https://github.com/denaro-org/vuepress-theme-denaro/compare/v1.0.2-alpha.9...v1.0.2-alpha.10) (2022-07-04)
+
+
+### Bug Fixes
+
+* **plugin-autodoc,plugin-vue-preview:** 修复 markdown 解析错误 ([fc25286](https://github.com/denaro-org/vuepress-theme-denaro/commit/fc25286ca20addf24270c1cf6186267f8cbac628))
+
+
+
+
+
 ## [1.0.2-alpha.9](https://github.com/denaro-org/vuepress-theme-denaro/compare/v1.0.2-alpha.8...v1.0.2-alpha.9) (2022-07-04)
 
 
