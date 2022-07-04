@@ -3,7 +3,6 @@
 
 @include b(#{$classPrefix}) {
   &flowchart {
-    overflow: scroll;
     text-align: center;
     font-size: 0px;
     min-height: 200px;
