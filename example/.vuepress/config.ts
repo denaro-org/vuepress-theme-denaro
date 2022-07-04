@@ -3,7 +3,10 @@ import { baiduAutopushPlugin } from '@vuepress-denaro/vuepress-plugin-baidu-auto
 import { codePreviewPlugin } from '@vuepress-denaro/vuepress-plugin-code-preview'
 import { dynamicTitlePlugin } from '@vuepress-denaro/vuepress-plugin-dynamic-title'
 import { flowchartPlugin } from '@vuepress-denaro/vuepress-plugin-flowchart'
-import { moefyCanvasPlugin } from '@vuepress-denaro/vuepress-plugin-moefy-canvas'
+import {
+  moefyCanvasPlugin,
+  MoefyCanvasTheme,
+} from '@vuepress-denaro/vuepress-plugin-moefy-canvas'
 import { oneClickCopyPlugin } from '@vuepress-denaro/vuepress-plugin-one-click-copy'
 import { permainkPinyinPlugin } from '@vuepress-denaro/vuepress-plugin-permalink-pinyin'
 import { rewardPlugin } from '@vuepress-denaro/vuepress-plugin-reward'
@@ -41,7 +44,9 @@ export default defineUserConfig({
       hideText: '(＞人＜;)呀！主人我走丢了, 看到我了嘛？',
       recoverTime: 2000,
     }),
-    moefyCanvasPlugin(),
+    moefyCanvasPlugin({
+      theme: MoefyCanvasTheme.Sakura,
+    }),
     oneClickCopyPlugin({
       copyMessage: '复制成功了, 快去粘贴使用吧 !!!',
     }),
