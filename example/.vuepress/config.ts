@@ -9,6 +9,7 @@ import {
 } from '@vuepress-denaro/vuepress-plugin-moefy-canvas'
 import { oneClickCopyPlugin } from '@vuepress-denaro/vuepress-plugin-one-click-copy'
 import { permainkPinyinPlugin } from '@vuepress-denaro/vuepress-plugin-permalink-pinyin'
+import { qrcodePlugin } from '@vuepress-denaro/vuepress-plugin-qrcode'
 import { rewardPlugin } from '@vuepress-denaro/vuepress-plugin-reward'
 import { sitemapPlugin } from '@vuepress-denaro/vuepress-plugin-sitemap'
 import { smoothScrollPlugin } from '@vuepress-denaro/vuepress-plugin-smooth-scroll'
@@ -33,6 +34,7 @@ export default defineUserConfig({
   }),
 
   plugins: [
+    qrcodePlugin(),
     flowchartPlugin(),
     autodocPlugin({
       rootPath: path.resolve(process.cwd(), '.vuepress/vue-previews'),

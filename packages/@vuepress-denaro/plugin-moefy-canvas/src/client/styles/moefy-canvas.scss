@@ -1,0 +1,8 @@
+@import '@vuepress-denaro/core/lib/styles/variables.scss';
+@import '@vuepress-denaro/core/lib/styles/mixins';
+
+@include b(#{$classPrefix}) {
+  &moefy-canvas {
+    position: relative;
+  }
+}
