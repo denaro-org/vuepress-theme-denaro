@@ -35,7 +35,7 @@
     "copy-watch": "lerna run copy --parallel -- --watch",
     "dev": "yarn copy-watch & yarn build --watch & cd ./example && yarn run dev",
     "example:serve": "anywhere -h localhost -d example/.vuepress/dist",
-    "lint": "eslint --ext .js,.ts,.vue .",
+    "lint": "eslint --fix --ext .js,.ts,.vue .",
     "prepare": "husky install",
     "publish": "yarn lint && yarn build:lib && lerna publish",
     "release": "yarn lint && yarn build:lib && lerna publish prerelease --dist-tag next",

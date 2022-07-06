@@ -20,6 +20,7 @@ import {
   canvasOptions as userCanvasOptions,
   themeConfig as userThemeConfig,
 } from './const'
+import '../styles/moefy-canvas.scss'
 
 export const DenaroMoefyCanvas = defineComponent({
   name: 'DenaroMoefyCanvas',
@@ -106,6 +107,6 @@ export const DenaroMoefyCanvas = defineComponent({
       moefyCanvas && moefyCanvas.unmount()
     })
 
-    return () => h(MoefyCanvasEL)
+    return () => !__VUEPRESS_SSR__ && MoefyCanvasEL
   },
 })
