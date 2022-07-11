@@ -33,7 +33,15 @@ export const DenraoVuePreview = defineComponent({
               {
                 class: classNameByBEM('preview-container'),
               },
-              [h(demoTP)]
+              [
+                h(
+                  'div',
+                  {
+                    style: 'overflow-x: auto;',
+                  },
+                  [h(demoTP)]
+                ),
+              ]
             )
           : h(''),
         slots?.default?.(),
