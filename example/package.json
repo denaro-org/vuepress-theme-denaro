@@ -1,6 +1,6 @@
 {
   "name": "vuepress-theme-denaro-example",
-  "version": "1.0.2-alpha.10",
+  "version": "1.0.2-alpha.11",
   "private": true,
   "scripts": {
     "build": "vuepress build",
@@ -12,13 +12,13 @@
     "@vuepress-denaro/vuepress-plugin-code-preview": "1.0.2-alpha.5",
     "@vuepress-denaro/vuepress-plugin-dynamic-title": "1.0.2-alpha.5",
     "@vuepress-denaro/vuepress-plugin-flowchart": "1.0.2-alpha.9",
-    "@vuepress-denaro/vuepress-plugin-moefy-canvas": "1.0.2-alpha.5",
+    "@vuepress-denaro/vuepress-plugin-moefy-canvas": "1.0.2-alpha.11",
     "@vuepress-denaro/vuepress-plugin-one-click-copy": "1.0.2-alpha.5",
     "@vuepress-denaro/vuepress-plugin-permalink-pinyin": "1.0.2-alpha.5",
     "@vuepress-denaro/vuepress-plugin-reward": "1.0.2-alpha.5",
     "@vuepress-denaro/vuepress-plugin-sitemap": "1.0.2-alpha.5",
     "@vuepress-denaro/vuepress-plugin-smooth-scroll": "1.0.2-alpha.5",
-    "@vuepress-denaro/vuepress-plugin-vue-preview": "1.0.2-alpha.10",
+    "@vuepress-denaro/vuepress-plugin-vue-preview": "1.0.2-alpha.11",
     "@vuepress/bundler-vite": "^2.0.0-beta.48",
     "@vuepress/cli": "^2.0.0-beta.48",
     "@vuepress/utils": "^2.0.0-beta.48",
