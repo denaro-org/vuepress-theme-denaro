@@ -25,7 +25,7 @@
   "scripts": {
     "bootstrap": "lerna bootstrap && yarn build:lib",
     "build": "tsc --build",
-    "build:example": "yarn build:lib && vuepress build example --clean-cache",
+    "build:example": "yarn build:lib && cd ./example && yarn run build",
     "build:lib": "yarn clean && yarn copy && yarn build",
     "clean": "lerna run clean --stream",
     "clean-install": "yarn clean && npx rimraf node_modules *.log *.lock *-lock.json && yarn clean:example && yarn bootstrap",

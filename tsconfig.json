@@ -39,9 +39,6 @@
     },
     {
       "path": "./packages/@vuepress-denaro/plugin-flowchart/tsconfig.build.json"
-    },
-    {
-      "path": "./packages/@vuepress-denaro/plugin-qrcode/tsconfig.build.json"
     }
   ],
   "files": []
