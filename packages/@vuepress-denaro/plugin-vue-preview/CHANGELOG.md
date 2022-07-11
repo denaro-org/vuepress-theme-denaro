@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.2-alpha.11](https://github.com/denaro-org/vuepress-theme-denaro/compare/v1.0.2-alpha.10...v1.0.2-alpha.11) (2022-07-11)
+
+
+### Bug Fixes
+
+* **plugin-moefy-canvas,plugin-vue-preview:** 修复插件样式 ([1e07b8f](https://github.com/denaro-org/vuepress-theme-denaro/commit/1e07b8fb3ecc66a89e4bb570da6b0e76ff9cd1b8))
+
+
+
+
+
 ## [1.0.2-alpha.10](https://github.com/denaro-org/vuepress-theme-denaro/compare/v1.0.2-alpha.9...v1.0.2-alpha.10) (2022-07-04)
 
 

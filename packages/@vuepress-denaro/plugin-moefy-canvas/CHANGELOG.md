@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.2-alpha.11](https://github.com/denaro-org/vuepress-theme-denaro/compare/v1.0.2-alpha.10...v1.0.2-alpha.11) (2022-07-11)
+
+
+### Features
+
+* **plugin-qrcode:** generate a QR code for your site ([4500aac](https://github.com/denaro-org/vuepress-theme-denaro/commit/4500aac2b12d8a758bc7de1098e07150f5a14d08))
+
+
+
+
+
 ## [1.0.2-alpha.5](https://github.com/denaro-org/vuepress-theme-denaro/compare/v1.0.2-alpha.4...v1.0.2-alpha.5) (2022-07-01)
 
 **Note:** Version bump only for package @vuepress-denaro/vuepress-plugin-moefy-canvas
