@@ -5,7 +5,7 @@ export interface VuePreviewOptions {
   /**
    * Replacement path for '@root'
    *
-   * @default '''
+   * @default ''
    */
   rootPath?: string
 }

@@ -1,7 +1,9 @@
 import { pluginNamePrefix } from '@vuepress-denaro/core'
 import type { Plugin, PluginObject } from '@vuepress/core'
-import { path } from '@vuepress/utils'
+import { getDirname, path } from '@vuepress/utils'
 import type { RewardPluginOptions } from '../shared'
+
+const __dirname = getDirname(import.meta.url)
 
 export const rewardPlugin = ({
   btnText = '打赏',
@@ -29,6 +31,14 @@ export const rewardPlugin = ({
     },
 
     clientConfigFile: path.resolve(__dirname, '../client/config.js'),
+
+    alias: {
+      // workaround for https://github.com/vitejs/vite/issues/7621
+      [`${pluginNamePrefix}reward/client`]: path.resolve(
+        __dirname,
+        '../client/index.js'
+      ),
+    },
   }
 
   return pluginObj

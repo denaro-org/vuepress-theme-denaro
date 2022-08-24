@@ -30,7 +30,7 @@
     "clean": "lerna run clean --stream",
     "clean-install": "yarn clean && npx rimraf node_modules *.log *.lock *-lock.json && yarn clean:example && yarn bootstrap",
     "clean:example": "npx rimraf example/.vuepress/.temp example/.vuepress/.cache example/.vuepress/dist",
-    "commit": "git-cz",
+    "commit": "git add . && git-cz",
     "copy": "lerna run copy --stream",
     "copy-watch": "lerna run copy --parallel -- --watch",
     "dev": "yarn copy-watch & yarn build --watch & cd ./example && yarn run dev",

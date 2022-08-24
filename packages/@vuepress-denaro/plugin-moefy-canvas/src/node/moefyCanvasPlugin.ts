@@ -1,8 +1,10 @@
 import { pluginNamePrefix } from '@vuepress-denaro/core'
 import type { Plugin, PluginObject } from '@vuepress/core'
-import { path } from '@vuepress/utils'
-import { MoefyCanvasTheme } from '../shared'
+import { getDirname, path } from '@vuepress/utils'
 import type { MoefyCanvasOptions } from '../shared'
+import { MoefyCanvasTheme } from '../shared'
+
+const __dirname = getDirname(import.meta.url)
 
 export const moefyCanvasPlugin = (
   { theme, themeConfig = {}, canvasOptions = {} }: MoefyCanvasOptions = {
@@ -19,6 +21,14 @@ export const moefyCanvasPlugin = (
     },
 
     clientConfigFile: path.resolve(__dirname, '../client/config.js'),
+
+    alias: {
+      // workaround for https://github.com/vitejs/vite/issues/7621
+      [`${pluginNamePrefix}moefy-canvas/client`]: path.resolve(
+        __dirname,
+        '../client/index.js'
+      ),
+    },
   }
 
   return pluginObj

@@ -1,7 +1,9 @@
 import { pluginNamePrefix } from '@vuepress-denaro/core'
 import type { Plugin, PluginObject } from '@vuepress/core'
-import { path } from '@vuepress/utils'
+import { getDirname, path } from '@vuepress/utils'
 import type { OneClickCopyOptions } from '../shared'
+
+const __dirname = getDirname(import.meta.url)
 
 export const oneClickCopyPlugin = ({
   copySelector = [
@@ -23,6 +25,14 @@ export const oneClickCopyPlugin = ({
     },
 
     clientConfigFile: path.resolve(__dirname, '../client/config.js'),
+
+    alias: {
+      // workaround for https://github.com/vitejs/vite/issues/7621
+      [`${pluginNamePrefix}one-click-copy/client`]: path.resolve(
+        __dirname,
+        '../client/index.js'
+      ),
+    },
   }
 
   return pluginObj

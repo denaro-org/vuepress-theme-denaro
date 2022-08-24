@@ -1,4 +1,4 @@
-import { resolveHighlighter } from '@vuepress/plugin-prismjs/lib/node'
+import { resolveHighlighter } from '@vuepress/plugin-prismjs'
 
 export const highlightCode = (md): void => {
   md.options.highlight = (code, lang) => {
