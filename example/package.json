@@ -19,9 +19,9 @@
     "@vuepress-denaro/vuepress-plugin-sitemap": "1.0.2-alpha.5",
     "@vuepress-denaro/vuepress-plugin-smooth-scroll": "1.0.2-alpha.5",
     "@vuepress-denaro/vuepress-plugin-vue-preview": "1.0.2-alpha.11",
-    "@vuepress/bundler-vite": "^2.0.0-beta.48",
-    "@vuepress/cli": "^2.0.0-beta.48",
-    "@vuepress/utils": "^2.0.0-beta.48",
+    "@vuepress/bundler-vite": "^2.0.0-beta.50",
+    "@vuepress/cli": "^2.0.0-beta.50",
+    "@vuepress/utils": "^2.0.0-beta.50",
     "vue": "^3.2.37"
   }
 }
