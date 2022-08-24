@@ -5,7 +5,7 @@ export interface AutodocOptions {
   /**
    * Replacement path for '@root'
    *
-   * @default '''
+   * @default ''
    */
   rootPath?: string
 }
