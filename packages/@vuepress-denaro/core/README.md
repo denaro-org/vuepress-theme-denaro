@@ -8,6 +8,5 @@
   <a href="https://github.com/denaro-org/vuepress-theme-denaro/issues" target="_blank"><img alt="GitHub issues" src="https://img.shields.io/github/issues/denaro-org/v-charts2"></a>
   <br />
   <a href="https://www.jsdelivr.com/package/npm/@vuepress-denaro/core" target="_blank"><img alt="jsdelivr" src="https://data.jsdelivr.com/v1/package/npm/@vuepress-denaro/core/badge"></a>
-  <a href="https://www.npmjs.com/package/@vuepress-denaro/core" target="_blank"><img alt="npm" src="https://img.shields.io/node/v/@vuepress-denaro/core"></a>
   <a href="https://github.com/denaro-org/vuepress-theme-denaro/blob/main/LICENSE" target="_blank"><img alt="NPM" src="https://img.shields.io/npm/l/@vuepress-denaro/core"></a>
 </p>
