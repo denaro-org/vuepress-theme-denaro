@@ -1,0 +1,45 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true
+  },
+  "references": [
+    {
+      "path": "./plugin-autodoc/tsconfig.build.json"
+    },
+    {
+      "path": "./plugin-baidu-autopush/tsconfig.build.json"
+    },
+    {
+      "path": "./plugin-code-preview/tsconfig.build.json"
+    },
+    {
+      "path": "./plugin-dynamic-title/tsconfig.build.json"
+    },
+    {
+      "path": "./plugin-flowchart/tsconfig.build.json"
+    },
+    {
+      "path": "./plugin-moefy-canvas/tsconfig.build.json"
+    },
+    {
+      "path": "./plugin-one-click-copy/tsconfig.build.json"
+    },
+    {
+      "path": "./plugin-permalink-pinyin/tsconfig.build.json"
+    },
+    {
+      "path": "./plugin-reward/tsconfig.build.json"
+    },
+    {
+      "path": "./plugin-sitemap/tsconfig.build.json"
+    },
+    {
+      "path": "./plugin-smooth-scroll/tsconfig.build.json"
+    },
+    {
+      "path": "./plugin-vue-preview/tsconfig.build.json"
+    }
+  ],
+  "files": []
+}

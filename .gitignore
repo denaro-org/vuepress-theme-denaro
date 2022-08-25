@@ -1,17 +1,28 @@
-node_modules
-*.log
-.idea
-yarn.lock
+# VuePress files
+example/.vuepress/.temp/
+example/.vuepress/.cache/
+example/.vuepress/dist/
+
+# Dist files
+dist/
+lib/
+
+# Test temp files
+**/__fixtures__/.temp/
+
+# Test coverage files
+coverage/
+
+# Node modules
+**/node_modules/
+
+# MacOS Desktop Services Store
 .DS_Store
-.vscode
-package-lock.json
-pnpm-lock.yaml
-lib
-libs
-dist
-example/.vuepress/.cache
-example/.vuepress/.temp
-packages/**/tsconfig.build.tsbuildinfo
-packages/**/tsconfig.cjs.tsbuildinfo
-packages/**/tsconfig.esm.tsbuildinfo
+
+# Log files
+*.log
+
+# Typescript build info
+*.tsbuildinfo
+
 .history

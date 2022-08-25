@@ -1,4 +1,4 @@
-import { autodocPlugin } from '@vuepress-denaro/vuepress-plugin-autodoc'
+// import { autodocPlugin } from '@vuepress-denaro/vuepress-plugin-autodoc'
 import { baiduAutopushPlugin } from '@vuepress-denaro/vuepress-plugin-baidu-autopush'
 import { codePreviewPlugin } from '@vuepress-denaro/vuepress-plugin-code-preview'
 import { dynamicTitlePlugin } from '@vuepress-denaro/vuepress-plugin-dynamic-title'
@@ -10,13 +10,21 @@ import {
 import { oneClickCopyPlugin } from '@vuepress-denaro/vuepress-plugin-one-click-copy'
 import { permainkPinyinPlugin } from '@vuepress-denaro/vuepress-plugin-permalink-pinyin'
 import { rewardPlugin } from '@vuepress-denaro/vuepress-plugin-reward'
-import { sitemapPlugin } from '@vuepress-denaro/vuepress-plugin-sitemap'
-import { smoothScrollPlugin } from '@vuepress-denaro/vuepress-plugin-smooth-scroll'
+// import { sitemapPlugin } from '@vuepress-denaro/vuepress-plugin-sitemap'
+// import { smoothScrollPlugin } from '@vuepress-denaro/vuepress-plugin-smooth-scroll'
 // import { vuePreviewPlugin } from '@vuepress-denaro/vuepress-plugin-vue-preview'
+import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from '@vuepress/cli'
-import { path } from '@vuepress/utils'
+import { defaultTheme } from '@vuepress/theme-default'
+// import { path } from '@vuepress/utils'
 
 export default defineUserConfig({
+  // set site base to default value
+  base: '/',
+
+  // specify bundler via environment variable
+  bundler: viteBundler(),
+
   locales: {
     // 键名是该语言所属的子路径
     // 作为特例，默认语言可以使用 '/' 作为其路径。
@@ -27,11 +35,13 @@ export default defineUserConfig({
     },
   },
 
+  // configure default theme
+  theme: defaultTheme(),
+
   plugins: [
-    flowchartPlugin(),
-    autodocPlugin({
-      rootPath: path.resolve(process.cwd(), '.vuepress/vue-previews'),
-    }),
+    // autodocPlugin({
+    //   rootPath: path.resolve(process.cwd(), '.vuepress/vue-previews'),
+    // }),
     baiduAutopushPlugin(),
     codePreviewPlugin(),
     dynamicTitlePlugin({
@@ -39,12 +49,14 @@ export default defineUserConfig({
       hideText: '(＞人＜;)呀！主人我走丢了, 看到我了嘛？',
       recoverTime: 2000,
     }),
+    flowchartPlugin(),
     moefyCanvasPlugin({
       theme: MoefyCanvasTheme.Sakura,
     }),
     oneClickCopyPlugin({
       copyMessage: '复制成功了, 快去粘贴使用吧 !!!',
     }),
+    permainkPinyinPlugin(),
     rewardPlugin({
       rewardOption: [
         {
@@ -57,12 +69,11 @@ export default defineUserConfig({
         },
       ],
     }),
-    sitemapPlugin(),
+    // sitemapPlugin(),
+    // smoothScrollPlugin(),
     // vuePreviewPlugin({
     //   rootPath: path.resolve(process.cwd(), '.vuepress/vue-previews'),
     // }),
-    smoothScrollPlugin(),
-    permainkPinyinPlugin(),
   ],
 
   markdown: {

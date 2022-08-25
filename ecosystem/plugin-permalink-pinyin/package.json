@@ -1,0 +1,47 @@
+{
+  "name": "@vuepress-denaro/vuepress-plugin-permalink-pinyin",
+  "version": "1.1.0-alpha.0",
+  "description": "A VuePress plugin which convert Chinese title to transliterate permalink.一个 VuePress 插件，将中文标题转换为音译永久链接.",
+  "keywords": [
+    "vuepress",
+    "vuepress-plugin",
+    "theme",
+    "denaro",
+    "permalink-pinyin",
+    "pinyin"
+  ],
+  "homepage": "https://github.com/denaro-org/vuepress-theme-denaro/tree/main/packages/@vuepress-denaro/plugin-permalink-pinyin#readme",
+  "bugs": {
+    "url": "https://github.com/denaro-org/vuepress-theme-denaro/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/denaro-org/vuepress-theme-denaro.git"
+  },
+  "license": "MIT",
+  "author": "vxhly <pengchengou@gmail.com>",
+  "type": "module",
+  "exports": {
+    ".": "./lib/node/index.js",
+    "./package.json": "./package.json"
+  },
+  "main": "./lib/node/index.js",
+  "types": "./lib/node/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc --build tsconfig.build.json",
+    "build:watch": "tsc --build -w tsconfig.build.json",
+    "clean": "rimraf lib *.tsbuildinfo ./**/dists",
+    "copy": "cpx \"src/**/*.{d.ts,vue,less,scss,css,html,sass,json,js}\" lib"
+  },
+  "dependencies": {
+    "@vuepress-denaro/core": "workspace:*",
+    "@vuepress/core": "^2.0.0-beta.50",
+    "transliteration": "^2.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

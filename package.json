@@ -1,99 +1,79 @@
 {
-  "version": "1.0.1",
+  "name": "@vuepress-denaro/monorepo",
+  "version": "1.1.0-alpha.0",
   "private": true,
-  "description": "Theme plugin for vuepress-next.",
-  "keywords": [
-    "vuepress",
-    "theme",
-    "denaro"
-  ],
-  "homepage": "https://github.com/denaro-org/vuepress-theme-denaro#readme",
-  "bugs": {
-    "url": "https://github.com/denaro-org/vuepress-theme-denaro/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/denaro-org/vuepress-theme-denaro.git"
-  },
-  "license": "MIT",
-  "author": "vxhly <pengchengou@gmail.com>",
-  "workspaces": [
-    "example",
-    "packages/vuepress-theme-denaro",
-    "packages/@vuepress-denaro/*"
-  ],
+  "type": "module",
   "scripts": {
-    "bootstrap": "lerna bootstrap && yarn build:lib",
-    "build": "tsc --build",
-    "build:example": "yarn build:lib && cd ./example && yarn run build",
-    "build:lib": "yarn clean && yarn copy && yarn build",
-    "clean": "lerna run clean --stream",
-    "clean-install": "yarn clean && npx rimraf node_modules *.log *.lock *-lock.json && yarn clean:example && yarn bootstrap",
-    "clean:example": "npx rimraf example/.vuepress/.temp example/.vuepress/.cache example/.vuepress/dist",
+    "build": "pnpm build:all && pnpm build:copy",
+    "build:all": "pnpm build:core && pnpm build:eco",
+    "build:copy": "pnpm --parallel --stream copy",
+    "build:core": "pnpm --filter=\"./packages/**\" -r --stream build",
+    "build:eco": "tsc -b ./ecosystem/tsconfig.build.json",
+    "clean": "pnpm --parallel --stream clean",
+    "clean:core": "pnpm --filter=\"./packages/**\" --parallel --stream clean",
+    "clean:eco": "pnpm --filter=\"./ecosystem/**\" --parallel --stream clean",
     "commit": "git add . && git-cz",
-    "copy": "lerna run copy --stream",
-    "copy-watch": "lerna run copy --parallel -- --watch",
-    "dev": "yarn copy-watch & yarn build --watch & cd ./example && yarn run dev",
-    "example:serve": "anywhere -h localhost -d example/.vuepress/dist",
-    "lint": "eslint --fix --ext .js,.ts,.vue .",
+    "example:build": "pnpm --filter=example example:build",
+    "example:clean": "pnpm --filter=example example:clean",
+    "example:dev": "pnpm --filter=example example:dev",
+    "example:release": "pnpm build && pnpm example:build",
+    "example:serve": "pnpm --filter=example example:serve",
+    "lint": "eslint --ext .cjs,.js,.ts,.vue .",
     "prepare": "husky install",
-    "publish": "yarn lint && yarn build:lib && lerna publish",
-    "release": "yarn lint && yarn build:lib && lerna publish prerelease --dist-tag next",
-    "update": "yarn upgrade-interactive --latest"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
+    "release": "pnpm release:check && pnpm release:version && pnpm release:publish",
+    "release:changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "release:check": "pnpm lint && pnpm clean && pnpm build && pnpm test",
+    "release:publish": "pnpm -r publish --tag next",
+    "release:version": "bumpp package.json packages/*/package.json ecosystem/*/package.json --execute=\"pnpm release:changelog\" --commit \"build: publish v%s\" --all",
+    "test": "vitest run",
+    "test:cov": "vitest run --coverage"
   },
   "lint-staged": {
-    "*.{js,ts,vue}": "eslint --fix",
-    "*.{json,yml,css,scss,sass}": "prettier --write",
-    "package.json": "sort-package-json",
-    "packages/**/package.json": "sort-package-json"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
+    "*.{cjs,js,ts,vue}": "eslint --fix",
+    "*.{json,yml,css,scss}": "prettier --write",
+    "package.json": "sort-package-json"
   },
   "prettier": "prettier-config-vuepress",
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
-    "@types/node": "^18.7.13",
-    "@typescript-eslint/eslint-plugin": "^5.30.0",
-    "@typescript-eslint/parser": "^5.30.0",
-    "anywhere": "^1.6.0",
-    "commitizen": "^4.2.4",
-    "concurrently": "^7.0.0",
-    "cpx": "^1.5.0",
-    "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^8.18.0",
-    "eslint-config-standard": "^17.0.0",
+    "@types/node": "^18.7.8",
+    "@types/webpack-env": "^1.18.0",
+    "@vitest/coverage-istanbul": "^0.22.1",
+    "bumpp": "^8.2.1",
+    "commitizen": "^4.2.5",
+    "conventional-changelog-cli": "^2.2.2",
+    "cpx2": "^4.2.0",
+    "eslint": "^8.22.0",
     "eslint-config-vuepress": "^4.0.3",
     "eslint-config-vuepress-typescript": "^4.0.3",
-    "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-import-order": "^2.1.4",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^6.0.0",
-    "eslint-plugin-vue": "^9.0.0",
     "husky": "^8.0.1",
-    "lint-staged": "^13.0.3",
-    "postcss-scss": "^4.0.3",
-    "prettier": "^2.6.0",
+    "lint-staged": "^12.5.0",
+    "prettier": "^2.7.1",
     "prettier-config-vuepress": "^4.0.0",
     "rimraf": "^3.0.2",
-    "sass": "^1.53.0",
-    "sass-loader": "^13.0.2",
-    "sort-package-json": "^1.54.0",
-    "stylelint": "^14.6.0",
-    "stylelint-config-standard": "^28.0.0",
-    "stylelint-order": "^5.0.0",
-    "stylelint-scss": "^4.2.0",
+    "sort-package-json": "^1.57.0",
     "tsconfig-vuepress": "^4.0.0",
+    "tsup": "^6.2.2",
     "typescript": "^4.7.4",
-    "vuepress": "^2.0.0-beta.50"
+    "vite": "~3.0.9",
+    "vitest": "^0.22.1"
+  },
+  "packageManager": "pnpm@7.9.3",
+  "engines": {
+    "node": ">=14.18.0"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search",
+        "@types/node",
+        "eslint-plugin-import",
+        "eslint-plugin-n",
+        "eslint-plugin-promise",
+        "typescript",
+        "webpack"
+      ]
+    }
   }
 }

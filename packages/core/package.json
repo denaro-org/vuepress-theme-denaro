@@ -1,0 +1,60 @@
+{
+  "name": "@vuepress-denaro/core",
+  "version": "1.1.0-alpha.0",
+  "description": "@vuepress-denaro 的核心包",
+  "keywords": [
+    "vuepress",
+    "theme",
+    "denaro"
+  ],
+  "homepage": "https://github.com/denaro-org/vuepress-theme-denaro/tree/main/packages/@vuepress-denaro/core#readme",
+  "bugs": {
+    "url": "https://github.com/denaro-org/vuepress-theme-denaro/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/denaro-org/vuepress-theme-denaro.git"
+  },
+  "license": "MIT",
+  "author": "vxhly <pengchengou@gmail.com>",
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json",
+    "./lib/styles/variables.scss": "./lib/styles/variables.scss",
+    "./lib/styles/mixins": "./lib/styles/mixins/index.scss"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "build:watch": "tsc --build -w tsconfig.build.json",
+    "clean": "rimraf lib *.tsbuildinfo ./**/dist",
+    "copy": "cpx \"src/**/*.{d.ts,vue,less,scss,css,html,sass,json,js}\" lib"
+  },
+  "dependencies": {
+    "@vuepress/client": "^2.0.0-beta.50",
+    "deconstruct-merge": "^2.0.1",
+    "vue": "^3.2.37"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "tsup": {
+    "clean": true,
+    "dts": "./src/index.ts",
+    "entry": [
+      "./src/index.ts"
+    ],
+    "format": [
+      "esm"
+    ],
+    "outDir": "./dist",
+    "sourcemap": false,
+    "target": "es2020",
+    "tsconfig": "../tsconfig.dts.json"
+  }
+}

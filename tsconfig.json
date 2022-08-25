@@ -3,49 +3,13 @@
   "compilerOptions": {
     "baseUrl": ".",
     "jsx": "preserve",
-    "types": ["vite/client"]
+    "types": ["webpack-env", "vite/client", "@types/jest"]
   },
-  "references": [
-    {
-      "path": "./packages/@vuepress-denaro/core/tsconfig.build.json"
-    },
-    {
-      "path": "./packages/@vuepress-denaro/plugin-autodoc/tsconfig.build.json"
-    },
-    {
-      "path": "./packages/@vuepress-denaro/plugin-baidu-autopush/tsconfig.build.json"
-    },
-    {
-      "path": "./packages/@vuepress-denaro/plugin-code-preview/tsconfig.build.json"
-    },
-    {
-      "path": "./packages/@vuepress-denaro/plugin-dynamic-title/tsconfig.build.json"
-    },
-    {
-      "path": "./packages/@vuepress-denaro/plugin-flowchart/tsconfig.build.json"
-    },
-    {
-      "path": "./packages/@vuepress-denaro/plugin-moefy-canvas/tsconfig.build.json"
-    },
-    {
-      "path": "./packages/@vuepress-denaro/plugin-one-click-copy/tsconfig.build.json"
-    },
-    {
-      "path": "./packages/@vuepress-denaro/plugin-permalink-pinyin/tsconfig.build.json"
-    },
-    {
-      "path": "./packages/@vuepress-denaro/plugin-reward/tsconfig.build.json"
-    },
-    {
-      "path": "./packages/@vuepress-denaro/plugin-sitemap/tsconfig.build.json"
-    },
-    {
-      "path": "./packages/@vuepress-denaro/plugin-smooth-scroll/tsconfig.build.json"
-    },
-    {
-      "path": "./packages/@vuepress-denaro/plugin-vue-preview/tsconfig.build.json"
-    }
+  "include": [
+    "**/.vuepress/**/*",
+    "ecosystem/**/*",
+    "packages/**/*",
+    "vitest.config.ts"
   ],
-  "files": [],
   "exclude": ["node_modules", ".temp", "lib", "dist"]
 }
