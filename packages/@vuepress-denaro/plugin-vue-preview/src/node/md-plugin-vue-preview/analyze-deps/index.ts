@@ -3,7 +3,7 @@ import traverse from '@babel/traverse'
 import * as types from '@babel/types'
 import * as compiler from '@vue/compiler-sfc'
 import { fs } from '@vuepress/utils'
-import { getModuleResolvePath } from './module-resolver'
+import { getModuleResolvePath } from './module-resolver.js'
 
 export function analyzeDeps(absoluteFilePath: string): string[] {
   let content = fs.readFileSync(absoluteFilePath, 'utf-8')
@@ -17,7 +17,7 @@ export function analyzeDeps(absoluteFilePath: string): string[] {
   // @ts-ignore
   const ast = babel.transformSync(content, {
     ast: true,
-    plugins: [require('@babel/plugin-syntax-jsx')],
+    plugins: ['@babel/plugin-syntax-jsx'],
   }).ast
 
   const dependencies: Array<string> = []

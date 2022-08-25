@@ -1,1 +1,1 @@
-export * from './useBaiduPush'
+export * from './useBaiduPush.js'

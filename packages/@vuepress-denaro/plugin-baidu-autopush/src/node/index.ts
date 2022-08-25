@@ -1,5 +1,5 @@
-import { baiduAutopushPlugin } from './baiduAutopushPlugin'
+import { baiduAutopushPlugin } from './baiduAutopushPlugin.js'
 
-export * from './baiduAutopushPlugin'
+export * from './baiduAutopushPlugin.js'
 
 export default baiduAutopushPlugin

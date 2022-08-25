@@ -1,6 +1,6 @@
 import { onMounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
-import * as defaultConst from '../components/const'
+import * as defaultConst from '../components/const.js'
 
 export const useDynamicTitle = (): void => {
   let originTitle

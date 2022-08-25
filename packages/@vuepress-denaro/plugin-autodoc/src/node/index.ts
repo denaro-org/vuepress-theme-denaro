@@ -1,6 +1,6 @@
-import { autodocPlugin } from './autodocPlugin'
+import { autodocPlugin } from './autodocPlugin.js'
 
-export * from './autodocPlugin'
-export * from '../shared'
+export * from './autodocPlugin.js'
+export * from '../shared/index.js'
 
 export default autodocPlugin

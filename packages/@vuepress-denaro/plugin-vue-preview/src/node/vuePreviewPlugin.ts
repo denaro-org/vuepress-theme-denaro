@@ -1,8 +1,8 @@
 import { pluginNamePrefix } from '@vuepress-denaro/core'
 import type { Plugin, PluginObject } from '@vuepress/core'
 import { getDirname, path } from '@vuepress/utils'
-import type { VuePreviewOptions } from '../shared'
-import { mdPluginVuePreview } from './md-plugin-vue-preview'
+import type { VuePreviewOptions } from '../shared/index.js'
+import { mdPluginVuePreview } from './md-plugin-vue-preview/index.js'
 
 const __dirname = getDirname(import.meta.url)
 

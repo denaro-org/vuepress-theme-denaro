@@ -1,5 +1,10 @@
 {
   "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "jsx": "preserve",
+    "types": ["vite/client"]
+  },
   "references": [
     {
       "path": "./packages/@vuepress-denaro/core/tsconfig.build.json"
@@ -17,10 +22,16 @@
       "path": "./packages/@vuepress-denaro/plugin-dynamic-title/tsconfig.build.json"
     },
     {
+      "path": "./packages/@vuepress-denaro/plugin-flowchart/tsconfig.build.json"
+    },
+    {
       "path": "./packages/@vuepress-denaro/plugin-moefy-canvas/tsconfig.build.json"
     },
     {
       "path": "./packages/@vuepress-denaro/plugin-one-click-copy/tsconfig.build.json"
+    },
+    {
+      "path": "./packages/@vuepress-denaro/plugin-permalink-pinyin/tsconfig.build.json"
     },
     {
       "path": "./packages/@vuepress-denaro/plugin-reward/tsconfig.build.json"
@@ -32,14 +43,9 @@
       "path": "./packages/@vuepress-denaro/plugin-smooth-scroll/tsconfig.build.json"
     },
     {
-      "path": "./packages/@vuepress-denaro/plugin-permalink-pinyin/tsconfig.build.json"
-    },
-    {
       "path": "./packages/@vuepress-denaro/plugin-vue-preview/tsconfig.build.json"
-    },
-    {
-      "path": "./packages/@vuepress-denaro/plugin-flowchart/tsconfig.build.json"
     }
   ],
-  "files": []
+  "files": [],
+  "exclude": ["node_modules", ".temp", "lib", "dist"]
 }

@@ -1,1 +1,1 @@
-export * from './DenaroReward'
+export * from './DenaroReward.js'

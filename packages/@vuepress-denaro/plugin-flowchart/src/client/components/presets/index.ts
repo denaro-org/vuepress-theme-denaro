@@ -1,6 +1,6 @@
-import ant from './ant'
-import pia from './pia'
-import vue from './vue'
+import ant from './ant.js'
+import pia from './pia.js'
+import vue from './vue.js'
 
 export default {
   ant,

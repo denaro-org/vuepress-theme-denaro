@@ -1,1 +1,1 @@
-export * from './useSmoothScroll'
+export * from './useSmoothScroll.js'

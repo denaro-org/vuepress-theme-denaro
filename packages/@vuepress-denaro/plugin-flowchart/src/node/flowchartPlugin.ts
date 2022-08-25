@@ -1,8 +1,8 @@
 import { pluginNamePrefix } from '@vuepress-denaro/core'
 import type { Plugin, PluginObject } from '@vuepress/core'
 import { getDirname, path } from '@vuepress/utils'
-import type { FlowchartOptions } from '../shared'
-import { mdPluginFlowchart } from './md-plugin-flowchart'
+import type { FlowchartOptions } from '../shared/index.js'
+import { mdPluginFlowchart } from './md-plugin-flowchart/index.js'
 
 const __dirname = getDirname(import.meta.url)
 

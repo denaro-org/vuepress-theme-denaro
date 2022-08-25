@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 import { classNameByBEM } from '@vuepress-denaro/core'
 import { onMounted, ref } from 'vue'
-import { DenraoLoading } from './DenraoLoading'
-import presets from './presets'
+import { DenraoLoading } from './DenraoLoading.js'
+import presets from './presets/index.js'
 import '../styles/flowchart.scss'
 
 const props = defineProps({

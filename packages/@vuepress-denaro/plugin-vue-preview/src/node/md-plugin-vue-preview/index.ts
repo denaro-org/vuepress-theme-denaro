@@ -1,8 +1,8 @@
 import { createMarkdown } from '@vuepress/markdown'
 import { fs, path } from '@vuepress/utils'
 import { docVue3 } from 'doc-vue3'
-import { analyzeDeps } from './analyze-deps'
-import { highlightCode } from './md-instance'
+import { analyzeDeps } from './analyze-deps/index.js'
+import { highlightCode } from './md-instance/index.js'
 
 const md = createMarkdown()
 

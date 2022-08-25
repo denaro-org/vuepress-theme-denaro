@@ -1,8 +1,8 @@
 import { pluginNamePrefix } from '@vuepress-denaro/core'
 import type { Plugin, PluginObject } from '@vuepress/core'
 import { getDirname, path } from '@vuepress/utils'
-import type { AutodocOptions } from '../shared'
-import { mdPluginAutodoc } from './md-plugin-autodoc'
+import type { AutodocOptions } from '../shared/index.js'
+import { mdPluginAutodoc } from './md-plugin-autodoc/index.js'
 
 const __dirname = getDirname(import.meta.url)
 

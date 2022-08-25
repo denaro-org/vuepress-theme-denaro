@@ -1,7 +1,7 @@
 import { classNameByBEM, classPrefix } from '@vuepress-denaro/core'
 import { defineComponent, h, onMounted } from 'vue'
 import '../styles/reward.scss'
-import * as defaultConst from './const'
+import * as defaultConst from './const.js'
 
 export const DenaroReward = defineComponent({
   name: 'DenaroReward',
@@ -84,7 +84,10 @@ export const DenaroReward = defineComponent({
                     'div',
                     { class: `${classPrefix}reward-container__body-img` },
                     [
-                      h('img', { src: item.url, alt: item.text }),
+                      h('img', {
+                        src: item.url,
+                        alt: item.text,
+                      }),
                       h('span', item.text),
                     ]
                   )

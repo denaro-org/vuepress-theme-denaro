@@ -1,1 +1,1 @@
-export * from './DenaroMoefyCanvas'
+export * from './DenaroMoefyCanvas.js'

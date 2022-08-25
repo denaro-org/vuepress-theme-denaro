@@ -19,7 +19,7 @@ import {
   theme,
   canvasOptions as userCanvasOptions,
   themeConfig as userThemeConfig,
-} from './const'
+} from './const.js'
 import '../styles/moefy-canvas.scss'
 
 export const DenaroMoefyCanvas = defineComponent({

@@ -1,1 +1,1 @@
-export * from './useDynamicTitle'
+export * from './useDynamicTitle.js'

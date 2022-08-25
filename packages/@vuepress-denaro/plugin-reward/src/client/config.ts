@@ -1,5 +1,5 @@
 import { defineClientConfig } from '@vuepress/client'
-import { DenaroReward } from './components'
+import { DenaroReward } from './components/index.js'
 
 export default defineClientConfig({
   rootComponents: [DenaroReward],

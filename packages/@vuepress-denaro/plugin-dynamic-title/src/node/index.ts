@@ -1,6 +1,6 @@
-import { dynamicTitlePlugin } from './dynamicTitlePlugin'
+import { dynamicTitlePlugin } from './dynamicTitlePlugin.js'
 
-export * from './dynamicTitlePlugin'
-export * from '../shared'
+export * from './dynamicTitlePlugin.js'
+export * from '../shared/index.js'
 
 export default dynamicTitlePlugin

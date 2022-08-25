@@ -1,1 +1,1 @@
-export * from './DenraoCodePreview'
+export * from './DenraoCodePreview.js'

@@ -1,6 +1,6 @@
-import { moefyCanvasPlugin } from './moefyCanvasPlugin'
+import { moefyCanvasPlugin } from './moefyCanvasPlugin.js'
 
-export * from './moefyCanvasPlugin'
-export * from '../shared'
+export * from './moefyCanvasPlugin.js'
+export * from '../shared/index.js'
 
 export default moefyCanvasPlugin

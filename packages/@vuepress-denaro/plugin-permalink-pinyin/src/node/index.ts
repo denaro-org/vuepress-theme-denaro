@@ -1,5 +1,5 @@
-import { permainkPinyinPlugin } from './permainkPinyinPlugin'
+import { permainkPinyinPlugin } from './permainkPinyinPlugin.js'
 
-export * from './permainkPinyinPlugin'
+export * from './permainkPinyinPlugin.js'
 
 export default permainkPinyinPlugin

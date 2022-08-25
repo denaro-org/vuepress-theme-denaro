@@ -12,8 +12,7 @@ import { permainkPinyinPlugin } from '@vuepress-denaro/vuepress-plugin-permalink
 import { rewardPlugin } from '@vuepress-denaro/vuepress-plugin-reward'
 import { sitemapPlugin } from '@vuepress-denaro/vuepress-plugin-sitemap'
 import { smoothScrollPlugin } from '@vuepress-denaro/vuepress-plugin-smooth-scroll'
-import { vuePreviewPlugin } from '@vuepress-denaro/vuepress-plugin-vue-preview'
-import { viteBundler } from '@vuepress/bundler-vite'
+// import { vuePreviewPlugin } from '@vuepress-denaro/vuepress-plugin-vue-preview'
 import { defineUserConfig } from '@vuepress/cli'
 import { path } from '@vuepress/utils'
 
@@ -27,10 +26,6 @@ export default defineUserConfig({
       description: '中文描述',
     },
   },
-  bundler: viteBundler({
-    viteOptions: {},
-    vuePluginOptions: {},
-  }),
 
   plugins: [
     flowchartPlugin(),
@@ -63,9 +58,9 @@ export default defineUserConfig({
       ],
     }),
     sitemapPlugin(),
-    vuePreviewPlugin({
-      rootPath: path.resolve(process.cwd(), '.vuepress/vue-previews'),
-    }),
+    // vuePreviewPlugin({
+    //   rootPath: path.resolve(process.cwd(), '.vuepress/vue-previews'),
+    // }),
     smoothScrollPlugin(),
     permainkPinyinPlugin(),
   ],

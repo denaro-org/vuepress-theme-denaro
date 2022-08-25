@@ -41,9 +41,9 @@
   },
   "dependencies": {
     "@vuepress-denaro/core": "1.0.2-alpha.5",
-    "@vuepress/client": "^2.0.0-beta.48",
-    "@vuepress/core": "^2.0.0-beta.48",
-    "@vuepress/utils": "^2.0.0-beta.48",
+    "@vuepress/client": "^2.0.0-beta.50",
+    "@vuepress/core": "^2.0.0-beta.50",
+    "@vuepress/utils": "^2.0.0-beta.50",
     "child_process": "^1.0.2",
     "jsdoc": "^3.6.10",
     "markdown-it": "^13.0.1",

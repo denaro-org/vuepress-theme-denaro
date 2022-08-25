@@ -1,2 +1,2 @@
-export * from './useInstance'
-export * from './useMobile'
+export * from './useInstance.js'
+export * from './useMobile.js'

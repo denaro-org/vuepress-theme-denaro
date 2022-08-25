@@ -1,5 +1,5 @@
-import { flowchartPlugin } from './flowchartPlugin'
+import { flowchartPlugin } from './flowchartPlugin.js'
 
-export * from './flowchartPlugin'
+export * from './flowchartPlugin.js'
 
 export default flowchartPlugin

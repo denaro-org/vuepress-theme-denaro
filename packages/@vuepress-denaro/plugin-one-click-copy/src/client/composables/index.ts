@@ -1,1 +1,1 @@
-export * from './useOneClickCopy'
+export * from './useOneClickCopy.js'

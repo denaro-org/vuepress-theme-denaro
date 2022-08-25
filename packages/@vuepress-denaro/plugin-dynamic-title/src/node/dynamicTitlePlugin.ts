@@ -1,7 +1,7 @@
 import { pluginNamePrefix } from '@vuepress-denaro/core'
 import type { Plugin, PluginObject } from '@vuepress/core'
 import { getDirname, path } from '@vuepress/utils'
-import type { DynamicTitlePluginOptions } from '../shared'
+import type { DynamicTitlePluginOptions } from '../shared/index.js'
 
 const __dirname = getDirname(import.meta.url)
 

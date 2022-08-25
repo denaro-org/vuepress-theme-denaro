@@ -1,7 +1,7 @@
 /* eslint-disable vue/match-component-file-name */
 import { defineClientConfig } from '@vuepress/client'
 import { h } from 'vue'
-import { DenraoCodePreview } from './components'
+import { DenraoCodePreview } from './components/index.js'
 
 export default defineClientConfig({
   enhance({ app }) {

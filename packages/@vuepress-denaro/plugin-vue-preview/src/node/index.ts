@@ -1,6 +1,6 @@
-import { vuePreviewPlugin } from './vuePreviewPlugin'
+import { vuePreviewPlugin } from './vuePreviewPlugin.js'
 
-export * from './vuePreviewPlugin'
-export * from '../shared'
+export * from './vuePreviewPlugin.js'
+export * from '../shared/index.js'
 
 export default vuePreviewPlugin

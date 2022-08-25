@@ -1,10 +1,7 @@
-node_modules/
-.temp/
-lib/
-dist/
 !.vuepress/
 !.*.js
-index.dev.html
-index.ssr.html
-*.min.js
-*.json
+.cache/
+.temp/
+node_modules/
+lib/
+dist/

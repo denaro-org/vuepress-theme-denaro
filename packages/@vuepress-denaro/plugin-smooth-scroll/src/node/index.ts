@@ -1,5 +1,5 @@
-import { smoothScrollPlugin } from './smoothScrollPlugin'
+import { smoothScrollPlugin } from './smoothScrollPlugin.js'
 
-export * from './smoothScrollPlugin'
+export * from './smoothScrollPlugin.js'
 
 export default smoothScrollPlugin

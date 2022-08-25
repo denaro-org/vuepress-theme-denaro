@@ -1,8 +1,8 @@
 import { classPrefix } from '@vuepress-denaro/core'
 import { onMounted, onUpdated } from 'vue'
-import * as defaultConst from '../components/const'
+import * as defaultConst from '../components/const.js'
 import '../styles/style.scss'
-import Message from '../utils/Message'
+import Message from '../utils/Message.js'
 
 export const useOneClickCopy = (): void => {
   const { copySelector, toolTipMessage, duration, copyMessage } = defaultConst

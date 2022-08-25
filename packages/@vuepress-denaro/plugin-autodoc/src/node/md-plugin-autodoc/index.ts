@@ -1,5 +1,5 @@
-import Token from 'markdown-it/lib/token'
-import { html, read } from './utils'
+import Token from 'markdown-it/lib/token.js'
+import { html, read } from './utils/index.js'
 
 export const mdPluginAutodoc = function (md, { rootPath }): void {
   const cache = {}

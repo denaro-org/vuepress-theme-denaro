@@ -1,5 +1,8 @@
 import type { CanvasOptions } from '@moefy-canvas/core'
-import type { MoefyCanvasTheme, MoefyCanvasThemeConfig } from '../../shared'
+import type {
+  MoefyCanvasTheme,
+  MoefyCanvasThemeConfig,
+} from '../../shared/index.js'
 
 declare const __MOEFY_CANVAS_THEME__: MoefyCanvasTheme
 declare const __MOEFY_CANVAS_THEME_CONFIG__: MoefyCanvasThemeConfig

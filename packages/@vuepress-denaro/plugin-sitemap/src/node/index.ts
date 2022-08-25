@@ -1,6 +1,6 @@
-import { sitemapPlugin } from './sitemapPlugin'
+import { sitemapPlugin } from './sitemapPlugin.js'
 
-export * from './sitemapPlugin'
-export * from '../shared'
+export * from './sitemapPlugin.js'
+export * from '../shared/index.js'
 
 export default sitemapPlugin
