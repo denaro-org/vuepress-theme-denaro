@@ -1,4 +1,4 @@
-// import { autodocPlugin } from '@vuepress-denaro/vuepress-plugin-autodoc'
+import { autodocPlugin } from '@vuepress-denaro/vuepress-plugin-autodoc'
 import { baiduAutopushPlugin } from '@vuepress-denaro/vuepress-plugin-baidu-autopush'
 import { codePreviewPlugin } from '@vuepress-denaro/vuepress-plugin-code-preview'
 import { dynamicTitlePlugin } from '@vuepress-denaro/vuepress-plugin-dynamic-title'
@@ -10,13 +10,13 @@ import {
 import { oneClickCopyPlugin } from '@vuepress-denaro/vuepress-plugin-one-click-copy'
 import { permainkPinyinPlugin } from '@vuepress-denaro/vuepress-plugin-permalink-pinyin'
 import { rewardPlugin } from '@vuepress-denaro/vuepress-plugin-reward'
-// import { sitemapPlugin } from '@vuepress-denaro/vuepress-plugin-sitemap'
+import { sitemapPlugin } from '@vuepress-denaro/vuepress-plugin-sitemap'
 // import { smoothScrollPlugin } from '@vuepress-denaro/vuepress-plugin-smooth-scroll'
 // import { vuePreviewPlugin } from '@vuepress-denaro/vuepress-plugin-vue-preview'
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from '@vuepress/cli'
 import { defaultTheme } from '@vuepress/theme-default'
-// import { path } from '@vuepress/utils'
+import { path } from '@vuepress/utils'
 
 export default defineUserConfig({
   // set site base to default value
@@ -39,9 +39,9 @@ export default defineUserConfig({
   theme: defaultTheme(),
 
   plugins: [
-    // autodocPlugin({
-    //   rootPath: path.resolve(process.cwd(), '.vuepress/vue-previews'),
-    // }),
+    autodocPlugin({
+      rootPath: path.resolve(process.cwd(), '.vuepress/vue-previews'),
+    }),
     baiduAutopushPlugin(),
     codePreviewPlugin(),
     dynamicTitlePlugin({
@@ -69,7 +69,9 @@ export default defineUserConfig({
         },
       ],
     }),
-    // sitemapPlugin(),
+    sitemapPlugin({
+      hostname: 'https://www.baidu.com/',
+    }),
     // smoothScrollPlugin(),
     // vuePreviewPlugin({
     //   rootPath: path.resolve(process.cwd(), '.vuepress/vue-previews'),

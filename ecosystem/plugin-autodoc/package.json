@@ -41,10 +41,10 @@
   },
   "dependencies": {
     "@vuepress-denaro/core": "workspace:*",
+    "@vuepress/client": "^2.0.0-beta.50",
     "@vuepress/core": "^2.0.0-beta.50",
     "@vuepress/utils": "2.0.0-beta.50",
     "child_process": "^1.0.2",
-    "jsdoc": "^3.6.11",
     "markdown-it": "^13.0.1",
     "prismjs": "^1.28.0",
     "vue": "^3.2.37"

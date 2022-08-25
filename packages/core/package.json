@@ -21,8 +21,8 @@
   "exports": {
     ".": "./dist/index.js",
     "./package.json": "./package.json",
-    "./lib/styles/variables.scss": "./lib/styles/variables.scss",
-    "./lib/styles/mixins": "./lib/styles/mixins/index.scss"
+    "./dist/styles/variables.scss": "./dist/styles/variables.scss",
+    "./dist/styles/mixins": "./dist/styles/mixins/index.scss"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -32,8 +32,8 @@
   "scripts": {
     "build": "tsup",
     "build:watch": "tsc --build -w tsconfig.build.json",
-    "clean": "rimraf lib *.tsbuildinfo ./**/dist",
-    "copy": "cpx \"src/**/*.{d.ts,vue,less,scss,css,html,sass,json,js}\" lib"
+    "clean": "rimraf *.tsbuildinfo ./**/dist",
+    "copy": "cpx \"src/**/*.{d.ts,vue,less,scss,css,html,sass,json,js}\" dist"
   },
   "dependencies": {
     "@vuepress/client": "^2.0.0-beta.50",
