@@ -9,8 +9,8 @@ import {
 
 export default defineClientConfig({
   enhance({ app }) {
-    app.component('DenraoVuePreview', h(DenraoVuePreview))
-    app.component('DenraoCodeGroup', CodeGroup)
+    app.component('DenraoVuePreview', DenraoVuePreview)
+    app.component('DenraoCodeGroup', h(CodeGroup))
     app.component('DenraoCodeGroupItem', CodeGroupItem)
   },
 })

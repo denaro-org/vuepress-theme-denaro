@@ -8,8 +8,9 @@ export default defineClientConfig({
       app,
       router,
     })
-  },
-  setup() {
-    useSmoothScroll()
+
+    if (!__VUEPRESS_SSR__) {
+      useSmoothScroll()
+    }
   },
 })

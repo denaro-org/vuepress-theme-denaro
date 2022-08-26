@@ -1,9 +1,11 @@
 import * as babel from '@babel/core'
-import traverse from '@babel/traverse'
+import _traverse from '@babel/traverse'
 import * as types from '@babel/types'
 import * as compiler from '@vue/compiler-sfc'
 import { fs } from '@vuepress/utils'
 import { getModuleResolvePath } from './module-resolver.js'
+
+const traverse = _traverse.default
 
 export function analyzeDeps(absoluteFilePath: string): string[] {
   let content = fs.readFileSync(absoluteFilePath, 'utf-8')

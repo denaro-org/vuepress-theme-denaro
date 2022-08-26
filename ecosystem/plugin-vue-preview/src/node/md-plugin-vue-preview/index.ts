@@ -57,12 +57,12 @@ export const mdPluginVuePreview = function (md, { rootPath }): void {
 
     if (!fs.existsSync(absoluteFilePath)) {
       resolveFileError = true
-      return `<div class="custom-container warning"><p>未找到文件: ${absoluteFilePath}</p></div><!-- `
+      return `<div class='custom-container warning'><p>未找到文件: ${absoluteFilePath}</p></div><!-- `
     }
 
     if (!/\.vue$/.test(absoluteFilePath)) {
       resolveFileError = true
-      return `<div class="custom-container warning"><p>不支持非 vue 文件: ${filePath}</p></div><!-- `
+      return `<div class='custom-container warning'><p>不支持非 vue 文件: ${filePath}</p></div><!-- `
     }
 
     resolveFileError = false
@@ -81,6 +81,7 @@ export const mdPluginVuePreview = function (md, { rootPath }): void {
 
       return htmlResult + '<!-- '
     }
+
     return ''
   }
 
@@ -99,6 +100,7 @@ export const mdPluginVuePreview = function (md, { rootPath }): void {
     ) {
       return ' -->'
     }
+
     if (
       importMode === 'preview' &&
       hasImportBlockOpen &&
@@ -110,19 +112,20 @@ export const mdPluginVuePreview = function (md, { rootPath }): void {
         ? '--></DenraoCodeGroup></DenraoVuePreview>'
         : ' -->'
     }
+
     return ''
   }
 }
 
 function renderDemoOpen({ filePath, absoluteFilePath, showDemo }): string {
-  const template = `<DenraoVuePreview absoluteFilePath="${absoluteFilePath}" showDemo="${showDemo}"><DenraoCodeGroup>`
+  const template = `<DenraoVuePreview absoluteFilePath='${absoluteFilePath}' showDemo='${showDemo}'><DenraoCodeGroup>`
 
   const deps = analyzeDeps(absoluteFilePath)
 
   const codeGroups = `${[absoluteFilePath]
     .concat(deps)
     .map((absPath, index) => {
-      return `<DenraoCodeGroupItem title="${path.basename(absPath)}">
+      return `<DenraoCodeGroupItem title='${path.basename(absPath)}'>
       ${md.render(`@[code](${absPath})`)}
       </DenraoCodeGroupItem>`
     })

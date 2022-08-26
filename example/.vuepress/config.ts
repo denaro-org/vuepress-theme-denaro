@@ -11,8 +11,8 @@ import { oneClickCopyPlugin } from '@vuepress-denaro/vuepress-plugin-one-click-c
 import { permainkPinyinPlugin } from '@vuepress-denaro/vuepress-plugin-permalink-pinyin'
 import { rewardPlugin } from '@vuepress-denaro/vuepress-plugin-reward'
 import { sitemapPlugin } from '@vuepress-denaro/vuepress-plugin-sitemap'
-// import { smoothScrollPlugin } from '@vuepress-denaro/vuepress-plugin-smooth-scroll'
-// import { vuePreviewPlugin } from '@vuepress-denaro/vuepress-plugin-vue-preview'
+import { smoothScrollPlugin } from '@vuepress-denaro/vuepress-plugin-smooth-scroll'
+import { vuePreviewPlugin } from '@vuepress-denaro/vuepress-plugin-vue-preview'
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from '@vuepress/cli'
 import { defaultTheme } from '@vuepress/theme-default'
@@ -72,10 +72,10 @@ export default defineUserConfig({
     sitemapPlugin({
       hostname: 'https://www.baidu.com/',
     }),
-    // smoothScrollPlugin(),
-    // vuePreviewPlugin({
-    //   rootPath: path.resolve(process.cwd(), '.vuepress/vue-previews'),
-    // }),
+    smoothScrollPlugin(),
+    vuePreviewPlugin({
+      rootPath: path.resolve(process.cwd(), '.vuepress/vue-previews'),
+    }),
   ],
 
   markdown: {

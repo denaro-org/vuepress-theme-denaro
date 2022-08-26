@@ -2,7 +2,7 @@ import { fs, path } from '@vuepress/utils'
 import resolve from 'enhanced-resolve'
 import slash from 'slash2'
 
-const DEFAULT_EXT = ['.tsx', '.jsx', '.js', '.ts', '.vue']
+const DEFAULT_EXT = ['.tsx', '.jsx', '.js', '.ts']
 
 export function getModuleResolvePath({
   basePath,

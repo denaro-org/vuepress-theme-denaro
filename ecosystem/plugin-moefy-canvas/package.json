@@ -34,7 +34,6 @@
   ],
   "scripts": {
     "build": "tsc --build tsconfig.build.json",
-    "build:watch": "tsc --build -w tsconfig.build.json",
     "clean": "rimraf lib *.tsbuildinfo ./**/dists",
     "copy": "cpx \"src/**/*.{d.ts,vue,less,scss,css,html,sass,json,js}\" lib"
   },

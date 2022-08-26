@@ -17,34 +17,32 @@ export const enhanceApp = ({ app, router }): void => {
     from,
     savedPosition: void | { x: number; y: number }
   ): void => {
-    if (!__VUEPRESS_SSR__ && typeof window !== 'undefined') {
-      if (savedPosition) {
-        return window.scrollTo({
-          top: savedPosition.y,
-          behavior: 'smooth',
-        })
-      } else if (to.hash) {
-        if (app.$vuepress.$get('disableScrollBehavior')) {
-          return
-        }
+    if (savedPosition) {
+      return window.scrollTo({
+        top: savedPosition.y,
+        behavior: 'smooth',
+      })
+    } else if (to.hash) {
+      if (app.$vuepress.$get('disableScrollBehavior')) {
+        return
+      }
 
-        const targetAnchor = to.hash.slice(1)
-        const targetElement =
-          document.getElementById(targetAnchor) ||
-          document.querySelector(`[name='${targetAnchor}']`)
+      const targetAnchor = to.hash.slice(1)
+      const targetElement =
+        document.getElementById(targetAnchor) ||
+        document.querySelector(`[name='${targetAnchor}']`)
 
-        if (targetElement) {
-          return window.scrollTo({
-            top: getElementPosition(targetElement).y,
-            behavior: 'smooth',
-          })
-        }
-      } else {
+      if (targetElement) {
         return window.scrollTo({
-          top: 0,
+          top: getElementPosition(targetElement).y,
           behavior: 'smooth',
         })
       }
+    } else {
+      return window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      })
     }
   }
 }
