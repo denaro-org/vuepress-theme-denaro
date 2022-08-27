@@ -14,6 +14,7 @@ import {
   SparklerMode,
 } from '@moefy-canvas/theme-sparkler'
 import { classNameByBEM } from '@vuepress-denaro/core'
+import type { VNode } from 'vue'
 import { defineComponent, h, onBeforeUnmount, onMounted } from 'vue'
 import {
   theme,
@@ -27,7 +28,6 @@ export const DenaroMoefyCanvas = defineComponent({
 
   setup() {
     const id = classNameByBEM('moefy-canvas')
-    const MoefyCanvasEL = h('div', { class: id }, h('canvas', { id }))
     let moefyCanvas: Ribbon | Sakura | Popper | Sparkler | null = null
 
     const getCanvas = (): HTMLCanvasElement => {
@@ -107,6 +107,7 @@ export const DenaroMoefyCanvas = defineComponent({
       moefyCanvas && moefyCanvas.unmount()
     })
 
-    return () => !__VUEPRESS_SSR__ && MoefyCanvasEL
+    return (): VNode =>
+      !__VUEPRESS_DEV__ ? h('div', { class: id }, h('canvas', { id })) : h('')
   },
 })
