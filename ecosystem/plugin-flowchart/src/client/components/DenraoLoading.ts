@@ -1,10 +1,11 @@
+import type { VNode } from 'vue'
 import { defineComponent, h } from 'vue'
 
 export const DenraoLoading = defineComponent({
   name: 'DenraoLoading',
 
   setup() {
-    return () =>
+    return (): VNode =>
       h(
         'svg',
         {

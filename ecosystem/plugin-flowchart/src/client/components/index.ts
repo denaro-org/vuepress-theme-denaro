@@ -1,3 +1,1 @@
-import DenraoFlowChart from './DenraoFlowChart.vue'
-
-export { DenraoFlowChart }
+export * from './DenraoFlowChart.js'
