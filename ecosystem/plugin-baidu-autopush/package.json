@@ -36,7 +36,7 @@
   ],
   "scripts": {
     "build": "tsc --build tsconfig.build.json",
-    "clean": "npx rimraf lib *.tsbuildinfo ./**/dist node_modules",
+    "clean": "npx rimraf lib *.tsbuildinfo ./dist",
     "copy": "cpx \"src/**/*.{d.ts,vue,less,scss,css,html,sass,json,js}\" lib"
   },
   "dependencies": {

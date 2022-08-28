@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "clean": "npx rimraf node_modules .vuepress/.cache .vuepress/.temp dist",
+    "clean": "npx rimraf .vuepress/.cache .vuepress/.temp dist",
     "example:build": "vuepress-cli build --clean-cache",
     "example:clean": "rimraf .vuepress/.temp .vuepress/.cache .vuepress/dist",
     "example:dev": "vuepress-cli dev --clean-cache",
