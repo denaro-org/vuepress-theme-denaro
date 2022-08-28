@@ -42,17 +42,15 @@ export const mdPluginVuePreview = function (md, { rootPath }): void {
       contentToken.content.match(/^@\[(preview|docvue)-?(\w+)?\]\{(.+)\}/)
 
     if (!matchImportPattern) {
-      return ''
+      return '<p>'
     }
 
     importMode = matchImportPattern[1]
     componentName = matchImportPattern[2]
-
     hasImportBlockOpen = true
     importBlockIndex = idx
 
     const filePath = matchImportPattern[3]
-
     const absoluteFilePath = getAbsPath(filePath, { rootPath })
 
     if (!fs.existsSync(absoluteFilePath)) {
@@ -82,7 +80,7 @@ export const mdPluginVuePreview = function (md, { rootPath }): void {
       return htmlResult + '<!-- '
     }
 
-    return ''
+    return '<p>'
   }
 
   // 覆盖块标签-结束标签
@@ -108,28 +106,28 @@ export const mdPluginVuePreview = function (md, { rootPath }): void {
     ) {
       hasImportBlockOpen = false
 
-      return !resolveFileError
-        ? '--></DenraoCodeGroup></DenraoVuePreview>'
-        : ' -->'
+      return !resolveFileError ? '--></CodeGroup></DenraoVuePreview>' : ' -->'
     }
 
-    return ''
+    return '</p>'
   }
 }
 
 function renderDemoOpen({ filePath, absoluteFilePath, showDemo }): string {
-  const template = `<DenraoVuePreview absoluteFilePath='${absoluteFilePath}' showDemo='${showDemo}'><DenraoCodeGroup>`
+  const componentName = path.basename(absoluteFilePath).replace('.vue', '')
+
+  const template = `<DenraoVuePreview componentName='${componentName}' showDemo='${showDemo}'><CodeGroup>`
 
   const deps = analyzeDeps(absoluteFilePath)
 
-  const codeGroups = `${[absoluteFilePath]
+  const CodeGroups = `${[absoluteFilePath]
     .concat(deps)
     .map((absPath, index) => {
-      return `<DenraoCodeGroupItem title='${path.basename(absPath)}'>
+      return `<CodeGroupItem title='${path.basename(absPath)}'>
       ${md.render(`@[code](${absPath})`)}
-      </DenraoCodeGroupItem>`
+      </CodeGroupItem>`
     })
     .join('')}`
 
-  return template + codeGroups + '' + '<!-- '
+  return template + CodeGroups + '' + '<!-- '
 }

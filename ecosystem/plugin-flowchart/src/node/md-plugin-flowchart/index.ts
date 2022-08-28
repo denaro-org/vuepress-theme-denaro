@@ -14,9 +14,9 @@ export const mdPluginFlowchart = (md, options): void => {
     const { content, info } = token
     const $dataBlock = {}
     $dataBlock[key] = content
-    return `<DenraoFlowChart id="${key}" code="${$dataBlock[key]}" preset="${
+    return `<DenraoFlowChart id='${key}' code='${$dataBlock[key]}' preset='${
       info.trim() || 'vue'
-    }"></DenraoFlowChart>`
+    }'></DenraoFlowChart>`
   }
 
   function uml(state, startLine, endLine, silent): boolean {

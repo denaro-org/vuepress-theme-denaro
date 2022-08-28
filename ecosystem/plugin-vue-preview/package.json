@@ -33,7 +33,7 @@
   ],
   "scripts": {
     "build": "tsc --build tsconfig.build.json",
-    "clean": "rimraf lib *.tsbuildinfo ./**/dists",
+    "clean": "npx rimraf lib *.tsbuildinfo ./**/dist node_modules",
     "copy": "cpx \"src/**/*.{d.ts,vue,less,scss,css,html,sass,json,js}\" lib"
   },
   "dependencies": {
@@ -43,12 +43,13 @@
     "@babel/types": "^7.18.13",
     "@vue/compiler-sfc": "^3.2.37",
     "@vuepress-denaro/core": "workspace:*",
-    "@vuepress/client": "^2.0.0-beta.50",
-    "@vuepress/core": "^2.0.0-beta.50",
-    "@vuepress/markdown": "^2.0.0-beta.50",
-    "@vuepress/plugin-prismjs": "^2.0.0-beta.50",
-    "@vuepress/theme-default": "^2.0.0-beta.50",
-    "@vuepress/utils": "^2.0.0-beta.50",
+    "@vuepress/client": "2.0.0-beta.50",
+    "@vuepress/core": "2.0.0-beta.50",
+    "@vuepress/markdown": "2.0.0-beta.50",
+    "@vuepress/plugin-prismjs": "2.0.0-beta.50",
+    "@vuepress/plugin-register-components": "2.0.0-beta.50",
+    "@vuepress/theme-default": "2.0.0-beta.50",
+    "@vuepress/utils": "2.0.0-beta.50",
     "doc-vue3": "^1.0.3",
     "enhanced-resolve": "^5.10.0",
     "marked": "^4.0.16",
