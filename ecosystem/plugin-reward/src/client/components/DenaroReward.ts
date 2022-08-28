@@ -11,11 +11,11 @@ export const DenaroReward = defineComponent({
   setup() {
     const isShowContainer = ref(false)
     const isShowBtn = ref(true)
-    const handlerShowContainer = () => {
+    const handlerShowContainer = (): void => {
       isShowBtn.value = false
       isShowContainer.value = true
     }
-    const handlerShowBtn = () => {
+    const handlerShowBtn = (): void => {
       isShowBtn.value = true
       isShowContainer.value = false
     }

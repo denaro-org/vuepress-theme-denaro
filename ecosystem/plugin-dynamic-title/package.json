@@ -35,14 +35,14 @@
   ],
   "scripts": {
     "build": "tsc --build tsconfig.build.json",
-    "clean": "rimraf lib *.tsbuildinfo ./**/dists",
+    "clean": "npx rimraf lib *.tsbuildinfo ./**/dist node_modules",
     "copy": "cpx \"src/**/*.{d.ts,vue,less,scss,css,html,sass,json,js}\" lib"
   },
   "dependencies": {
     "@vuepress-denaro/core": "workspace:*",
     "@vuepress/client": "^2.0.0-beta.50",
     "@vuepress/core": "^2.0.0-beta.50",
-    "@vuepress/utils": "^2.0.0-beta.50",
+    "@vuepress/utils": "2.0.0-beta.50",
     "vue": "^3.2.37",
     "vue-router": "^4.0.14"
   },

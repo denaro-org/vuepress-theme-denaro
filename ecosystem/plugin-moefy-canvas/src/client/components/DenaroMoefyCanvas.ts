@@ -108,6 +108,6 @@ export const DenaroMoefyCanvas = defineComponent({
     })
 
     return (): VNode =>
-      !__VUEPRESS_DEV__ ? h('div', { class: id }, h('canvas', { id })) : h('')
+      !__VUEPRESS_SSR__ ? h('div', { class: id }, h('canvas', { id })) : h('')
   },
 })
