@@ -9,8 +9,7 @@
     "**/.vuepress/**/*",
     "ecosystem/**/*",
     "packages/**/*",
-    "vitest.config.ts",
-    "node_modules/.pnpm/@vuepress+client@2.0.0-beta.50/node_modules/@vuepress/client/types.d.ts"
+    "vitest.config.ts"
   ],
   "exclude": ["node_modules", ".temp", "lib", "dist"]
 }

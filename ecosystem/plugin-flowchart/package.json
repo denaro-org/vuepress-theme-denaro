@@ -38,9 +38,9 @@
   },
   "dependencies": {
     "@vuepress-denaro/core": "workspace:*",
-    "@vuepress/client": "2.0.0-beta.50",
-    "@vuepress/core": "2.0.0-beta.50",
-    "@vuepress/utils": "2.0.0-beta.50",
+    "@vuepress/client": "^2.0.0-beta.51",
+    "@vuepress/core": "^2.0.0-beta.51",
+    "@vuepress/utils": "^2.0.0-beta.51",
     "flowchart.js": "^1.17.1",
     "vue": "^3.2.37"
   },
