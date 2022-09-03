@@ -1,3 +1,12 @@
+# [1.1.0-alpha.2](https://github.com/denaro-org/vuepress-theme-denaro/compare/v1.1.0-alpha.1...v1.1.0-alpha.2) (2022-09-03)
+
+
+### Performance Improvements
+
+* **core:** 更新vuepress相关的依赖版本号 ([5615918](https://github.com/denaro-org/vuepress-theme-denaro/commit/561591832dc76d90480c65fa09212665d49b0d72))
+
+
+
 # [1.1.0-alpha.1](https://github.com/denaro-org/vuepress-theme-denaro/compare/v1.0.2-alpha.11...v1.1.0-alpha.1) (2022-08-28)
 
 
