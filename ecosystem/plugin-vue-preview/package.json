@@ -43,18 +43,18 @@
     "@babel/types": "^7.18.13",
     "@vue/compiler-sfc": "^3.2.37",
     "@vuepress-denaro/core": "workspace:*",
-    "@vuepress/client": "^2.0.0-beta.51",
-    "@vuepress/core": "^2.0.0-beta.51",
-    "@vuepress/markdown": "^2.0.0-beta.51",
-    "@vuepress/plugin-prismjs": "^2.0.0-beta.51",
-    "@vuepress/plugin-register-components": "^2.0.0-beta.51",
-    "@vuepress/theme-default": "^2.0.0-beta.51",
-    "@vuepress/utils": "^2.0.0-beta.51",
+    "@vuepress/client": "2.0.0-beta.51",
+    "@vuepress/core": "2.0.0-beta.51",
+    "@vuepress/markdown": "2.0.0-beta.51",
+    "@vuepress/plugin-prismjs": "2.0.0-beta.51",
+    "@vuepress/plugin-register-components": "2.0.0-beta.51",
+    "@vuepress/theme-default": "2.0.0-beta.51",
+    "@vuepress/utils": "2.0.0-beta.51",
     "doc-vue3": "^1.0.3",
     "enhanced-resolve": "^5.10.0",
     "marked": "^4.0.16",
     "slash2": "^2.0.0",
-    "vue": "^3.2.37"
+    "vue": "^3.2.38"
   },
   "publishConfig": {
     "access": "public"

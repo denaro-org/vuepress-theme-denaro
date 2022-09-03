@@ -35,9 +35,9 @@
     "copy": "cpx \"src/**/*.{d.ts,vue,less,scss,css,html,sass,json,js}\" dist"
   },
   "dependencies": {
-    "@vuepress/client": "^2.0.0-beta.51",
+    "@vuepress/client": "2.0.0-beta.51",
     "deconstruct-merge": "^2.0.1",
-    "vue": "^3.2.37"
+    "vue": "^3.2.38"
   },
   "publishConfig": {
     "access": "public"
