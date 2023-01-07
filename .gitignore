@@ -2,6 +2,7 @@
 example/.vuepress/.temp/
 example/.vuepress/.cache/
 example/.vuepress/dist/
+example/out
 
 # Dist files
 dist/

@@ -156,7 +156,8 @@ export const html = (data: Record<any, any>, nested?: boolean): string => {
 }
 
 export const explain = (path: string): Record<any, any> => {
-  const proc = execSync(`npx -y jsdoc --explain ${path}`)
+  const proc = execSync(`npx  jsdoc --explain ${path}`)
+  console.log(proc)
   return JSON.parse(proc.toString())
 }
 
