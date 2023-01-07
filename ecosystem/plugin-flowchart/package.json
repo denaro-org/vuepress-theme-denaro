@@ -1,6 +1,6 @@
 {
   "name": "@vuepress-denaro/vuepress-plugin-flowchart",
-  "version": "1.1.0-alpha.3",
+  "version": "1.1.0",
   "description": "Rapid flowchart development plugin for vuepress.vuepress 的快速流程图开发插件.",
   "keywords": [
     "vuepress",
