@@ -1,3 +1,7 @@
+## [1.1.1-beta.0](https://github.com/denaro-org/vuepress-theme-denaro/compare/v1.1.0...v1.1.1-beta.0) (2023-04-05)
+
+
+
 # [1.1.0](https://github.com/denaro-org/vuepress-theme-denaro/compare/v1.1.0-alpha.3...v1.1.0) (2023-01-07)
 
 
