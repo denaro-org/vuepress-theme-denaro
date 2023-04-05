@@ -38,9 +38,9 @@
   },
   "dependencies": {
     "@vuepress-denaro/core": "workspace:*",
-    "@vuepress/client": "2.0.0-beta.60",
-    "@vuepress/core": "2.0.0-beta.60",
-    "@vuepress/utils": "2.0.0-beta.60",
+    "@vuepress/client": "2.0.0-beta.61",
+    "@vuepress/core": "2.0.0-beta.61",
+    "@vuepress/utils": "2.0.0-beta.61",
     "smoothscroll-polyfill": "^0.4.4"
   },
   "publishConfig": {
