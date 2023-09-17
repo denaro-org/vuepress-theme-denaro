@@ -15,7 +15,7 @@ export const enhanceApp = ({ app, router }): void => {
   router.options.scrollBehavior = (
     to,
     from,
-    savedPosition: void | { x: number; y: number }
+    savedPosition: void | { x: number; y: number },
   ): void => {
     if (savedPosition) {
       return window.scrollTo({

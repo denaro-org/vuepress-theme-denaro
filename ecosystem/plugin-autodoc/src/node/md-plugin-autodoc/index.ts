@@ -22,7 +22,7 @@ export const mdPluginAutodoc = function (md, { rootPath }): void {
                   .trim()
                   .replace(/^@root/, rootPath)
                   .trim()
-              : path.trim()
+              : path.trim(),
           )
         }
 
@@ -39,7 +39,7 @@ export const mdPluginAutodoc = function (md, { rootPath }): void {
           .map((key) => {
             if (!(key in data)) {
               throw new Error(
-                `Autodoc: could not find export \`${key}\` in file \`${path}\``
+                `Autodoc: could not find export \`${key}\` in file \`${path}\``,
               )
             }
             return html(data[key])

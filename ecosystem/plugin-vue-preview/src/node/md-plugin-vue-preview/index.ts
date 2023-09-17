@@ -34,7 +34,7 @@ export const mdPluginVuePreview = function (md, { rootPath }): void {
     idx,
     options,
     env,
-    self
+    self,
   ) {
     const contentToken = tokens[idx + 1]
     const matchImportPattern =
@@ -89,7 +89,7 @@ export const mdPluginVuePreview = function (md, { rootPath }): void {
     idx,
     options,
     env,
-    self
+    self,
   ) {
     if (
       importMode === 'docvue' &&

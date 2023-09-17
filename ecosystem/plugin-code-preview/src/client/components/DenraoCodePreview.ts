@@ -61,7 +61,7 @@ export const DenraoCodePreview = defineComponent({
                   'allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts',
               })
             : h(''),
-        ]
+        ],
       )
   },
 })

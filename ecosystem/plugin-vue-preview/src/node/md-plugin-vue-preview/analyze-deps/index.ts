@@ -21,7 +21,7 @@ export function analyzeDeps(absoluteFilePath: string): string[] {
     plugins: ['@babel/plugin-syntax-jsx'],
   }).ast
 
-  const dependencies: Array<string> = []
+  const dependencies: string[] = []
 
   const addDep = function (requireStr: string): void {
     const absPath = getModuleResolvePath({

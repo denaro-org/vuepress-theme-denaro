@@ -1,3 +1,7 @@
+import { viteBundler } from '@vuepress/bundler-vite'
+import { defineUserConfig } from '@vuepress/cli'
+import { defaultTheme } from '@vuepress/theme-default'
+import { path } from '@vuepress/utils'
 import { autodocPlugin } from '@vuepress-denaro/vuepress-plugin-autodoc'
 import { baiduAutopushPlugin } from '@vuepress-denaro/vuepress-plugin-baidu-autopush'
 import { codePreviewPlugin } from '@vuepress-denaro/vuepress-plugin-code-preview'
@@ -13,10 +17,6 @@ import { rewardPlugin } from '@vuepress-denaro/vuepress-plugin-reward'
 import { sitemapPlugin } from '@vuepress-denaro/vuepress-plugin-sitemap'
 import { smoothScrollPlugin } from '@vuepress-denaro/vuepress-plugin-smooth-scroll'
 import { vuePreviewPlugin } from '@vuepress-denaro/vuepress-plugin-vue-preview'
-import { viteBundler } from '@vuepress/bundler-vite'
-import { defineUserConfig } from '@vuepress/cli'
-import { defaultTheme } from '@vuepress/theme-default'
-import { path } from '@vuepress/utils'
 
 export default defineUserConfig({
   // set site base to default value

@@ -32,10 +32,11 @@ export const DenaroReward = defineComponent({
             onHandlerShowContainer: () => handlerShowContainer(),
           }),
           h(DenaroRewardContainer, {
+            isShowBtn: unref(isShowBtn),
             isShowContainer: unref(isShowContainer),
             onHandlerShowBtn: () => handlerShowBtn(),
           }),
-        ]
+        ],
       )
   },
 })

@@ -43,12 +43,12 @@ export const generateSitemap = (
     pages: [],
     base: '',
     dest: '',
-  }
+  },
 ): void => {
   if (!hostname) {
     return log(
       'Not generating sitemap because required "hostname" option doesn\'t exist',
-      'red'
+      'red',
     )
   }
 
@@ -61,7 +61,7 @@ export const generateSitemap = (
   const localesByNormalizedPagePath = pages.reduce((map, page) => {
     const { normalizedPath, localePrefix } = stripLocalePrefix(
       page.path,
-      localeKeys
+      localeKeys,
     )
     const prefixesByPath = map.get(normalizedPath) || []
     prefixesByPath.push(localePrefix)
@@ -73,7 +73,7 @@ export const generateSitemap = (
   pages.forEach((page) => {
     const fmOpts = page.frontmatter.sitemap || {}
     const metaRobots = (page.frontmatter.meta || []).find(
-      (meta) => meta.name === 'robots'
+      (meta) => meta.name === 'robots',
     )
     const excludePage = metaRobots
       ? (metaRobots.content || '')
@@ -129,12 +129,14 @@ export const generateSitemap = (
   })
 
   urls.forEach((item) => {
-    const page = pagesMap.get(item.url)
-    if (page) {
-      sitemap.del(item.url)
-      sitemap.add({ ...page, ...item })
-    } else {
-      sitemap.add(item)
+    if (item instanceof Object) {
+      const page = pagesMap.get(item.url)
+      if (page) {
+        sitemap.del(item.url)
+        sitemap.add({ ...page, ...item })
+      } else {
+        typeof item === 'string' && sitemap.add(item)
+      }
     }
   })
 

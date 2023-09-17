@@ -1,35 +1,28 @@
-import { pluginNamePrefix } from '@vuepress-denaro/core'
-import type { Plugin, PluginObject } from '@vuepress/core'
-import { getDirname, path } from '@vuepress/utils'
+import type { PluginFunction, PluginObject } from '@vuepress/core'
 import { MoefyCanvasTheme } from '../shared/index.js'
 import type { MoefyCanvasOptions } from '../shared/index.js'
+import { CLIENT_CONFIG_FILE, PLUGIN_NAME } from './utils.js'
 
-const __dirname = getDirname(import.meta.url)
-
-export const moefyCanvasPlugin = (
-  { theme, themeConfig = {}, canvasOptions = {} }: MoefyCanvasOptions = {
-    theme: MoefyCanvasTheme.Sparkler,
-  }
-): Plugin => {
-  const pluginObj: PluginObject = {
-    name: `${pluginNamePrefix}moefy-canvas`,
-
-    define: {
-      __MOEFY_CANVAS_THEME__: theme,
-      __MOEFY_CANVAS_THEME_CONFIG__: themeConfig,
-      __MOEFY_CANVAS_OPTIONS__: canvasOptions,
+export const moefyCanvasPlugin =
+  (
+    options: MoefyCanvasOptions = {
+      theme: MoefyCanvasTheme.Sparkler,
     },
+  ): PluginFunction =>
+  (app) => {
+    const { theme, themeConfig = {}, canvasOptions = {} } = options
 
-    clientConfigFile: path.resolve(__dirname, '../client/config.js'),
+    const pluginObj: PluginObject = {
+      name: PLUGIN_NAME,
 
-    alias: {
-      // workaround for https://github.com/vitejs/vite/issues/7621
-      [`${pluginNamePrefix}moefy-canvas/client`]: path.resolve(
-        __dirname,
-        '../client/index.js'
-      ),
-    },
+      define: {
+        __MOEFY_CANVAS_THEME__: theme,
+        __MOEFY_CANVAS_THEME_CONFIG__: themeConfig,
+        __MOEFY_CANVAS_OPTIONS__: canvasOptions,
+      },
+
+      clientConfigFile: CLIENT_CONFIG_FILE,
+    }
+
+    return pluginObj
   }
-
-  return pluginObj
-}

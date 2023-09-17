@@ -1,18 +1,12 @@
 import type { CanvasOptions } from '@moefy-canvas/core'
-import {
-  Popper,
-  type PopperConfig,
-  PopperShape,
-} from '@moefy-canvas/theme-popper'
+import { Popper, PopperShape } from '@moefy-canvas/theme-popper'
+import type { PopperConfig } from '@moefy-canvas/theme-popper'
 import type { RibbonConfig } from '@moefy-canvas/theme-ribbon'
 import { Ribbon } from '@moefy-canvas/theme-ribbon'
 import type { SakuraConfig } from '@moefy-canvas/theme-sakura'
 import { Sakura } from '@moefy-canvas/theme-sakura'
-import {
-  Sparkler,
-  type SparklerConfig,
-  SparklerMode,
-} from '@moefy-canvas/theme-sparkler'
+import { Sparkler, SparklerMode } from '@moefy-canvas/theme-sparkler'
+import type { SparklerConfig } from '@moefy-canvas/theme-sparkler'
 import { classNameByBEM } from '@vuepress-denaro/core'
 import type { VNode } from 'vue'
 import { defineComponent, h, onBeforeUnmount, onMounted } from 'vue'
@@ -32,7 +26,7 @@ export const DenaroMoefyCanvas = defineComponent({
 
     const getCanvas = (): HTMLCanvasElement => {
       const canvas: HTMLCanvasElement = document.getElementById(
-        id
+        id,
       ) as HTMLCanvasElement
 
       return canvas

@@ -18,14 +18,14 @@ export function getModuleResolvePath({
       mainFiles: ['index', 'package.json'],
     })(
       fs.statSync(basePath).isDirectory() ? basePath : path.parse(basePath).dir,
-      sourcePath
+      sourcePath,
     )
 
     return slash(absolutePath)
   } catch (err) {
     if (!silent) {
       console.error(
-        `[vuepress]: cannot resolve module ${sourcePath} from ${basePath}`
+        `[vuepress]: cannot resolve module ${sourcePath} from ${basePath}`,
       )
     }
 

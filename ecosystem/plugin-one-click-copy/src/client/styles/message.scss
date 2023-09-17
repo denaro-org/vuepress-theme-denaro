@@ -21,7 +21,9 @@
       border-radius: 3px;
       display: flex;
       align-items: center;
-      transition: height 0.2s ease-in-out, margin 0.2s ease-in-out;
+      transition:
+        height 0.2s ease-in-out,
+        margin 0.2s ease-in-out;
 
       .text {
         color: #333;

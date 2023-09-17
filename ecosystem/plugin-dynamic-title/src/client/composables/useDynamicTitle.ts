@@ -61,6 +61,6 @@ export const useDynamicTitle = (): void => {
     },
     {
       deep: true,
-    }
+    },
   )
 }

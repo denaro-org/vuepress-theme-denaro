@@ -14,7 +14,7 @@ const __dirname = getDirname(import.meta.url)
 export const prepareConfigFile = async (
   app: App,
   options: Required<RegisterComponentsPluginOptions>,
-  identifier: string
+  identifier: string,
 ): Promise<string> => {
   // get components from directory
   const componentsFromDir = await getComponentsFromDir(options)
@@ -25,7 +25,7 @@ export const prepareConfigFile = async (
     ...componentsFromDir,
     DenraoVuePreview: path.resolve(
       __dirname,
-      '../../client/components/DenraoVuePreview.vue'
+      '../../client/components/DenraoVuePreview.vue',
     ),
   }
 
@@ -40,8 +40,8 @@ export default {
       app.component(${JSON.stringify(
         ['DenraoVuePreview'].includes(name)
           ? name
-          : 'DenraoVuePreview' + capitalize(name)
-      )}, defineAsyncComponent(() => import(${JSON.stringify(filepath)})))`
+          : 'DenraoVuePreview' + capitalize(name),
+      )}, defineAsyncComponent(() => import(${JSON.stringify(filepath)})))`,
     )}
   },
 }

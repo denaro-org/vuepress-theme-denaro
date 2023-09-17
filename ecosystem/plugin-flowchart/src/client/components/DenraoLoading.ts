@@ -41,7 +41,7 @@ export const DenraoLoading = defineComponent({
                 dur: '0.6s',
                 repeatCount: 'indefinite',
               }),
-            ]
+            ],
           ),
           h(
             'rect',
@@ -68,7 +68,7 @@ export const DenraoLoading = defineComponent({
                 dur: '0.6s',
                 repeatCount: 'indefinite',
               }),
-            ]
+            ],
           ),
           h(
             'rect',
@@ -95,9 +95,9 @@ export const DenraoLoading = defineComponent({
                 dur: '0.6s',
                 repeatCount: 'indefinite',
               }),
-            ]
+            ],
           ),
-        ]
+        ],
       )
   },
 })

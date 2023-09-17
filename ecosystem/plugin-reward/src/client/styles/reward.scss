@@ -6,7 +6,7 @@ $textColor: #0f4244;
 
 @include b(#{$classPrefix}) {
   &reward {
-    @keyframes slide-out-right {
+    @keyframes slideOutRight {
       from {
         transform: translate3d(0, 0, 0);
       }
@@ -18,10 +18,10 @@ $textColor: #0f4244;
     }
 
     .slide-out-right {
-      animation-name: 'slide-out-right';
+      animation-name: slideOutRight;
     }
 
-    @keyframes slide-in-right {
+    @keyframes slideInRight {
       from {
         visibility: visible;
         transform: translate3d(100%, 0, 0);
@@ -33,7 +33,7 @@ $textColor: #0f4244;
     }
 
     .slide-in-right {
-      animation-name: 'slide-in-right';
+      animation-name: slideInRight;
     }
 
     .animated {

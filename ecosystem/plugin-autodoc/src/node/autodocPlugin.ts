@@ -1,30 +1,23 @@
-import { pluginNamePrefix } from '@vuepress-denaro/core'
-import type { Plugin, PluginObject } from '@vuepress/core'
-import { getDirname, path } from '@vuepress/utils'
+import type { PluginFunction, PluginObject } from '@vuepress/core'
 import type { AutodocOptions } from '../shared/index.js'
 import { mdPluginAutodoc } from './md-plugin-autodoc/index.js'
+import { CLIENT_CONFIG_FILE, PLUGIN_NAME } from './utils.js'
 
-const __dirname = getDirname(import.meta.url)
+export const autodocPlugin =
+  (options: AutodocOptions = {}): PluginFunction =>
+  (app) => {
+    const { rootPath } = options
 
-export const autodocPlugin = ({ rootPath }: AutodocOptions = {}): Plugin => {
-  const pluginObj: PluginObject = {
-    name: `${pluginNamePrefix}autodoc`,
+    const pluginObj: PluginObject = {
+      name: PLUGIN_NAME,
 
-    extendsMarkdown(md) {
-      md.set({ breaks: true })
-      md.use(mdPluginAutodoc, { rootPath })
-    },
+      extendsMarkdown(md) {
+        md.set({ breaks: true })
+        md.use(mdPluginAutodoc, { rootPath })
+      },
 
-    clientConfigFile: path.resolve(__dirname, '../client/config.js'),
+      clientConfigFile: CLIENT_CONFIG_FILE,
+    }
 
-    alias: {
-      // workaround for https://github.com/vitejs/vite/issues/7621
-      [`${pluginNamePrefix}autodoc/client`]: path.resolve(
-        __dirname,
-        '../client/index.js'
-      ),
-    },
+    return pluginObj
   }
-
-  return pluginObj
-}

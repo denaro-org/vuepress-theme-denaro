@@ -1,22 +1,11 @@
-import { pluginNamePrefix } from '@vuepress-denaro/core'
-import type { Plugin, PluginObject } from '@vuepress/core'
-import { getDirname, path } from '@vuepress/utils'
+import type { PluginFunction, PluginObject } from '@vuepress/core'
+import { CLIENT_CONFIG_FILE, PLUGIN_NAME } from './utils.js'
 
-const __dirname = getDirname(import.meta.url)
-
-export const smoothScrollPlugin = (): Plugin => {
+export const smoothScrollPlugin = (): PluginFunction => (app) => {
   const pluginObj: PluginObject = {
-    name: `${pluginNamePrefix}smooth-scroll`,
+    name: PLUGIN_NAME,
 
-    clientConfigFile: path.resolve(__dirname, '../client/config.js'),
-
-    alias: {
-      // workaround for https://github.com/vitejs/vite/issues/7621
-      [`${pluginNamePrefix}smooth-scroll/client`]: path.resolve(
-        __dirname,
-        '../client/index.js'
-      ),
-    },
+    clientConfigFile: CLIENT_CONFIG_FILE,
   }
 
   return pluginObj

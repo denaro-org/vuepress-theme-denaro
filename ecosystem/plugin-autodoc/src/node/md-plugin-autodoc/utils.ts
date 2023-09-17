@@ -63,7 +63,7 @@ export const html = (data: Record<any, any>, nested?: boolean): string => {
   result.push(`<${htag} id="${anchor}">`)
   result.push(` <a href="#${anchor}" class="header-anchor">#</a>`)
   result.push(
-    ` <span class="badge ${cls}" style="vertical-align: top;">${data.type}</span>`
+    ` <span class="badge ${cls}" style="vertical-align: top;">${data.type}</span>`,
   )
   result.push(` <code>${call}</code>`)
   result.push(`</${htag}>`)
@@ -109,7 +109,7 @@ export const html = (data: Record<any, any>, nested?: boolean): string => {
       const prismCode = Prism.highlight(
         param.text,
         Prism.languages.javascript,
-        'javascript'
+        'javascript',
       )
       const code = `<div class="language-javascript line-numbers-mode">
         <pre class="language-javascript"><code>${prismCode}</code></pre>
@@ -130,7 +130,7 @@ export const html = (data: Record<any, any>, nested?: boolean): string => {
       const prismCode = Prism.highlight(
         param,
         Prism.languages.javascript,
-        'javascript'
+        'javascript',
       )
       const code = `<div class="language-javascript line-numbers-mode">
         <pre class="language-javascript"><code>${prismCode}</code></pre>

@@ -22,7 +22,7 @@ const capitalize = (str): string => {
 }
 
 const StateComponentName = computed(
-  () => `DenraoVuePreview${capitalize(props.componentName)}`
+  () => `DenraoVuePreview${capitalize(props.componentName)}`,
 )
 </script>
 

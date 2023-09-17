@@ -31,7 +31,7 @@ export const DenaroRewardBtn = defineComponent({
             emit('handler-show-container')
           },
         },
-        h('span', btnText)
+        h('span', btnText),
       )
   },
 })

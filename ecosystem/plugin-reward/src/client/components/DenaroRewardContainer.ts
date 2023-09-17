@@ -42,7 +42,7 @@ export const DenaroRewardContainer = defineComponent({
                     `${classNameByBEM('reward-container', 'header-title')}`,
                   ],
                 },
-                title
+                title,
               ),
               h(
                 'i',
@@ -64,10 +64,10 @@ export const DenaroRewardContainer = defineComponent({
                   },
                   h('path', {
                     d: 'M887.2 774.2 624.8 510.8l263-260c10.8-10.8 10.8-28.4 0-39.2l-74.8-75.2c-5.2-5.2-12.2-8-19.6-8-7.4 0-14.4 3-19.6 8L512 395.6 249.8 136.6c-5.2-5.2-12.2-8-19.6-8-7.4 0-14.4 3-19.6 8L136 211.8c-10.8 10.8-10.8 28.4 0 39.2l263 260L136.8 774.2c-5.2 5.2-8.2 12.2-8.2 19.6 0 7.4 2.8 14.4 8.2 19.6l74.8 75.2c5.4 5.4 12.4 8.2 19.6 8.2 7 0 14.2-2.6 19.6-8.2L512 626.2l261.4 262.2c5.4 5.4 12.4 8.2 19.6 8.2 7 0 14.2-2.6 19.6-8.2l74.8-75.2c5.2-5.2 8.2-12.2 8.2-19.6C895.4 786.4 892.4 779.4 887.2 774.2z',
-                  })
-                )
+                  }),
+                ),
               ),
-            ]
+            ],
           ),
           h(
             'div',
@@ -76,7 +76,7 @@ export const DenaroRewardContainer = defineComponent({
               h(
                 'span',
                 { class: [`${classPrefix}reward-container__header-subTitle`] },
-                subTitle
+                subTitle,
               ),
               h(
                 'div',
@@ -94,13 +94,13 @@ export const DenaroRewardContainer = defineComponent({
                           alt: item.text,
                         }),
                         h('span', item.text),
-                      ]
+                      ],
                     )
-                  })
+                  }),
               ),
-            ]
+            ],
           ),
-        ]
+        ],
       )
   },
 })

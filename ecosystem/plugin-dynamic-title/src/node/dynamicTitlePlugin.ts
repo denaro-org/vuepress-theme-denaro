@@ -1,38 +1,31 @@
-import { pluginNamePrefix } from '@vuepress-denaro/core'
-import type { Plugin, PluginObject } from '@vuepress/core'
-import { getDirname, path } from '@vuepress/utils'
+import type { PluginFunction, PluginObject } from '@vuepress/core'
 import type { DynamicTitlePluginOptions } from '../shared/index.js'
+import { CLIENT_CONFIG_FILE, PLUGIN_NAME } from './utils.js'
 
-const __dirname = getDirname(import.meta.url)
+export const dynamicTitlePlugin =
+  (options: DynamicTitlePluginOptions = {}): PluginFunction =>
+  (app) => {
+    const {
+      showIcon = '',
+      showText = '(/≧▽≦/)咦！又好了！',
+      hideIcon = '',
+      hideText = '(●—●)喔哟, 崩溃啦！',
+      recoverTime = 2000,
+    } = options
 
-export const dynamicTitlePlugin = ({
-  showIcon = '',
-  showText = '(/≧▽≦/)咦！又好了！',
-  hideIcon = '',
-  hideText = '(●—●)喔哟, 崩溃啦！',
-  recoverTime = 2000,
-}: DynamicTitlePluginOptions = {}): Plugin => {
-  const pluginObj: PluginObject = {
-    name: `${pluginNamePrefix}dynamic-title`,
+    const pluginObj: PluginObject = {
+      name: PLUGIN_NAME,
 
-    define: {
-      __DYNAMIC_TITLE_SHOW_ICON__: showIcon, // The icon displayed when the document is in the current tab.
-      __DYNAMIC_TITLE_SHOW_TEXT__: showText, // The title displayed when the document is in the current tab.
-      __DYNAMIC_TITLE_HIDE_ICON__: hideIcon, // The icon displayed when the document is not in the current tab.
-      __DYNAMIC_TITLE_HIDE_TEXT__: hideText, // The title displayed when the document is not in the current tab.
-      __DYNAMIC_TITLE_RECOVER_TIME__: recoverTime, // The time to recover the title after the tab is changed.
-    },
+      define: {
+        __DYNAMIC_TITLE_SHOW_ICON__: showIcon, // The icon displayed when the document is in the current tab.
+        __DYNAMIC_TITLE_SHOW_TEXT__: showText, // The title displayed when the document is in the current tab.
+        __DYNAMIC_TITLE_HIDE_ICON__: hideIcon, // The icon displayed when the document is not in the current tab.
+        __DYNAMIC_TITLE_HIDE_TEXT__: hideText, // The title displayed when the document is not in the current tab.
+        __DYNAMIC_TITLE_RECOVER_TIME__: recoverTime, // The time to recover the title after the tab is changed.
+      },
 
-    clientConfigFile: path.resolve(__dirname, '../client/config.js'),
+      clientConfigFile: CLIENT_CONFIG_FILE,
+    }
 
-    alias: {
-      // workaround for https://github.com/vitejs/vite/issues/7621
-      [`${pluginNamePrefix}dynamic-title/client`]: path.resolve(
-        __dirname,
-        '../client/index.js'
-      ),
-    },
+    return pluginObj
   }
-
-  return pluginObj
-}

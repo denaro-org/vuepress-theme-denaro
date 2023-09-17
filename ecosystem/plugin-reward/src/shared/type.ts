@@ -40,5 +40,5 @@ export interface RewardPluginOptions {
    *
    * @default Array<IRewardOption>
    */
-  rewardOption?: Array<IRewardOption>
+  rewardOption?: IRewardOption[]
 }
