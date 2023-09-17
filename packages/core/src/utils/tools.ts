@@ -1,6 +1,6 @@
 export const mergeStyle = (
   style1,
-  style2
+  style2,
 ): string | Record<string, string> | string[] => {
   let style
   style1 instanceof Object &&

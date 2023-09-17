@@ -28,15 +28,13 @@ yarn add @vuepress-denaro/vuepress-plugin-sitemap
 ### js
 
 ```javascript
-const {
-  sitemapPlugin
-} = require('@vuepress-denaro/vuepress-plugin-sitemap')
+const { sitemapPlugin } = require('@vuepress-denaro/vuepress-plugin-sitemap')
 module.exports = {
-  plugins: [sitemapPlugin(
-    {
-      hostname: 'https://pake.web.id'
-    }
-  )],
+  plugins: [
+    sitemapPlugin({
+      hostname: 'https://pake.web.id',
+    }),
+  ],
 }
 ```
 
@@ -47,11 +45,11 @@ import { sitemapPlugin } from '@vuepress-denaro/vuepress-plugin-sitemap'
 import { defineUserConfig } from '@vuepress/cli'
 
 export default defineUserConfig({
-  plugins: [sitemapPlugin(
-    {
-      hostname: 'https://pake.web.id'
-    }
-  )],
+  plugins: [
+    sitemapPlugin({
+      hostname: 'https://pake.web.id',
+    }),
+  ],
 })
 ```
 

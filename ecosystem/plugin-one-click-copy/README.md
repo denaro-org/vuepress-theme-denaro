@@ -40,7 +40,7 @@ module.exports = {
       ], // Need to add one-click-copy class wildcard.
       copyMessage: 'Copied successfully!', // Prompt for successful copy.
       toolTipMessage: 'Copy to clipboard', // Click the title of the copy button.
-      duration: 3000 // Successful prompt disappearing time.
+      duration: 3000, // Successful prompt disappearing time.
     }),
   ],
 }
@@ -61,7 +61,7 @@ export default defineUserConfig({
       ], // Need to add one-click-copy class wildcard.
       copyMessage: 'Copied successfully!', // Prompt for successful copy.
       toolTipMessage: 'Copy to clipboard', // Click the title of the copy button.
-      duration: 3000 // Successful prompt disappearing time.
+      duration: 3000, // Successful prompt disappearing time.
     }),
   ],
 })

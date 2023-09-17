@@ -28,7 +28,9 @@ yarn add @vuepress-denaro/vuepress-plugin-flowchart
 ### js
 
 ```javascript
-const { flowchartPlugin  } = require('@vuepress-denaro/vuepress-plugin-flowchart')
+const {
+  flowchartPlugin,
+} = require('@vuepress-denaro/vuepress-plugin-flowchart')
 module.exports = {
   plugins: [
     moefyCanvasPlugin({

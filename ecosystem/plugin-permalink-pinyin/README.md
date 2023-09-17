@@ -28,12 +28,14 @@ yarn add @vuepress-denaro/vuepress-plugin-permalink-pinyin
 ### js
 
 ```javascript
-const { permainkPinyinPlugin } = require('@vuepress-denaro/vuepress-plugin-permalink-pinyin')
+const {
+  permainkPinyinPlugin,
+} = require('@vuepress-denaro/vuepress-plugin-permalink-pinyin')
 module.exports = {
   plugins: [
     permainkPinyinPlugin({
       lowercase: true, // Converted into lowercase, default: true
-      separator: '-' // Separator of the slug, default: '-'
+      separator: '-', // Separator of the slug, default: '-'
     }),
   ],
 }
@@ -49,15 +51,15 @@ export default defineUserConfig({
   plugins: [
     permainkPinyinPlugin({
       lowercase: true, // Converted into lowercase, default: true
-      separator: '-' // Separator of the slug, default: '-'
-    })
-  ]
+      separator: '-', // Separator of the slug, default: '-'
+    }),
+  ],
 })
 ```
 
 ## Configurations
 
-``` text
+```text
 /**
   * Ignore a list of strings untouched
   * @example tr('你好，世界', { ignore: ['你'] }) // 你 Hao , Shi Jie

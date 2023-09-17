@@ -28,15 +28,13 @@ yarn add @vuepress-denaro/vuepress-plugin-autodoc
 ### js
 
 ```javascript
-const {
-  autodocPlugin,
-} = require('@vuepress-denaro/vuepress-plugin-autodoc')
+const { autodocPlugin } = require('@vuepress-denaro/vuepress-plugin-autodoc')
 module.exports = {
-  plugins: [autodocPlugin(    
-    {
-      rootPath: '' // Replacement path for '@root'
-    }
-  )],
+  plugins: [
+    autodocPlugin({
+      rootPath: '', // Replacement path for '@root'
+    }),
+  ],
 }
 ```
 
@@ -47,11 +45,11 @@ import { autodocPlugin } from '@vuepress-denaro/vuepress-plugin-autodoc'
 import { defineUserConfig } from '@vuepress/cli'
 
 export default defineUserConfig({
-  plugins: [autodocPlugin(
-    {
-      rootPath: '' // Replacement path for '@root'
-    }
-  )],
+  plugins: [
+    autodocPlugin({
+      rootPath: '', // Replacement path for '@root'
+    }),
+  ],
 })
 ```
 

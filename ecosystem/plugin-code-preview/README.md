@@ -32,9 +32,7 @@ const {
   codePreviewPlugin,
 } = require('@vuepress-denaro/vuepress-plugin-code-preview')
 module.exports = {
-  plugins: [
-    codePreviewPlugin(),
-  ],
+  plugins: [codePreviewPlugin()],
 }
 ```
 
@@ -45,9 +43,7 @@ import { codePreviewPlugin } from '@vuepress-denaro/vuepress-plugin-code-preview
 import { defineUserConfig } from '@vuepress/cli'
 
 export default defineUserConfig({
-  plugins: [
-    codePreviewPlugin(),
-  ],
+  plugins: [codePreviewPlugin()],
 })
 ```
 
