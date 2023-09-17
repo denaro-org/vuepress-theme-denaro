@@ -7,7 +7,7 @@ import type { SakuraConfig } from '@moefy-canvas/theme-sakura'
 import { Sakura } from '@moefy-canvas/theme-sakura'
 import { Sparkler, SparklerMode } from '@moefy-canvas/theme-sparkler'
 import type { SparklerConfig } from '@moefy-canvas/theme-sparkler'
-import { classNameByBEM } from '@vuepress-denaro/core'
+import { classNameByBEM } from '@vuepress-denaro/core/client'
 import type { VNode } from 'vue'
 import { defineComponent, h, onBeforeUnmount, onMounted } from 'vue'
 import {

@@ -1,4 +1,4 @@
-import { classPrefix } from '@vuepress-denaro/core'
+import { classPrefix } from '@vuepress-denaro/core/client'
 import { onMounted, onUpdated } from 'vue'
 import * as defaultConst from '../components/const.js'
 import '../styles/style.scss'

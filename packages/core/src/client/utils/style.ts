@@ -1,4 +1,4 @@
-import { classPrefix } from '../config/index.js'
+import { classPrefix } from '../../config/index.js'
 
 const modifierSeparator = '--'
 const elementSeparator = '__'

@@ -19,41 +19,51 @@
   "author": "vxhly <pengchengou@gmail.com>",
   "type": "module",
   "exports": {
-    ".": "./dist/index.js",
+    ".": "./lib/node/index.js",
+    "./client": "./lib/client/index.js",
+    "./client/*": "./lib/client/*",
+    "./node": "./lib/node/index.js",
     "./package.json": "./package.json",
-    "./dist/styles/variables.scss": "./dist/styles/variables.scss",
-    "./dist/styles/mixins": "./dist/styles/mixins/index.scss"
+    "./styles/*": "./lib/styles/*"
   },
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsup",
-    "clean": "npx rimraf lib *.tsbuildinfo ./dist",
-    "copy": "cpx \"src/**/*.{d.ts,vue,less,scss,css,html,sass,json,js}\" dist"
+    "build": "tsc --build tsconfig.build.json",
+    "clean": "npx rimraf lib *.tsbuildinfo ./lib",
+    "copy": "cpx \"src/**/*.{d.ts,vue,less,scss,css,html,sass,json,js}\" lib"
   },
   "dependencies": {
     "@vuepress/client": "2.0.0-beta.67",
+    "@vuepress/core": "2.0.0-beta.67",
+    "@vuepress/utils": "2.0.0-beta.67",
     "deconstruct-merge": "^2.0.1",
+    "ora": "^7.0.1",
+    "semver": "^7.5.4",
     "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "sass": "^1.67.0",
+    "sass-loader": "^13.3.2"
+  },
+  "peerDependencies": {
+    "vuepress": "2.0.0-beta.67",
+    "vuepress-vite": "2.0.0-beta.67",
+    "vuepress-webpack": "2.0.0-beta.67"
+  },
+  "peerDependenciesMeta": {
+    "vuepress": {
+      "optional": true
+    },
+    "vuepress-vite": {
+      "optional": true
+    },
+    "vuepress-webpack": {
+      "optional": true
+    }
   },
   "publishConfig": {
     "access": "public"
-  },
-  "tsup": {
-    "clean": true,
-    "dts": "./src/index.ts",
-    "entry": [
-      "./src/index.ts"
-    ],
-    "format": [
-      "esm"
-    ],
-    "outDir": "./dist",
-    "sourcemap": false,
-    "target": "es2020",
-    "tsconfig": "../tsconfig.dts.json"
   }
 }

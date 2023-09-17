@@ -1,4 +1,4 @@
-import { classPrefix } from '@vuepress-denaro/core'
+import { classPrefix } from '@vuepress-denaro/core/client'
 import type { VNode } from 'vue'
 import { defineComponent, h, ref, unref } from 'vue'
 import '../styles/reward.scss'

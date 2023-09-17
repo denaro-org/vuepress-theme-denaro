@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { classNameByBEM } from '@vuepress-denaro/core'
+import { classNameByBEM } from '@vuepress-denaro/core/client'
 import { computed } from 'vue'
 
 const props = defineProps({

@@ -1,4 +1,4 @@
-import { classNameByBEM } from '@vuepress-denaro/core'
+import { classNameByBEM } from '@vuepress-denaro/core/client'
 import type { VNode } from 'vue'
 import { defineComponent, h } from 'vue'
 import '../styles/code-preview.scss'

@@ -1,4 +1,4 @@
-import { classPrefix } from '@vuepress-denaro/core'
+import { classPrefix } from '@vuepress-denaro/core/client'
 import type { VNode } from 'vue'
 import { defineComponent, h } from 'vue'
 import * as defaultConst from './const.js'

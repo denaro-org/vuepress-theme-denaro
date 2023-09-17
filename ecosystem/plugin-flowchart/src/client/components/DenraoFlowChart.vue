@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { classNameByBEM } from '@vuepress-denaro/core'
+import { classNameByBEM } from '@vuepress-denaro/core/client'
 import { onMounted, ref } from 'vue'
 import { DenraoLoading } from './DenraoLoading.js'
 import presets from './presets/index.js'

@@ -1,0 +1,10 @@
+{
+  "extends": "../tsconfig.dts.json",
+  "compilerOptions": {
+    "module": "NodeNext",
+    "rootDir": "./src",
+    "outDir": "./lib",
+    "types": ["@vuepress/client/types"]
+  },
+  "include": ["./src"]
+}

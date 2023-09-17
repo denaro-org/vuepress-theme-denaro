@@ -1,5 +1,5 @@
 import '../styles/message.scss'
-import { classPrefix } from '@vuepress-denaro/core'
+import { classPrefix } from '@vuepress-denaro/core/client'
 export interface IShow {
   text: string
   duration: number
