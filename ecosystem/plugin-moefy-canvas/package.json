@@ -44,13 +44,13 @@
     "@moefy-canvas/theme-sakura": "^0.3.3",
     "@moefy-canvas/theme-sparkler": "^0.3.3",
     "@vuepress-denaro/core": "workspace:*",
-    "@vuepress/client": "2.0.0-beta.61",
-    "@vuepress/core": "2.0.0-beta.61",
-    "@vuepress/utils": "2.0.0-beta.61",
-    "canvas-confetti": "^1.5.1",
+    "@vuepress/client": "2.0.0-beta.67",
+    "@vuepress/core": "2.0.0-beta.67",
+    "@vuepress/utils": "2.0.0-beta.67",
+    "canvas-confetti": "^1.6.0",
     "lodash": "^4.17.21",
     "ts-debounce": "^4.0.0",
-    "vue": "^3.2.47"
+    "vue": "^3.3.4"
   },
   "publishConfig": {
     "access": "public"

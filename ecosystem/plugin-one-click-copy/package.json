@@ -40,10 +40,10 @@
   },
   "dependencies": {
     "@vuepress-denaro/core": "workspace:*",
-    "@vuepress/client": "2.0.0-beta.61",
-    "@vuepress/core": "2.0.0-beta.61",
-    "@vuepress/utils": "2.0.0-beta.61",
-    "vue": "^3.2.47"
+    "@vuepress/client": "2.0.0-beta.67",
+    "@vuepress/core": "2.0.0-beta.67",
+    "@vuepress/utils": "2.0.0-beta.67",
+    "vue": "^3.3.4"
   },
   "publishConfig": {
     "access": "public"

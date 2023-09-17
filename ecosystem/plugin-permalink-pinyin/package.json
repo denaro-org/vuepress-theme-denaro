@@ -37,8 +37,8 @@
   },
   "dependencies": {
     "@vuepress-denaro/core": "workspace:*",
-    "@vuepress/core": "2.0.0-beta.61",
-    "transliteration": "^2.2.0"
+    "@vuepress/core": "2.0.0-beta.67",
+    "transliteration": "^2.3.5"
   },
   "publishConfig": {
     "access": "public"
