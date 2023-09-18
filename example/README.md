@@ -48,14 +48,20 @@ vuepress build .
 :::
 
 ::: warning 注意
-请确保你的 Node.js 版本 >= 8.6。
+请确保你的 Node.js 版本 >= 18.16。
 :::
 
+## 代码导入
+
 @[preview-code]{@root/demo.vue}
+
+## 文档
 
 @[docvue]{@root/demo.vue}
 
 @[autodoc]{@root/demo.js}
+
+## 流程图
 
 @flowstart
 st=>start: Start:>http://www.google.com[blank]

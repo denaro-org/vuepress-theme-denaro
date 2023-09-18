@@ -1,3 +1,10 @@
+# [1.2.0-beta.0](https://github.com/denaro-org/vuepress-theme-denaro/compare/v1.1.1-beta.0...v1.2.0-beta.0) (2023-09-18)
+
+### Performance Improvements
+
+- ⚡️ core ([0e82743](https://github.com/denaro-org/vuepress-theme-denaro/commit/0e82743e33b5b11047f9b90cd9630f0d78d66d49))
+- ⚡️ plugin-\* ([11990fd](https://github.com/denaro-org/vuepress-theme-denaro/commit/11990fd495bf9c035ee65556256a65508cafbce3))
+
 ## [1.1.1-beta.0](https://github.com/denaro-org/vuepress-theme-denaro/compare/v1.1.0...v1.1.1-beta.0) (2023-04-05)
 
 # [1.1.0](https://github.com/denaro-org/vuepress-theme-denaro/compare/v1.1.0-alpha.3...v1.1.0) (2023-01-07)

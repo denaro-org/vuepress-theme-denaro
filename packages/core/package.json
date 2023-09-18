@@ -1,6 +1,6 @@
 {
   "name": "@vuepress-denaro/core",
-  "version": "1.1.1-beta.0",
+  "version": "1.2.0-beta.0",
   "description": "@vuepress-denaro 的核心包",
   "keywords": [
     "vuepress",

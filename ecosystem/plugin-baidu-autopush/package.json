@@ -1,6 +1,6 @@
 {
   "name": "@vuepress-denaro/vuepress-plugin-baidu-autopush",
-  "version": "1.1.1-beta.0",
+  "version": "1.2.0-beta.0",
   "description": "Baidu autopush SEO plugin for vuepress. 百度站点自动推送 Vuepress 插件.",
   "keywords": [
     "vuepress",
