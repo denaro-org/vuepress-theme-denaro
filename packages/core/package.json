@@ -27,7 +27,7 @@
     "./styles/*": "./lib/styles/*"
   },
   "files": [
-    "dist"
+    "lib"
   ],
   "scripts": {
     "build": "tsc --build tsconfig.build.json",

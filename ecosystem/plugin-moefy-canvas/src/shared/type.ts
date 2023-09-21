@@ -1,4 +1,5 @@
 import type { CanvasOptions } from '@moefy-canvas/core'
+import type { MeteorConfig } from '@moefy-canvas/theme-meteor'
 import type { PopperConfig } from '@moefy-canvas/theme-popper'
 import type { RibbonConfig } from '@moefy-canvas/theme-ribbon'
 import type { SakuraConfig } from '@moefy-canvas/theme-sakura'
@@ -9,6 +10,7 @@ export enum MoefyCanvasTheme {
   Popper = 'popper',
   Ribbon = 'ribbon',
   Sakura = 'sakura',
+  Meteor = 'meteor',
 }
 
 export interface ConfettiConfig {
@@ -25,7 +27,8 @@ export interface MoefyCanvasThemeConfig
     SparklerConfig,
     PopperConfig,
     RibbonConfig,
-    ConfettiConfig {}
+    ConfettiConfig,
+    MeteorConfig {}
 
 /**
  * Options for @vuepress-denaro/vuepress-plugin-moefy-canvas

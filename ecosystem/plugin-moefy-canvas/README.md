@@ -78,6 +78,7 @@ export enum MoefyCanvasTheme {
   Popper = 'popper',
   Ribbon = 'ribbon',
   Sakura = 'sakura',
+  Meteor = 'meteor',
 }
 ```
 
@@ -165,6 +166,32 @@ export interface RibbonConfig extends ThemeConfig {
 ```typescript
 export interface SakuraConfig extends ThemeConfig {
   numPatels?: number
+}
+```
+
+#### Meteor
+
+- **default:**
+
+```js
+{
+  numParticles: null,
+  particleColor: {
+    light: 'rgba(102, 175, 239, .2)',
+    dark: 'rgba(245, 236, 66, .2)',
+  },
+}
+```
+
+```typescript
+export interface ColorTheme {
+  light: string
+  dark: string
+}
+
+export interface MeteorConfig extends ThemeConfig {
+  numParticles?: number | null
+  particleColor?: string | ColorTheme
 }
 ```
 

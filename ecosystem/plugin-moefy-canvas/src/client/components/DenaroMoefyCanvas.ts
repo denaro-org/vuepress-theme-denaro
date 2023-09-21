@@ -1,4 +1,6 @@
 import type { CanvasOptions } from '@moefy-canvas/core'
+import type { MeteorConfig } from '@moefy-canvas/theme-meteor'
+import { Meteor } from '@moefy-canvas/theme-meteor'
 import { Popper, PopperShape } from '@moefy-canvas/theme-popper'
 import type { PopperConfig } from '@moefy-canvas/theme-popper'
 import type { RibbonConfig } from '@moefy-canvas/theme-ribbon'
@@ -90,6 +92,24 @@ export const DenaroMoefyCanvas = defineComponent({
             ...userCanvasOptions,
           }
           moefyCanvas = new Sparkler(themeConfig, canvasOptions)
+          break
+        }
+        case 'meteor': {
+          const themeConfig: MeteorConfig = {
+            numParticles: null,
+            particleColor: {
+              light: 'rgba(102, 175, 239, .2)',
+              dark: 'rgba(245, 236, 66, .2)',
+            },
+            ...userThemeConfig,
+          }
+
+          const canvasOptions: CanvasOptions = {
+            opacity: 1,
+            zIndex: 0,
+            ...userCanvasOptions,
+          }
+          moefyCanvas = new Meteor(themeConfig, canvasOptions)
           break
         }
       }

@@ -38,11 +38,12 @@
     "copy": "cpx \"src/**/*.{d.ts,vue,less,scss,css,html,sass,json,js}\" lib"
   },
   "dependencies": {
-    "@moefy-canvas/core": "^0.3.3",
-    "@moefy-canvas/theme-popper": "^0.3.3",
-    "@moefy-canvas/theme-ribbon": "^0.3.3",
-    "@moefy-canvas/theme-sakura": "^0.3.3",
-    "@moefy-canvas/theme-sparkler": "^0.3.3",
+    "@moefy-canvas/core": "^0.5.2",
+    "@moefy-canvas/theme-meteor": "^0.5.2",
+    "@moefy-canvas/theme-popper": "^0.5.2",
+    "@moefy-canvas/theme-ribbon": "^0.5.2",
+    "@moefy-canvas/theme-sakura": "^0.5.2",
+    "@moefy-canvas/theme-sparkler": "^0.5.2",
     "@vuepress-denaro/core": "workspace:*",
     "@vuepress/client": "2.0.0-beta.67",
     "@vuepress/core": "2.0.0-beta.67",
