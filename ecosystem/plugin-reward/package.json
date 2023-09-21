@@ -1,6 +1,6 @@
 {
   "name": "@vuepress-denaro/vuepress-plugin-reward",
-  "version": "1.2.0-beta.0",
+  "version": "1.2.1-beta.0",
   "description": "A vuepress plugin for reward component.在你的站点添加一个打赏插件.",
   "keywords": [
     "vuepress",

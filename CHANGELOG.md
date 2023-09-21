@@ -1,3 +1,9 @@
+## [1.2.1-beta.0](https://github.com/denaro-org/vuepress-theme-denaro/compare/v1.2.0-beta.0...v1.2.1-beta.0) (2023-09-21)
+
+### Features
+
+- 🎸 @vuepress-denaro/vuepress-plugin-moefy-canvas ([0a25518](https://github.com/denaro-org/vuepress-theme-denaro/commit/0a255186e9c5e900925f1fb57aba52e9e0a76856))
+
 # [1.2.0-beta.0](https://github.com/denaro-org/vuepress-theme-denaro/compare/v1.1.1-beta.0...v1.2.0-beta.0) (2023-09-18)
 
 ### Performance Improvements

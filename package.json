@@ -1,6 +1,6 @@
 {
   "name": "@vuepress-denaro/monorepo",
-  "version": "1.2.0-beta.0",
+  "version": "1.2.1-beta.0",
   "private": true,
   "type": "module",
   "scripts": {
