@@ -4,13 +4,13 @@ import type { MoefyCanvasOptions } from '../shared/index.js'
 import { CLIENT_CONFIG_FILE, PLUGIN_NAME } from './utils.js'
 
 export const moefyCanvasPlugin =
-  (
-    options: MoefyCanvasOptions = {
-      theme: MoefyCanvasTheme.Sparkler,
-    },
-  ): PluginFunction =>
+  (options: MoefyCanvasOptions): PluginFunction =>
   (app) => {
-    const { theme, themeConfig = {}, canvasOptions = {} } = options
+    const {
+      theme = MoefyCanvasTheme.Sparkler,
+      themeConfig = {},
+      canvasOptions = {},
+    } = options
 
     const pluginObj: PluginObject = {
       name: PLUGIN_NAME,

@@ -4,9 +4,10 @@ import { mdPluginFlowchart } from './md-plugin-flowchart/index.js'
 import { CLIENT_CONFIG_FILE, PLUGIN_NAME } from './utils.js'
 
 export const flowchartPlugin =
-  (options: FlowchartOptions = {}): PluginFunction =>
+  (options?: FlowchartOptions): PluginFunction =>
   (app) => {
-    const { openMarker = '@flowstart', closeMarker = '@flowend' } = options
+    const { openMarker = '@flowstart', closeMarker = '@flowend' } =
+      options || {}
 
     const pluginObj: PluginObject = {
       name: PLUGIN_NAME,

@@ -10,7 +10,7 @@
     "vue-preview",
     "vue 组件预览"
   ],
-  "homepage": "https://github.com/denaro-org/vuepress-theme-denaro/tree/main/packages/@vuepress-denaro/plugin-vue-preview#readme",
+  "homepage": "https://github.com/denaro-org/vuepress-theme-denaro/tree/main/ecosystem/plugin-vue-preview#readme",
   "bugs": {
     "url": "https://github.com/denaro-org/vuepress-theme-denaro/issues"
   },

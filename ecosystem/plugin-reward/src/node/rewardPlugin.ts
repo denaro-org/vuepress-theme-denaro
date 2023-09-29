@@ -3,7 +3,7 @@ import type { RewardPluginOptions } from '../shared/index.js'
 import { CLIENT_CONFIG_FILE, PLUGIN_NAME } from './utils.js'
 
 export const rewardPlugin =
-  (options: RewardPluginOptions = {}): PluginFunction =>
+  (options: RewardPluginOptions): PluginFunction =>
   (app) => {
     const {
       btnText = '打赏',

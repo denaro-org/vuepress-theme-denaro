@@ -5,13 +5,13 @@ export interface FlowchartOptions {
   /**
    * setting open marker
    *
-   * @default '```mermaid'
+   * @default '@flowstart'
    */
   openMarker?: string
   /**
    * setting close marker
    *
-   * @default '```'
+   * @default '@flowend'
    */
   closeMarker?: string
 }

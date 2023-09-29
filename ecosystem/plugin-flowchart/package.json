@@ -10,7 +10,7 @@
     "flowchart",
     "流程图"
   ],
-  "homepage": "https://github.com/denaro-org/vuepress-theme-denaro/tree/main/packages/@vuepress-denaro/plugin-flowchart#readme",
+  "homepage": "https://github.com/denaro-org/vuepress-theme-denaro/tree/main/ecosystem/plugin-flowchart#readme",
   "bugs": {
     "url": "https://github.com/denaro-org/vuepress-theme-denaro/issues"
   },

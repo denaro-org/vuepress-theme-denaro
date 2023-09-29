@@ -3,7 +3,7 @@ import type { DynamicTitlePluginOptions } from '../shared/index.js'
 import { CLIENT_CONFIG_FILE, PLUGIN_NAME } from './utils.js'
 
 export const dynamicTitlePlugin =
-  (options: DynamicTitlePluginOptions = {}): PluginFunction =>
+  (options: DynamicTitlePluginOptions): PluginFunction =>
   (app) => {
     const {
       showIcon = '',

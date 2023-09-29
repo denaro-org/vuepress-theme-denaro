@@ -3,7 +3,7 @@ import type { OneClickCopyOptions } from '../shared/index.js'
 import { CLIENT_CONFIG_FILE, PLUGIN_NAME } from './utils.js'
 
 export const oneClickCopyPlugin =
-  (options: OneClickCopyOptions = {}): PluginFunction =>
+  (options: OneClickCopyOptions): PluginFunction =>
   (app) => {
     const {
       copySelector = [

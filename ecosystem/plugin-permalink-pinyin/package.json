@@ -10,7 +10,7 @@
     "permalink-pinyin",
     "pinyin"
   ],
-  "homepage": "https://github.com/denaro-org/vuepress-theme-denaro/tree/main/packages/@vuepress-denaro/plugin-permalink-pinyin#readme",
+  "homepage": "https://github.com/denaro-org/vuepress-theme-denaro/tree/main/ecosystem/plugin-permalink-pinyin#readme",
   "bugs": {
     "url": "https://github.com/denaro-org/vuepress-theme-denaro/issues"
   },

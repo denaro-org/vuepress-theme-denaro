@@ -10,7 +10,7 @@
     "smooth-scroll",
     "平滑滚动"
   ],
-  "homepage": "https://github.com/denaro-org/vuepress-theme-denaro/tree/main/packages/@vuepress-denaro/plugin-smooth-scroll#readme",
+  "homepage": "https://github.com/denaro-org/vuepress-theme-denaro/tree/main/ecosystem/plugin-smooth-scroll#readme",
   "bugs": {
     "url": "https://github.com/denaro-org/vuepress-theme-denaro/issues"
   },

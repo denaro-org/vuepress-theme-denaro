@@ -4,7 +4,7 @@ import { mdPluginAutodoc } from './md-plugin-autodoc/index.js'
 import { CLIENT_CONFIG_FILE, PLUGIN_NAME } from './utils.js'
 
 export const autodocPlugin =
-  (options: AutodocOptions = {}): PluginFunction =>
+  (options: AutodocOptions): PluginFunction =>
   (app) => {
     const { rootPath } = options
 

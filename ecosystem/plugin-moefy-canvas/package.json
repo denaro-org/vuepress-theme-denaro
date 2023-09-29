@@ -11,7 +11,7 @@
     "canvas",
     "canvas 动画"
   ],
-  "homepage": "https://github.com/denaro-org/vuepress-theme-denaro/tree/main/packages/@vuepress-denaro/plugin-moefy-canvas#readme",
+  "homepage": "https://github.com/denaro-org/vuepress-theme-denaro/tree/main/ecosystem/plugin-moefy-canvas#readme",
   "bugs": {
     "url": "https://github.com/denaro-org/vuepress-theme-denaro/issues"
   },
