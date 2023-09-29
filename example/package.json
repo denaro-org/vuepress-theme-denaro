@@ -10,6 +10,7 @@
     "example:serve": "anywhere -s -h localhost -d .vuepress/dist"
   },
   "dependencies": {
+    "@vuepress-denaro/core": "workspace:*",
     "@vuepress-denaro/vuepress-plugin-autodoc": "workspace:*",
     "@vuepress-denaro/vuepress-plugin-baidu-autopush": "workspace:*",
     "@vuepress-denaro/vuepress-plugin-code-preview": "workspace:*",

@@ -48,6 +48,7 @@ export const DenraoCodePreview = defineComponent({
           props.embedBox === 'codesandbox'
             ? h('iframe', {
                 src: props.embedUrl,
+                loading: 'lazy',
                 style: {
                   width: '100%',
                   height: '100%',

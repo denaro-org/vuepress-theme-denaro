@@ -1,5 +1,5 @@
 import { classPrefix } from '@vuepress-denaro/core/client'
-import { onMounted, onUpdated } from 'vue'
+import { nextTick, onMounted, onUpdated, watchEffect } from 'vue'
 import * as defaultConst from '../components/const.js'
 import '../styles/style.scss'
 import Message from '../utils/Message.js'
@@ -7,12 +7,16 @@ import Message from '../utils/Message.js'
 export const useOneClickCopy = (): void => {
   const { copySelector, toolTipMessage, duration, copyMessage } = defaultConst
 
-  onMounted(() => {
-    updateCopy()
+  onMounted(async () => {
+    await updateCopy()
   })
 
-  onUpdated(() => {
-    updateCopy()
+  onUpdated(async () => {
+    await updateCopy()
+  })
+
+  watchEffect(async () => {
+    await updateCopy()
   })
 
   const generateCopyButton = (parent: any): void => {
@@ -53,8 +57,8 @@ export const useOneClickCopy = (): void => {
     }
   }
 
-  const updateCopy = (): void => {
-    setTimeout(() => {
+  const updateCopy = async (): Promise<void> => {
+    await nextTick(() => {
       if (typeof copySelector === 'string') {
         document.querySelectorAll(copySelector).forEach(generateCopyButton)
       } else if (copySelector instanceof Array || Array.isArray(copySelector)) {
@@ -62,6 +66,6 @@ export const useOneClickCopy = (): void => {
           document.querySelectorAll(item).forEach(generateCopyButton)
         })
       }
-    }, 1000)
+    })
   }
 }

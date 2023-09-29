@@ -8,6 +8,8 @@
     "noEmitOnError": true,
     "noImplicitAny": false,
     "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
     "target": "ESNext",
     "types": ["@vuepress/client/types"]
   }

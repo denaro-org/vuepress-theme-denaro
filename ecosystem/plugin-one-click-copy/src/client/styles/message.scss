@@ -1,14 +1,14 @@
 @import '@vuepress-denaro/core/styles/variables.scss';
 
 .#{$classPrefix} {
-  &message-container {
+  &-message-container {
     .message {
       &.move-in {
-        animation: message-move-in 0.3s ease-in-out;
+        animation: messageMoveIn 0.3s ease-in-out;
       }
 
       &.move-out {
-        animation: message-move-out 0.3s ease-in-out;
+        animation: messageMoveOut 0.3s ease-in-out;
         animation-fill-mode: forwards;
       }
 
@@ -41,7 +41,7 @@
   }
 }
 
-@keyframes message-move-out {
+@keyframes messageMoveOut {
   0% {
     opacity: 1;
     transform: translateY(0);
@@ -53,7 +53,7 @@
   }
 }
 
-@keyframes message-move-in {
+@keyframes messageMoveIn {
   0% {
     opacity: 0;
     transform: translateY(-100%);

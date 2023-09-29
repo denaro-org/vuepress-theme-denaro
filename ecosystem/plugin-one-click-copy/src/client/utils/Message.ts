@@ -14,7 +14,7 @@ export default class Message {
 
     if (!this.containerEl) {
       this.containerEl = document.createElement('div')
-      this.containerEl.id = containerId
+      this.containerEl.className = containerId
       document.body.appendChild(this.containerEl)
     }
   }
@@ -49,6 +49,7 @@ export default class Message {
     messageEl.addEventListener('animationend', () => {
       // Element对象内部有一个remove方法, 调用之后可以将该元素从dom树种移除！
       messageEl.remove()
+      this.containerEl?.remove()
     })
   }
 }

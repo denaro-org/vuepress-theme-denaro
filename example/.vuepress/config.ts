@@ -17,6 +17,7 @@ import { rewardPlugin } from '@vuepress-denaro/vuepress-plugin-reward'
 import { sitemapPlugin } from '@vuepress-denaro/vuepress-plugin-sitemap'
 import { smoothScrollPlugin } from '@vuepress-denaro/vuepress-plugin-smooth-scroll'
 import { vuePreviewPlugin } from '@vuepress-denaro/vuepress-plugin-vue-preview'
+import { navbar, sidebar } from './configs/index.js'
 
 export default defineUserConfig({
   // set site base to default value
@@ -36,7 +37,22 @@ export default defineUserConfig({
   },
 
   // configure default theme
-  theme: defaultTheme(),
+  theme: defaultTheme({
+    locales: {
+      '/': {
+        // navbar
+        navbar: navbar.denaroNavbar,
+        // sidebar
+        sidebar: sidebar.denaroSidebar,
+      },
+    },
+  }),
+  pagePatterns: [
+    '**/*.md',
+    '!.vuepress',
+    '!node_modules',
+    'node_modules/@vuepress-denaro/**/*.md',
+  ],
 
   plugins: [
     autodocPlugin({

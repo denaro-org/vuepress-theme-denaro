@@ -23,7 +23,7 @@ npm install @vuepress-denaro/vuepress-plugin-vue-preview
 yarn add @vuepress-denaro/vuepress-plugin-vue-preview
 ```
 
-- Update `plugins` in `.vuepress/config.js`
+- Update `plugins` in `.vuepress/config.js` or `.vuepress/config.ts`
 
 ### js
 

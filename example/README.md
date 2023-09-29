@@ -50,32 +50,3 @@ vuepress build .
 ::: warning 注意
 请确保你的 Node.js 版本 >= 18.16。
 :::
-
-## 代码导入
-
-@[preview-code]{@root/demo.vue}
-
-## 文档
-
-@[docvue]{@root/demo.vue}
-
-@[autodoc]{@root/demo.js}
-
-## 流程图
-
-@flowstart
-st=>start: Start:>http://www.google.com[blank]
-e=>end:>http://www.google.com
-op1=>operation: My Operation
-sub1=>subroutine: My Subroutine
-cond=>condition: Yes
-or No?:>http://www.google.com
-io=>inputoutput: catch something...
-para=>parallel: parallel tasks
-
-st->op1->cond
-cond(yes)->io->e
-cond(no)->para
-para(path1, bottom)->sub1(right)->op1
-para(path2, top)->op1
-@flowend
