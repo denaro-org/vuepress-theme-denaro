@@ -1,12 +1,5 @@
-import { ensureEndingSlash } from '@vuepress/shared'
-import { getDirname, path } from '@vuepress/utils'
-import { pluginNamePrefix } from '@vuepress-denaro/core'
+import { getDirname } from '@vuepress-denaro/core'
 
-const __dirname = getDirname(import.meta.url)
+export const DIR_NAME = getDirname(import.meta.url)
 
-export const PLUGIN_NAME = `${pluginNamePrefix}moefy-canvas`
-export const CLIENT_FOLDER = ensureEndingSlash(
-  path.resolve(__dirname, '../client'),
-)
-
-export const CLIENT_CONFIG_FILE = `${CLIENT_FOLDER}config.js`
+export const PLUGIN_NAME = `moefy-canvas`

@@ -1,10 +1,10 @@
-import type { PluginFunction, PluginObject } from '@vuepress/core'
+import { useDenaroPlugin } from '@vuepress-denaro/core'
+import type { PluginFunction } from '@vuepress-denaro/core'
 import type { RewardPluginOptions } from '../shared/index.js'
-import { CLIENT_CONFIG_FILE, PLUGIN_NAME } from './utils.js'
+import { DIR_NAME, PLUGIN_NAME } from './utils.js'
 
-export const rewardPlugin =
-  (options: RewardPluginOptions): PluginFunction =>
-  (app) => {
+export const rewardPlugin = (options?: RewardPluginOptions): PluginFunction =>
+  useDenaroPlugin(() => {
     const {
       btnText = '打赏',
       title = '给作者赏一杯咖啡吧',
@@ -19,10 +19,12 @@ export const rewardPlugin =
           url: '/Alipay.png', // ddd your picture to docs/.vuepress/public
         },
       ],
-    } = options
+    } = options || {}
 
-    const pluginObj: PluginObject = {
+    return {
       name: PLUGIN_NAME,
+      dirname: DIR_NAME,
+      useClientConfig: true,
 
       define: {
         __REWARD_BTN_TEXT__: btnText, // reward button text.
@@ -30,9 +32,5 @@ export const rewardPlugin =
         __REWARD_SUB_TITLE__: subTitle, // Second reward text.
         __REWARD_OPTION__: rewardOption,
       },
-
-      clientConfigFile: CLIENT_CONFIG_FILE,
     }
-
-    return pluginObj
-  }
+  })

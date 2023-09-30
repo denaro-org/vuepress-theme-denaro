@@ -1,12 +1,10 @@
-import type { PluginFunction, PluginObject } from '@vuepress/core'
-import { CLIENT_CONFIG_FILE, PLUGIN_NAME } from './utils.js'
+import type { PluginFunction } from '@vuepress-denaro/core'
+import { useDenaroPlugin } from '@vuepress-denaro/core'
+import { DIR_NAME, PLUGIN_NAME } from './utils.js'
 
-export const codePreviewPlugin = (): PluginFunction => (app) => {
-  const pluginObj: PluginObject = {
+export const codePreviewPlugin = (): PluginFunction =>
+  useDenaroPlugin({
     name: PLUGIN_NAME,
-
-    clientConfigFile: CLIENT_CONFIG_FILE,
-  }
-
-  return pluginObj
-}
+    dirname: DIR_NAME,
+    useClientConfig: true,
+  })

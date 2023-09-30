@@ -3,8 +3,7 @@
   "compilerOptions": {
     "module": "NodeNext",
     "rootDir": "./src",
-    "outDir": "./lib",
-    "types": ["@vuepress/client/types"]
+    "outDir": "./lib"
   },
   "include": ["./src"]
 }

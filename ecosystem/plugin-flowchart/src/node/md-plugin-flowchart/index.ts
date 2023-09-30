@@ -1,4 +1,4 @@
-import { hash } from '@vuepress/utils'
+import { hash } from '@vuepress-denaro/core'
 
 export const mdPluginFlowchart = (md, options): void => {
   options = options || {}

@@ -1,10 +1,12 @@
-import type { PluginFunction, PluginObject } from '@vuepress/core'
+import type { PluginFunction } from '@vuepress-denaro/core'
+import { useDenaroPlugin } from '@vuepress-denaro/core'
 import type { OneClickCopyOptions } from '../shared/index.js'
-import { CLIENT_CONFIG_FILE, PLUGIN_NAME } from './utils.js'
+import { DIR_NAME, PLUGIN_NAME } from './utils.js'
 
-export const oneClickCopyPlugin =
-  (options: OneClickCopyOptions): PluginFunction =>
-  (app) => {
+export const oneClickCopyPlugin = (
+  options?: OneClickCopyOptions,
+): PluginFunction =>
+  useDenaroPlugin(() => {
     const {
       copySelector = [
         'div[class*="language-"] pre',
@@ -13,10 +15,12 @@ export const oneClickCopyPlugin =
       copyMessage = 'Copied successfully!',
       toolTipMessage = 'Copy to clipboard',
       duration = 3000,
-    } = options
+    } = options || {}
 
-    const pluginObj: PluginObject = {
+    return {
       name: PLUGIN_NAME,
+      dirname: DIR_NAME,
+      useClientConfig: true,
 
       define: {
         __ONE_CLICK_COPY_COPY_SELECTOR__: copySelector, // Need to add one-click-copy class wildcard.
@@ -24,9 +28,5 @@ export const oneClickCopyPlugin =
         __ONE_CLICK_COPY_TOOL_TIP_MESSAGE__: toolTipMessage, // Click the title of the copy button.
         __ONE_CLICK_COPY_DURATION__: duration, // Successful prompt disappearing time.
       },
-
-      clientConfigFile: CLIENT_CONFIG_FILE,
     }
-
-    return pluginObj
-  }
+  })

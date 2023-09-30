@@ -46,12 +46,6 @@
     "@moefy-canvas/theme-sparkler": "^0.5.2",
     "@vuepress-denaro/core": "workspace:*",
     "@vuepress/client": "2.0.0-beta.67",
-    "@vuepress/core": "2.0.0-beta.67",
-    "@vuepress/shared": "2.0.0-beta.67",
-    "@vuepress/utils": "2.0.0-beta.67",
-    "canvas-confetti": "^1.6.0",
-    "lodash": "^4.17.21",
-    "ts-debounce": "^4.0.0",
     "vue": "^3.3.4"
   },
   "publishConfig": {

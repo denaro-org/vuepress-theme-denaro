@@ -1,5 +1,5 @@
 import { classPrefix } from '@vuepress-denaro/core/client'
-import { nextTick, onMounted, onUpdated, watchEffect } from 'vue'
+import { nextTick, onMounted, onUpdated } from 'vue'
 import * as defaultConst from '../components/const.js'
 import '../styles/style.scss'
 import Message from '../utils/Message.js'
@@ -12,10 +12,6 @@ export const useOneClickCopy = (): void => {
   })
 
   onUpdated(async () => {
-    await updateCopy()
-  })
-
-  watchEffect(async () => {
     await updateCopy()
   })
 
