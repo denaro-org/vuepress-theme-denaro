@@ -1,3 +1,14 @@
+# [1.3.0](https://github.com/denaro-org/vuepress-theme-denaro/compare/v1.2.1-beta.0...v1.3.0) (2023-10-21)
+
+### Bug Fixes
+
+- 🐛 修改类型说明 ([167b077](https://github.com/denaro-org/vuepress-theme-denaro/commit/167b077b31c6eda03dcf67e5ec6b617ddb7a0578))
+- 🐛 plugin-reward ([90d7560](https://github.com/denaro-org/vuepress-theme-denaro/commit/90d7560cab478a417e4c3030048595362b96e362))
+
+### Features
+
+- 🎸 plugin-reward ([ef938bd](https://github.com/denaro-org/vuepress-theme-denaro/commit/ef938bde5a53055603d6d032ce32403144bf6170))
+
 ## [1.2.1-beta.0](https://github.com/denaro-org/vuepress-theme-denaro/compare/v1.2.0-beta.0...v1.2.1-beta.0) (2023-09-21)
 
 ### Features
