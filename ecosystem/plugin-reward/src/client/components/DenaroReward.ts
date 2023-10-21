@@ -22,11 +22,20 @@ export const DenaroReward = defineComponent({
     }
 
     const { elDom } = defaultConst
+    const EL_DOM = document.querySelector(elDom)
+
+    // 判断是不是 dom 元素
+    const isDom = (value: any): boolean =>
+      typeof HTMLElement === 'object'
+        ? value instanceof HTMLElement
+        : value &&
+          typeof value === 'object' &&
+          value !== null &&
+          value.nodeType === 1 &&
+          typeof value.nodeName === 'string'
 
     // 自定义渲染位置, 兼容在某个容器之前渲染
-    if (elDom && !__VUEPRESS_SSR__) {
-      const el = document.querySelector(elDom)
-
+    if (elDom && !__VUEPRESS_SSR__ && isDom(EL_DOM)) {
       const rewardEL = document.createElement('div')
       rewardEL.setAttribute('class', `${classPrefix}reward in-container`)
 
@@ -122,8 +131,8 @@ export const DenaroReward = defineComponent({
       })
 
       // 渲染在容器之前
-      if (el) {
-        el.before(rewardEL)
+      if (EL_DOM) {
+        EL_DOM.before(rewardEL)
       }
 
       return null
