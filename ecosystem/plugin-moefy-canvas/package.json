@@ -46,7 +46,7 @@
     "@moefy-canvas/theme-sparkler": "^0.5.2",
     "@vuepress-denaro/core": "workspace:*",
     "@vuepress/client": "2.0.0-beta.67",
-    "vue": "^3.3.4"
+    "vue": "^3.3.6"
   },
   "publishConfig": {
     "access": "public"

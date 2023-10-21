@@ -41,8 +41,8 @@
   "dependencies": {
     "@vuepress-denaro/core": "workspace:*",
     "@vuepress/client": "2.0.0-beta.67",
-    "vue": "^3.3.4",
-    "vue-router": "^4.2.4"
+    "vue": "^3.3.6",
+    "vue-router": "^4.2.5"
   },
   "publishConfig": {
     "access": "public"
