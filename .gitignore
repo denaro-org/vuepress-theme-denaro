@@ -31,3 +31,4 @@ coverage/
 .idea
 *.lock
 *-lock.*
+bun.*

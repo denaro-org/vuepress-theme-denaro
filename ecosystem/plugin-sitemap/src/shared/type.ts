@@ -55,7 +55,8 @@ export interface SitemapPluginOptions {
   /**
    * formatted today
    *
-   * @default '(lastUpdated) => new Date(lastUpdated).toISOString()'
+   * @default
+   * (lastUpdated) => new Date(lastUpdated).toISOString()
    */
   dateFormatter?: (lastUpdated: string) => string
 }

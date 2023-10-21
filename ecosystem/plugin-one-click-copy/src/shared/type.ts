@@ -5,7 +5,8 @@ export interface OneClickCopyOptions {
   /**
    * Need to add one-click-copy class wildcard.
    *
-   * @default '[div[class*="language-"] pre, div[class*="aside-code"] aside]'
+   * @default
+   * [div[class*="language-"] pre, div[class*="aside-code"] aside]
    */
   copySelector?: string[] | string
   /**

@@ -26,10 +26,6 @@ export const denaroSidebar: SidebarConfig = {
           link: '/node_modules/@vuepress-denaro/vuepress-plugin-flowchart/README.md',
         },
         {
-          text: 'vuepress-plugin-giscus',
-          link: '/node_modules/@vuepress-denaro/vuepress-plugin-giscus/README.md',
-        },
-        {
           text: 'vuepress-plugin-moefy-canvas',
           link: '/node_modules/@vuepress-denaro/vuepress-plugin-moefy-canvas/README.md',
         },
