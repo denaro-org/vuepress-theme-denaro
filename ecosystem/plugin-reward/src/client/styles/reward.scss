@@ -6,6 +6,13 @@ $textColor: #0f4244;
 
 @include b(#{$classPrefix}) {
   &reward {
+    &.in-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
     @keyframes slideOutRight {
       from {
         transform: translate3d(0, 0, 0);
@@ -62,14 +69,8 @@ $textColor: #0f4244;
       position: fixed;
       top: 50%;
       right: 0;
-      height: 40px;
       padding: 10px;
       padding-left: 0;
-      font-size: 16px;
-      font-weight: 600;
-      color: $accentColor;
-      cursor: pointer;
-      background-color: lighten($accentColor, 50%);
 
       &::after {
         position: absolute;
@@ -86,6 +87,41 @@ $textColor: #0f4244;
         background-color: lighten($accentColor, 50%);
         border-top-left-radius: 50%;
         border-bottom-left-radius: 50%;
+      }
+    }
+
+    &-btn,
+    &-btn2 {
+      height: 40px;
+      transition: all 0.3s ease-in-out;
+      font-size: 16px;
+      font-weight: 600;
+      color: $accentColor;
+      cursor: pointer;
+      background-color: lighten($accentColor, 50%);
+    }
+
+    &-btn2 {
+      width: 150px;
+      border-radius: 20px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &::before {
+        text-align: center;
+        border-right: 1px solid #fff;
+        width: 30px;
+        height: 40px;
+        position: absolute;
+        content: '¥';
+        background-color: lighten($accentColor, 50%);
+        left: 0;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+        line-height: 40px;
+        text-align: center;
       }
     }
 

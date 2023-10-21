@@ -1,6 +1,6 @@
 # vuepress-plugin-permalink-pinyin
 
-> :tada: A VuePress plugin which convert Chinese title to transliterate permalink.一个 VuePress 插件，将中文标题转换为音译永久链接.
+> :tada: A VuePress plugin which convert Chinese title to transliterate permalink.一个 VuePress 插件, 将中文标题转换为音译永久链接.
 
 <p align="center">
   <a href="https://www.npmjs.com/package/@vuepress-denaro/vuepress-plugin-permalink-pinyin" target="_blank"><img alt="npm version" src="https://img.shields.io/npm/v/@vuepress-denaro/vuepress-plugin-permalink-pinyin"></a>
@@ -62,15 +62,15 @@ export default defineUserConfig({
 ```text
 /**
   * Ignore a list of strings untouched
-  * @example tr('你好，世界', { ignore: ['你'] }) // 你 Hao , Shi Jie
+  * @example tr('你好, 世界', { ignore: ['你'] }) // 你 Hao , Shi Jie
   */
 ignore?: string[];
 /**
   * Replace a list of string / regex in the source string with the provided target string before transliteration
   * The option can either be an array or an object
-  * @example tr('你好，世界', { replace: {你: 'You'} }) // You Hao , Shi Jie
-  * @example tr('你好，世界', { replace: [['你', 'You']] }) // You Hao , Shi Jie
-  * @example tr('你好，世界', { replace: [[/你/g, 'You']] }) // You Hao , Shi Jie
+  * @example tr('你好, 世界', { replace: {你: 'You'} }) // You Hao , Shi Jie
+  * @example tr('你好, 世界', { replace: [['你', 'You']] }) // You Hao , Shi Jie
+  * @example tr('你好, 世界', { replace: [[/你/g, 'You']] }) // You Hao , Shi Jie
   */
 replace?: OptionReplaceCombined;
 /**

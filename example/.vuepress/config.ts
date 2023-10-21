@@ -28,7 +28,7 @@ export default defineUserConfig({
 
   locales: {
     // 键名是该语言所属的子路径
-    // 作为特例，默认语言可以使用 '/' 作为其路径。
+    // 作为特例, 默认语言可以使用 '/' 作为其路径。
     '/': {
       lang: 'zh-CN',
       title: 'vuepress-theme-denrao',
@@ -74,6 +74,7 @@ export default defineUserConfig({
     }),
     permainkPinyinPlugin(),
     rewardPlugin({
+      elDom: 'footer.page-meta',
       rewardOption: [
         {
           text: '微信',

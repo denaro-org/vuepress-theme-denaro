@@ -19,6 +19,7 @@ export const rewardPlugin = (options?: RewardPluginOptions): PluginFunction =>
           url: '/Alipay.png', // ddd your picture to docs/.vuepress/public
         },
       ],
+      elDom = '',
     } = options || {}
 
     return {
@@ -30,7 +31,8 @@ export const rewardPlugin = (options?: RewardPluginOptions): PluginFunction =>
         __REWARD_BTN_TEXT__: btnText, // reward button text.
         __REWARD_TITLE__: title, // First reward text.
         __REWARD_SUB_TITLE__: subTitle, // Second reward text.
-        __REWARD_OPTION__: rewardOption,
+        __REWARD_OPTION__: rewardOption, // your QR code image.
+        __REWARD_EL_DOM__: elDom, // reward element dom.
       },
     }
   })

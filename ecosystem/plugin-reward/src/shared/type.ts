@@ -41,4 +41,10 @@ export interface RewardPluginOptions {
    * @default Array<IRewardOption>
    */
   rewardOption?: IRewardOption[]
+  /**
+   * reward element render dom.
+   *
+   * @default undefined
+   */
+  elDom?: string
 }

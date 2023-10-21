@@ -120,6 +120,13 @@ Second reward text.
 
 your QR code image.
 
+### elDom
+
+- **type:** `string`
+- **default:** undefined
+
+reward element render dom.
+
 ## Thanks
 
 [vuepress-plugin-reward](https://github.com/vxhly/vuepress-plugin-reward)
