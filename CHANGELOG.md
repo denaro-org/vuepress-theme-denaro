@@ -1,3 +1,9 @@
+## [1.3.1](https://github.com/denaro-org/vuepress-theme-denaro/compare/v1.3.0...v1.3.1) (2023-10-31)
+
+### Bug Fixes
+
+- 🐛 plugin-reward ([788897d](https://github.com/denaro-org/vuepress-theme-denaro/commit/788897da8b1c9e7e214671c22b01dbfcf012f8d1))
+
 # [1.3.0](https://github.com/denaro-org/vuepress-theme-denaro/compare/v1.2.1-beta.0...v1.3.0) (2023-10-21)
 
 ### Bug Fixes
