@@ -44,7 +44,7 @@
     "child_process": "^1.0.2",
     "markdown-it": "^13.0.2",
     "prismjs": "^1.29.0",
-    "vue": "^3.3.6"
+    "vue": "^3.3.7"
   },
   "publishConfig": {
     "access": "public"

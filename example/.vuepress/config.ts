@@ -51,7 +51,7 @@ export default defineUserConfig({
     '**/*.md',
     '!.vuepress',
     '!node_modules',
-    'node_modules/@vuepress-denaro/**/*.md',
+    'node_modules/@vuepress-denaro/plugin-*/README.md',
   ],
 
   plugins: [

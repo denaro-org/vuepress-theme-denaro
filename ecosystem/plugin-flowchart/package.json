@@ -40,7 +40,7 @@
     "@vuepress-denaro/core": "workspace:*",
     "@vuepress/client": "2.0.0-beta.67",
     "flowchart.js": "^1.17.1",
-    "vue": "^3.3.6"
+    "vue": "^3.3.7"
   },
   "devDependencies": {
     "raphael": "^2.3.0"
