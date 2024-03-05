@@ -37,25 +37,25 @@
     "copy": "cpx \"src/**/*.{d.ts,vue,less,scss,css,html,sass,json,js}\" lib"
   },
   "dependencies": {
-    "@babel/core": "^7.23.2",
-    "@babel/plugin-syntax-jsx": "^7.22.5",
-    "@babel/traverse": "^7.23.2",
-    "@babel/types": "^7.23.0",
-    "@vue/compiler-sfc": "^3.3.7",
+    "@babel/core": "^7.24.0",
+    "@babel/plugin-syntax-jsx": "^7.23.3",
+    "@babel/traverse": "^7.24.0",
+    "@babel/types": "^7.24.0",
+    "@vue/compiler-sfc": "^3.4.21",
     "@vuepress-denaro/core": "workspace:*",
-    "@vuepress/client": "2.0.0-beta.67",
+    "@vuepress/client": "2.0.0-rc.2",
     "@vuepress/core": "2.0.0-beta.67",
     "@vuepress/markdown": "2.0.0-beta.67",
-    "@vuepress/plugin-prismjs": "2.0.0-beta.67",
+    "@vuepress/plugin-prismjs": "2.0.0-rc.0",
     "@vuepress/plugin-register-components": "2.0.0-beta.67",
-    "@vuepress/shared": "2.0.0-beta.67",
+    "@vuepress/shared": "2.0.0-rc.2",
     "@vuepress/theme-default": "2.0.0-beta.67",
-    "@vuepress/utils": "2.0.0-beta.67",
-    "doc-vue3": "^1.0.3",
-    "enhanced-resolve": "^5.15.0",
-    "marked": "^4.3.0",
+    "@vuepress/utils": "2.0.0-rc.2",
+    "doc-vue3": "^1.1.1",
+    "enhanced-resolve": "^5.15.1",
+    "marked": "^12.0.0",
     "slash2": "^2.0.0",
-    "vue": "^3.3.7"
+    "vue": "^3.4.21"
   },
   "publishConfig": {
     "access": "public"

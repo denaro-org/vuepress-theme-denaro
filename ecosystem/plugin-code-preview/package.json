@@ -40,8 +40,8 @@
   },
   "dependencies": {
     "@vuepress-denaro/core": "workspace:*",
-    "@vuepress/client": "2.0.0-beta.67",
-    "vue": "^3.3.7"
+    "@vuepress/client": "2.0.0-rc.2",
+    "vue": "^3.4.21"
   },
   "publishConfig": {
     "access": "public"

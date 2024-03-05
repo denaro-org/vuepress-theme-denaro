@@ -40,11 +40,11 @@
   },
   "dependencies": {
     "@vuepress-denaro/core": "workspace:*",
-    "@vuepress/client": "2.0.0-beta.67",
+    "@vuepress/client": "2.0.0-rc.2",
     "child_process": "^1.0.2",
-    "markdown-it": "^13.0.2",
+    "markdown-it": "^14.0.0",
     "prismjs": "^1.29.0",
-    "vue": "^3.3.7"
+    "vue": "^3.4.21"
   },
   "publishConfig": {
     "access": "public"
